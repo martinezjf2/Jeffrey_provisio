@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>The User Successfully Logged in</h1>
-<p>Added a p tag</p>
+
 </body>
 </html>
 
