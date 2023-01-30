@@ -8,10 +8,10 @@
 </head>
 <body>
  <!-- START NAVBAR -->
-        <div class="header">
+        <div class="header bg-primary">
             <nav>
-            	<div id="firstNav">
-            		<img src="./images/logo1.png" href="http://localhost:8080/Jeffrey_provisio/index.jsp" class="logo">  
+            	<div id="firstNav" >
+            		<a href="http://localhost:8080/Jeffrey_provisio/index.jsp"><img src="./images/logo1.png" class="logo"></a>  
             	</div>
  				<div id="secondNav">
  					<a href="http://localhost:8080/Jeffrey_provisio/index.jsp">Home</a>
@@ -23,5 +23,7 @@
             </nav>
         </div>
         <!-- ENDING NAVBAR -->
+        <!-- Script-->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
