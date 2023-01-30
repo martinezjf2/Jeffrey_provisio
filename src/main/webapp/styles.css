@@ -29,12 +29,13 @@
 
 nav {
 	width: 100%;
-	margin: 0px 0px 0px 150px;
+	
 	text-align: left;
 	padding: 15px 10px;
 }
 
 #firstNav {
+	margin-left: 150px;
 	float: left;
 	width: 20%
 }
@@ -42,7 +43,8 @@ nav {
 #secondNav {
 	margin-top: 50px;
 	width: 80%;
-	float: left;
+	margin-left: 40%;
+	
 }
 
 
@@ -150,7 +152,27 @@ nav a {
     box-shadow: 1px 4px 12px rgba(94,28,68,.15);
 }
 
+#footer {
+	background-color: #0d6efd;
+	padding: 30px 100px
+}
 
-#footer div {
-	background-color: blue;
+#footer div{
+	padding: 0;
+}
+
+
+#footer #firstDiv {
+	padding-left: 80px;
+	padding-right: 40px;
+}
+
+#footer #secondDiv {
+	padding-left: 80px
+}
+
+
+#footer #thirdDiv {
+	padding-left: 80px;
+	padding-right: 40px;
 }

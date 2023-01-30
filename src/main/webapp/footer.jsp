@@ -4,19 +4,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Provisio Footer</title>
 </head>
 <body>
-<div id="footer">
+
 <div class="container-fluid ">    
-            <div class="row">
-                <div class="col-lg-4 p-5 bg-primary">
+            <div class="row" id="footer">
+                <div class="col-lg-6 bg-primary" id="firstDiv">
                     <h3 class="h-font fw-bold fs-3 mb-2 text-white">Luv To Learn Inc.</h3>
                     <p class="text-white">
                         We are a company based on the personal relationships we make with our clients. Specializing in Salesforce.com: Administration Prep Class, Sales Reps, Reports, Power Users, Marketing, Sales/Service Cloud Consultant prep classes.
                     </p>
                 </div>
-                <div class="col-lg-4 p-5 bg-primary">
+                <div class="col-lg-3 bg-primary" id="secondDiv">
                     <h5 class="mb-3 text-white">Links</h5>
                     <a href="index.php" class="d-inline-block mb-2 text-white text-decoration-none">Home</a><br>
                     <a href="aboutus.php" class="d-inline-block mb-2 text-white text-decoration-none">About</a><br>
@@ -24,7 +24,7 @@
                     <a href="contactus.php" class="d-inline-block mb-2 text-white text-decoration-none">Contact Us</a><br>
 
                 </div> 
-                <div class="col-lg-4 p-5 bg-primary">
+                <div class="col-lg-3 bg-primary" id="thirdDiv">
                 <h5 class="mb-3 text-white">Follow Us</h5>
                 <a href="https://www.facebook.com/LuvToLearn/?ref=nf" class="d-inline-block mb-3 text-white text-decoration-none">
                             <i class="bi bi-facebook me-1"></i> Facebook
@@ -35,7 +35,7 @@
                 </div>
             </div>
          </div>
-       </div>
+     
 
          <!-- Designed by-->
 

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Provisio Navbar Page</title>
 </head>
 <body>
  <!-- START NAVBAR -->
@@ -17,13 +17,12 @@
  					<a href="http://localhost:8080/Jeffrey_provisio/index.jsp">Home</a>
                 	<a href="http://localhost:8080/Jeffrey_provisio/about.jsp">about</a>
                 	<a href="http://localhost:8080/Jeffrey_provisio/contact.jsp">contact</a>
-                	<button class="btn" id="btn1"data-bs-toggle="modal" data-bs-target="#loginModal">Log In</button>
-            		<button class="btn" id="btn2" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                	<a class="btn" id="btn1"data-bs-toggle="modal" data-bs-target="#loginModal">Log In</a>
+            		<a class="btn" id="btn2" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
  				</div>     
             </nav>
         </div>
         <!-- ENDING NAVBAR -->
-        <!-- Script-->
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+       
 </body>
 </html>
