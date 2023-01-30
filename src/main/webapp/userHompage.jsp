@@ -15,6 +15,15 @@
 <body>
 <!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
 	<jsp:include page="navbar.jsp" />
+	
+	<!--Modal fade for User Login-->
+   <jsp:include page="loginForm.jsp" />
+
+ 	<!--Modal fade for User Registration-->
+ 	<jsp:include page="registration.jsp" />
+ 	
+ 	<!-- FOOTER INCLUDE  -->
+ 	<jsp:include page="footer.jsp" />
 <h1>The User Successfully Logged in</h1>
 
 </body>
