@@ -30,7 +30,7 @@ public class RegistrationServlet extends HttpServlet {
 	}
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+//		Resource: https://www.tutorialspoint.com/jdbc/jdbc-insert-records.htm
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		out.println("<html><body>");
