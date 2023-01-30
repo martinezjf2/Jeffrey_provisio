@@ -45,10 +45,10 @@ DROP TABLE IF EXISTS history;
 
 -- CREATE USER TABLE
 CREATE TABLE user (
-    user_id              INT             NOT NULL        AUTO_INCREMENT,
+    user_id       	INT       		NOT NULL        	AUTO_INCREMENT,
     first_name      VARCHAR(75)     NOT NULL,
     last_name       VARCHAR(75)     NOT NULL,
-    email           VARCHAR(255)    NOT NULL,
+    email           VARCHAR(255)    NOT NULL 			UNIQUE,
     passphrase      VARCHAR(255)    NOT NULL,
     points          INT             NOT NULL,
     PRIMARY KEY(user_id)
@@ -63,7 +63,7 @@ INSERT INTO user(first_name, last_name, email, passphrase, points)
 INSERT INTO user(first_name, last_name, email, passphrase, points)
     VALUES('Isabella', 'Holmes', 'holmesbella@icloud.com', 'Detective#700', 2560);
 
-
+DELETE FROM user WHERE first_name = 'Jeffrey';
 
 -- CREATE TABLE PLACE (LOCATION IS A KEYWORD IN MYSQL)
 

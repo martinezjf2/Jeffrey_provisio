@@ -113,21 +113,30 @@ nav a {
     letter-spacing: .1em;
     font-size: 40px;
     color: yellow;
+    text-align: center;
 }
+
 .content .text h1 span {
     font-size: 50px;
 }
-.content .text p {
-    font-size: 17px;
+
+/* .content .text p {
+    font-size: 170px;
     font-weight: 600;
     letter-spacing: .1em;
     margin-top: 40px;
-    color: black;
+   
+ }  */
+ 
+ #headerButton {
+	width: 30%;
+	margin: 30px auto;
  }
+
+ 
 .btn3 {
     background: linear-gradient(to bottom, #cbcbcb 2%, #fff 100%);
-    margin-top: 60px;
-    margin-left: 140px;
+   	float: center;
     padding: 15px 30px;
     text-align: center;
     transition: .5s;
@@ -139,13 +148,4 @@ nav a {
     font-weight: 700;
     border-radius: 30px;
     box-shadow: 1px 4px 12px rgba(94,28,68,.15);
-}
-.pepsi {
-    display: flex;
-    height: 100%;
-    position: relative;
-    width: 600px;
-    margin-top: 80px;
-    padding-left: 440px;
-    justify-content: space-between;
 }

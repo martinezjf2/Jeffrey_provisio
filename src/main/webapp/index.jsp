@@ -22,11 +22,17 @@
     	<div class="container">
         	<div class="content">
             	<div class="text">
-            		<h1>Be Vibrant, Enjoy Life, <br> <span>Book Provisio</span></h1>
-            		<p>Welcome home at Provisio Beach and Resorts.<br>Family vacations to appeal each member. <br>and a getaway to achieve your relation needs.</p>
+            		<h1 style="text-align: center;">Be Vibrant, Enjoy Life, <br> <span>Book Provisio</span></h1>
+            		<p class="text-white h1" style="font-size: 25px; text-align: center;">Welcome home at Provisio Beach and Resorts.<br>Family vacations to appeal each member. <br>and a getaway to achieve your relation needs.</p>
+           			<div id="headerButton">
+           				<a class="btn3" href="http://localhost:8080/Jeffrey_provisio/registerUser.jsp">Book Now</a>
+           			</div>
            		</div>
        		</div>
-       		<button class="btn3"><a href="#room">Book Now</a></button>
+       		
+       			
+       		
+       		
    		</div>
  	</div>
    
@@ -36,5 +42,8 @@
 
  	<!--Modal fade for User Registration-->
  	<jsp:include page="registration.jsp" />
+ 	
+ 	<!-- FOOTER INCLUDE  -->
+ 	<jsp:include page="footer.jsp" />
 </body>
 </html>

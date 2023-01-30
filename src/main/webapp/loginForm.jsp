@@ -29,7 +29,7 @@
                     </div>
                     <div class= "d-flex align-items-center justify-content-between mb-2">
                     	<button type="submit" class="btn btn-dark shadow-none">LOGIN</button>
-                    	<a href="javascript: void(0)" class="text-secondary text-decoration-none">Forgot Password?</a>
+                    	<a href="http://localhost:8080/Jeffrey_provisio/registerUser.jsp" class="text-secondary text-decoration-none">New User? Register Here</a>
                     </div>
                 </div>
             </form>
