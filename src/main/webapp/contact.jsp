@@ -22,6 +22,8 @@
  	<!--Modal fade for User Registration-->
  	<jsp:include page="registration.jsp" />
  	
+ 	<h1>Contact Us Page</h1>
+ 	
  	<!-- FOOTER INCLUDE  -->
  	<jsp:include page="footer.jsp" />
 </body>

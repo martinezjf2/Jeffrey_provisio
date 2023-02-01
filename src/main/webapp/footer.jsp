@@ -18,18 +18,18 @@
                 </div>
                 <div class="col-lg-3 bg-primary" id="secondDiv">
                     <h5 class="mb-3 text-white">Links</h5>
-                    <a href="index.php" class="d-inline-block mb-2 text-white text-decoration-none">Home</a><br>
-                    <a href="aboutus.php" class="d-inline-block mb-2 text-white text-decoration-none">About</a><br>
-                    <a href="areasofexpertise.php" class="d-inline-block mb-2 text-white text-decoration-none">Areas of Expertise</a><br>
-                    <a href="contactus.php" class="d-inline-block mb-2 text-white text-decoration-none">Contact Us</a><br>
+                    <a href="http://localhost:8080/Jeffrey_provisio/index.jsp" class="d-inline-block mb-2 text-white text-decoration-none">Home</a><br>
+                    <a href="http://localhost:8080/Jeffrey_provisio/about.jsp" class="d-inline-block mb-2 text-white text-decoration-none">About</a><br>
+                    <a href="http://localhost:8080/Jeffrey_provisio/registerUser.jsp" class="d-inline-block mb-2 text-white text-decoration-none">Register</a><br>
+                    <a href="http://localhost:8080/Jeffrey_provisio/contact.jsp" class="d-inline-block mb-2 text-white text-decoration-none">Contact Us</a><br>
 
                 </div> 
                 <div class="col-lg-3 bg-primary" id="thirdDiv">
                 <h5 class="mb-3 text-white">Follow Us</h5>
-                <a href="https://www.facebook.com/LuvToLearn/?ref=nf" class="d-inline-block mb-3 text-white text-decoration-none">
+                <a href="#" class="d-inline-block mb-3 text-white text-decoration-none">
                             <i class="bi bi-facebook me-1"></i> Facebook
                         </a><br>
-                        <a href="https://www.linkedin.com/in/goldenmarty3827/" class="d-inline-block mb-3 text-white text-decoration-none">
+                        <a href="#" class="d-inline-block mb-3 text-white text-decoration-none">
                             <i class="bi bi-linkedin me-1"></i> Linkedin
                         </a><br>
                 </div>

@@ -176,3 +176,31 @@ nav a {
 	padding-left: 80px;
 	padding-right: 40px;
 }
+
+section form {
+	width: 50%;
+    margin: 10% auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 60px;
+    text-align: left;
+}
+
+#backToHomepageLink {
+	text-align: center;
+	padding: 0px 25px 25px 20px;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+		
+}
+
+#backToHomepageLink a {
+	text-decoration: none;
+	/* transition: all .2s ease-in-out; */
+}
+
+#backToHomepageLink a:hover {
+	text-decoration: underline;
+/* 	transform: scale(2); */
+}
