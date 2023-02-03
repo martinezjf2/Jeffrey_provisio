@@ -55,9 +55,15 @@ public class RetrievePassword extends HttpServlet {
 				out.println("fullName: "+ fullName);
 				out.println("email: "+ email);
 				out.println("passphrase: "+ sqlpassphrase);
+				response.sendRedirect("getInfo.jsp");
 			}
+			
+//			*******         Resource: https://initialcommit.com/blog/how-to-send-data-from-servlet-to-jsp         *********
+			
+			
+			
+			
 //			if (rs.next() != false) {
-//			Resource: https://initialcommit.com/blog/how-to-send-data-from-servlet-to-jsp
 //				response.sendRedirect("http://localhost:8080/Jeffrey_provisio/userHompage.jsp");
 //			} else {
 //				response.sendRedirect("http://localhost:8080/Jeffrey_provisio/wrongInformationLogin.jsp");
@@ -65,7 +71,7 @@ public class RetrievePassword extends HttpServlet {
 			con.close();
 		} catch(Exception e) {
 			out.println(e);
-			response.sendRedirect("http://localhost:8080/Jeffrey_provisio/wrongInformationLogin.jsp");
+			response.sendRedirect("wrongInformationLogin.jsp");
 			
 		}
 		out.println("</body></html>");

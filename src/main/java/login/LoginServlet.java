@@ -61,9 +61,9 @@ public class LoginServlet extends HttpServlet {
 			if (rs.next() != false) {
 				HttpSession session = request.getSession();
 				session.setAttribute("email", rs.getString(2));
-				response.sendRedirect("http://localhost:8080/Jeffrey_provisio/userHompage.jsp");
+				response.sendRedirect("userHompage.jsp");
 			} else {
-				response.sendRedirect("http://localhost:8080/Jeffrey_provisio/wrongInformationLogin.jsp");
+				response.sendRedirect("wrongInformationLogin.jsp");
 			}
 			
 //			Add Session to the email, when the user logs in
@@ -73,7 +73,7 @@ public class LoginServlet extends HttpServlet {
 //			response.sendRedirect("http://localhost:8080/Jeffrey_provisio/userHompage.jsp");
 		} catch(Exception e) {
 			out.println(e);
-			response.sendRedirect("http://localhost:8080/Jeffrey_provisio/wrongInformationLogin.jsp");
+			response.sendRedirect("wrongInformationLogin.jsp");
 //			Resource: https://www.javatpoint.com/sendRedirect()-method
 //			Resource: https://stackoverflow.com/questions/13621998/how-to-send-redirect-to-jsp-page-in-servlet
 			

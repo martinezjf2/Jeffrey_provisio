@@ -47,12 +47,12 @@ public class RegistrationServlet extends HttpServlet {
 //			String sql = "INSERT INTO user(first_name, last_name, email, passphrase, points) VALUES('Jeffrey', 'Martinez', 'jeffreypowerhouseandcallitaday@gmail.com', 'Python%78', 0)";
 			String sql = "INSERT INTO user(first_name, last_name, email, passphrase, points) VALUES('" +  firstName + "', "  + "'" + lastName + "', " + "'" + email + "', " + "'" + password + "', 0);";			
 			stmt.executeUpdate(sql);
-			response.sendRedirect("http://localhost:8080/Jeffrey_provisio/newUserHomepage.jsp");
+			response.sendRedirect("newUserHomepage.jsp");
 			
 			con.close();
 		} catch(Exception e) {
 			out.println(e);
-			response.sendRedirect("http://localhost:8080/Jeffrey_provisio/userAlreadyExistsPage.jsp");
+			response.sendRedirect("userAlreadyExistsPage.jsp");
 
 		}
 		out.println("</body></html>");

@@ -32,7 +32,7 @@ public class LogoutServlet extends HttpServlet {
 		response.setContentType("text/html");
 		HttpSession session = request.getSession();
 		session.invalidate();
-		response.sendRedirect("http://localhost:8080/Jeffrey_provisio/index.jsp");
+		response.sendRedirect("index.jsp");
 		
 	}
 
