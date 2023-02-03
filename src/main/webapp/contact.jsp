@@ -14,17 +14,72 @@
 </head>
 <body>
 <!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
-	<jsp:include page="navbar.jsp" />
+	<jsp:include page="partials/navbar.jsp" />
 	
 	<!--Modal fade for User Login-->
-   <jsp:include page="loginForm.jsp" />
+   <jsp:include page="partials/loginForm.jsp" />
 
  	<!--Modal fade for User Registration-->
  	<jsp:include page="registration.jsp" />
  	
- 	<h1>Contact Us Page</h1>
+ 	
+ 	
+ 	
+ 	<div class="container overlay-content">
+		<h1 class="hero-heading">How can we help you?</h1>
+	</div>
+	
+
+	<section class="py-6">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+					<div class="icon-rounded mb-4 bg-primary-light">
+						<i class="fa fa-2x text-primary fa-map-marker-alt"></i>
+					</div>
+					<h3 class="h5">Address</h3>
+					<p class="text-muted">
+						1000 Galvin Road South<br>Bellevue, NE 68005
+					</p>
+				</div>
+				<div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+					<div class="icon-rounded mb-4 bg-primary-light">
+						<i class="fa fa-2x text-primary fa-phone"></i>
+					</div>
+					<h3 class="h5">Customer Service</h3>
+					<p class="text-muted">Our customer service is available 24 hours a
+						day to assist with reservations, accommodations, amenities, and any questions you may have.</p>
+					<p class="text-muted">
+						<strong>1 (800) 555-5555</strong>
+					</p>
+				</div>
+				<div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+					<div class="icon-rounded mb-4 bg-primary-light">
+						<i class="fa fa-2x text-primary fa-envelope"></i>
+					</div>
+					<h3 class="h5">Email Us</h3>
+					<p class="text-muted">Please feel free to email us, sometimes for time and convenience this is the best option.</p>
+					<ul class="list-unstyled text-muted">
+						<li>
+							<a href="mailto:info@provisio.com?subject=Comments and Inquires from Provisio.com">
+								info@provisio.com 
+							</a>
+						</li>
+						<li>
+							<a href="mailto:support@provisio.com?subject=Technical Support Request Provisio.com">
+							support@provisio.com 
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+ 	
+ 	
+ 	
  	
  	<!-- FOOTER INCLUDE  -->
- 	<jsp:include page="footer.jsp" />
+ 	<jsp:include page="partials/footer.jsp" />
 </body>
 </html>

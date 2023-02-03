@@ -61,7 +61,7 @@
 </section>
 
 <!-- FOOTER INCLUDE  -->
- 	<jsp:include page="footer.jsp" />
+ 	<jsp:include page="partials/footer.jsp" />
 
 </body>
 </html>

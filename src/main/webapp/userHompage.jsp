@@ -14,17 +14,26 @@
 </head>
 <body>
 <!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
-	<jsp:include page="navbar.jsp" />
+	<jsp:include page="partials/navbar.jsp" />
 	
 	<!--Modal fade for User Login-->
-   <jsp:include page="loginForm.jsp" />
+   <jsp:include page="partials/loginForm.jsp" />
 
  	<!--Modal fade for User Registration-->
  	<jsp:include page="registration.jsp" />
  	
+ 	<% String name = (String)session.getAttribute("email"); 
+ 		out.print("Hello, " + name);
+ 	%>
+ 	
+ 	<h1>User Homepage When Logged In! </h1>
+ 	
+ 	
+ 	
+ 	
  	<!-- FOOTER INCLUDE  -->
- 	<jsp:include page="footer.jsp" />
-<h1>The User Successfully Logged in</h1>
+ 	<jsp:include page="partials/footer.jsp" />
+
 
 </body>
 </html>

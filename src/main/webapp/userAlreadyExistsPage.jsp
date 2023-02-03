@@ -14,16 +14,16 @@
 </head>
 <body>
 <!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
-	<jsp:include page="navbar.jsp" />
+	<jsp:include page="partials/navbar.jsp" />
 	
 	<!--Modal fade for User Login-->
-   <jsp:include page="loginForm.jsp" />
+   <jsp:include page="partials/loginForm.jsp" />
 
  	<!--Modal fade for User Registration-->
  	<jsp:include page="registration.jsp" />
  	
  	<!-- FOOTER INCLUDE  -->
- 	<jsp:include page="footer.jsp" />
+ 	<jsp:include page="partials/footer.jsp" />
 <h1>This email already exists, please return to the home screen to Login</h1>
 
 </body>

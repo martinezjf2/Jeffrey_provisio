@@ -1,6 +1,7 @@
 package login;
 
 import java.io.IOException;
+
 import java.sql.*;
 import java.io.PrintWriter;
 import java.sql.DriverManager;
@@ -10,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class LoginServlet
@@ -48,17 +50,25 @@ public class LoginServlet extends HttpServlet {
 //			Resource: https://javarevisited.blogspot.com/2016/10/how-to-check-if-resultset-is-empty-in-Java-JDBC.html#axzz7rZ0UhPlW
 //			Resource: https://www.garron.me/en/bits/mysql-select-multiple-conditions.html
 //			String sqlEmail = rs.getString(4);
-//			String sqlPassphrase = rs.getString(5);
+//			String sqlFirstName = rs.getString(2);
+//			String sqlLastName = rs.getString(3);
+//			String fullName = sqlFirstName + ' ' + sqlLastName;
 //			out.print(sqlEmail);
 //			if (email == sqlEmail && password == sqlPassphrase){
 //				out.println("Successful Login");
 ////				response.sendRedirect("http://localhost:8080/Jeffrey_provisio/userHompage.jsp");
 //			}
 			if (rs.next() != false) {
+				HttpSession session = request.getSession();
+				session.setAttribute("email", rs.getString(2));
 				response.sendRedirect("http://localhost:8080/Jeffrey_provisio/userHompage.jsp");
 			} else {
 				response.sendRedirect("http://localhost:8080/Jeffrey_provisio/wrongInformationLogin.jsp");
 			}
+			
+//			Add Session to the email, when the user logs in
+			
+			
 			con.close();
 //			response.sendRedirect("http://localhost:8080/Jeffrey_provisio/userHompage.jsp");
 		} catch(Exception e) {
