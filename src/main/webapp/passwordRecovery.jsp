@@ -28,13 +28,13 @@
  	
 
 	<div class="modal-content">
-    	<form action="register" method="POST">
+    	<form action="info" method="GET">
     	<div id="backToHomepageLink">
 			<a href="index.jsp">Click here to go back to Homepage</a>
 		</div>
             <div class="modal-header">
                 <h5 class="modal-title d-flex align-items-center">
-                <i class="bi bi-person-lines-fill fs-3 me-2"></i> User Registration
+                <i class="bi bi-person-lines-fill fs-3 me-2"></i> Forgot Password?
                 </h5>
                 
             </div>
@@ -52,19 +52,14 @@
                             <label class="form-label">Last Name</label>
                             <input type="text" class="form-control shadow-none" name="lastName" required>
                         </div>
-                        <div class="col-md-6 ps-0 mb-3">
+                        <div class="col-md-12 ps-0 mb-3">
                             <label class="form-label">Email</label>
                             <input type="email" class="form-control shadow-none" name="email" required>
-                        </div>
-                  
-                        <div class="col-md-6 ps-0 mb-3">
-                            <label class="form-label">Password</label>
-                            <input type="password" class="form-control shadow-none" name="password" required>
                         </div>
                     </div>
                 </div>
                 <div class="text-center my-1">
-                    <button type="submit" class="btn btn-dark shadow-none">REGISTER</button>
+                    <button type="submit" class="btn btn-dark shadow-none">Get Info</button>
                 </div>
             </div>
         </form>
