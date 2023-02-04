@@ -28,6 +28,13 @@
  	
  	<h1>Hello</h1>
  	
+ 	<h3>Full Name: ${name}</h3>
+ 	<h3>Email: ${email}</h3>
+ 	<h3>Password: ${password}</h3>
+ 	
+ 	<div id="backToHomepageLink">
+			<a href="index.jsp">Click here to go back to Homepage</a>
+		</div>
  	
  	
  	

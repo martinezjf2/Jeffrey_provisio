@@ -46,7 +46,7 @@ public class RetrievePassword extends HttpServlet {
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery("SELECT * FROM user WHERE email = '" + email + "' AND first_name = '" + firstName + "' AND last_name = '" +  lastName + "';");
 
-			while(rs.next()) {
+			if (rs.next() != false) {
 				String sqlFirstName = rs.getString("first_name");
 				String sqlLastName = rs.getString("last_name");
 				String sqlEmail = rs.getString("email");
@@ -55,7 +55,15 @@ public class RetrievePassword extends HttpServlet {
 				out.println("fullName: "+ fullName);
 				out.println("email: "+ email);
 				out.println("passphrase: "+ sqlpassphrase);
-				response.sendRedirect("getInfo.jsp");
+//				response.sendRedirect("getInfo.jsp");
+				request.setAttribute("name", fullName);
+				request.setAttribute("email", sqlEmail);
+				request.setAttribute("password", sqlpassphrase);
+				request.getRequestDispatcher("getInfo.jsp").forward(request, response);
+				con.close();
+				
+			} else {
+				response.sendRedirect("http://localhost:8080/Jeffrey_provisio/wrongInformationLogin.jsp");
 			}
 			
 //			*******         Resource: https://initialcommit.com/blog/how-to-send-data-from-servlet-to-jsp         *********
@@ -63,17 +71,15 @@ public class RetrievePassword extends HttpServlet {
 			
 			
 			
-//			if (rs.next() != false) {
-//				response.sendRedirect("http://localhost:8080/Jeffrey_provisio/userHompage.jsp");
-//			} else {
-//				response.sendRedirect("http://localhost:8080/Jeffrey_provisio/wrongInformationLogin.jsp");
-//			}
-			con.close();
+			
+			
 		} catch(Exception e) {
 			out.println(e);
 			response.sendRedirect("wrongInformationLogin.jsp");
 			
 		}
+		
+		
 		out.println("</body></html>");
 	}
 
