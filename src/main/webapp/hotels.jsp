@@ -19,9 +19,9 @@
 	<jsp:include page="partials/navbar.jsp" />
 	
 
- 	<h1>Reservations Page</h1>
+ 	<h1>Hotels Page</h1>
  	
- 	<!-- List all reservations from the user, may need a scriplet instead of a servlet  -->
+ 	<!-- List all hotels using a scriplet, have a reserve button that will redirect to the booking.jsp that will have a form, and action to a servlet.  -->
  	
  	<!-- FOOTER INCLUDE  -->
  	<jsp:include page="partials/footer.jsp" />
