@@ -52,9 +52,9 @@ public class RetrievePassword extends HttpServlet {
 				String sqlEmail = rs.getString("email");
 				String sqlpassphrase = rs.getString("passphrase");
 				String fullName = sqlFirstName + ' ' + sqlLastName;
-				out.println("fullName: "+ fullName);
-				out.println("email: "+ email);
-				out.println("passphrase: "+ sqlpassphrase);
+//				out.println("fullName: "+ fullName);
+//				out.println("email: "+ email);
+//				out.println("passphrase: "+ sqlpassphrase);
 //				response.sendRedirect("getInfo.jsp");
 				request.setAttribute("name", fullName);
 				request.setAttribute("email", sqlEmail);

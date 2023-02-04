@@ -21,7 +21,7 @@
    <jsp:include page="partials/loginForm.jsp" />
 
  	<!--Modal fade for User Registration-->
- 	<jsp:include page="registration.jsp" />
+ 	<jsp:include page="partials/registration.jsp" />
  	
  	<h1>The User Successfully Registered</h1>
  	

@@ -24,7 +24,7 @@
    <jsp:include page="partials/loginForm.jsp" />
 
  	<!--Modal fade for User Registration-->
- 	<jsp:include page="registration.jsp" />
+ 	<jsp:include page="partials/registration.jsp" />
  	
  	<!-- FOOTER INCLUDE  -->
  	<jsp:include page="partials/footer.jsp" />
