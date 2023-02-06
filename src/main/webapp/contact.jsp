@@ -22,7 +22,8 @@
  	<!--Modal fade for User Registration-->
  	<jsp:include page="partials/registration.jsp" />
  	
- 	
+ 	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
+	<jsp:include page="partials/header.jsp"/>
  	
  	
  	<div class="container overlay-content">

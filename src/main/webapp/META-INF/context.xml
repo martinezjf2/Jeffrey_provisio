@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+	<Resource name="jdbc/provisio"
+		auth="Container" type="javax.sql.DataSource"
+		 	maxIdle="5" 
+			username="provisio_user" password="password"
+			driverClassName="com.mysql.jdbc.Driver"
+			url="jdbc:mysql://localhost:3306/provisio" />
+			
+</Context>

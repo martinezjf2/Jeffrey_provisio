@@ -133,49 +133,51 @@ INSERT INTO hotel(hotel_name, price, descrip, amenities, place_id)
         );
 
 
--- CREATE TABLE RESERVATIONS
+-- CREATE TABLE RESERVATIONS, to have the check_in and check_out
 
 CREATE TABLE reservation (
     reservation_id     INT             NOT NULL        AUTO_INCREMENT,
     user_id            INT             NOT NULL,
     hotel_id           INT             NOT NULL,
-    place_id           INT             NOT NULL,
     adults             INT             NOT NULL,
     children           INT             NOT NULL,
+    check_in           VARCHAR(100)    NOT NULL,
+    check_out		   VARCHAR(100)    NOT NULL,
     PRIMARY KEY(reservation_id),
     FOREIGN KEY (user_id)
         REFERENCES user(user_id),
     FOREIGN KEY (hotel_id)
-        REFERENCES hotel(hotel_id),
-    FOREIGN KEY (place_id)
-        REFERENCES place(place_id)
+        REFERENCES hotel(hotel_id)
 ); 
 
-INSERT INTO reservation(user_id, hotel_id, place_id, adults, children) 
+INSERT INTO reservation(user_id, hotel_id, adults, children, check_in, check_out) 
     VALUES (
         (SELECT user_id FROM user WHERE first_name = 'Darell'),
         (SELECT hotel_id FROM hotel WHERE hotel_name = 'Old Key West'),
-        (SELECT place_id FROM place WHERE city = 'Orlando'),
         5,
-        2
+        2,
+        '2019-08-21',
+        '2019-08-28'
     );
 
-INSERT INTO reservation(user_id, hotel_id, place_id, adults, children) 
+INSERT INTO reservation(user_id, hotel_id, adults, children, check_in, check_out) 
     VALUES (
         (SELECT user_id FROM user WHERE first_name = 'Isabella'),
         (SELECT hotel_id FROM hotel WHERE hotel_name = 'Provisio South Beach'),
-        (SELECT place_id FROM place WHERE city = 'Miami'),
         10,
-        6
+        6,
+        '2020-09-27',
+        '2020-10-14'
     );
 
-INSERT INTO reservation(user_id, hotel_id, place_id, adults, children) 
+INSERT INTO reservation(user_id, hotel_id, adults, children, check_in, check_out) 
     VALUES (
         (SELECT user_id FROM user WHERE first_name = 'Austin'),
         (SELECT hotel_id FROM hotel WHERE hotel_name = 'Grand Provisio'),
-        (SELECT place_id FROM place WHERE city = 'New York'),
         2,
-        0
+        0,
+        '2022-07-21',
+        '2022-08-09'
     );
 
 
@@ -219,3 +221,5 @@ SELECT * FROM hotel;
 SELECT * FROM reservation;
 SELECT * FROM history;
 
+
+--Notes for the context.xml page resource: http://wiki.metawerx.net/wiki/Context.xml
