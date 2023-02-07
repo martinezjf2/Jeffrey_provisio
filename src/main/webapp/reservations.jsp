@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" import="java.util.*, reservations.* "%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,16 +12,50 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <title>Provisio Reservations Page </title>
 </head>
+
 <body>
 
 
 <!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
 	<jsp:include page="partials/navbar.jsp" />
 	
-
- 	<h1>Reservations Page</h1>
  	
  	<!-- List all reservations from the user, may need a scriplet instead of a servlet  -->
+ 	<% List<Reservation> theReservations = (List<Reservation>)request.getAttribute("reservations"); %>
+
+ 	
+ 	<div id="wrapper">
+ 		<div>
+ 			<h2>Reservations</h2>
+ 			<br><br>
+ 		</div>
+ 	</div>
+ 	
+ 	
+ 	
+ 	
+ 	<div style="">
+ 		
+ 		<% for (Reservation res : theReservations) { %>
+ 			<div class="card stretched-link" style="width:80%; padding:50px">
+ 				<div class="card-body">
+ 					<h4>Check In: </h4><h5><%= res.getCheck_in() %></h5>
+ 					<h4>Check Out: </h4><h5><%= res.getCheck_out() %></h5>
+ 					<h4>Adults: </h4><h3><%= res.getAdults() %></h3>
+ 					<h4>Children: </h4><h5><%= res.getChildren() %></h5>
+ 					<h4>Room Type: </h4><h5><%= res.getRoom_type() %></h5>
+ 					<h4>Instructions: </h4><h5><%= res.getInstructions() %></h5>
+ 				</div>
+ 			</div>
+ 		<% } %>
+ 	</div>
+ 	
+ 	
+ <%-- 	<% Enumeration keys = session.getAttributeNames();
+		while (keys.hasMoreElements()) {
+  		String key = (String)keys.nextElement();
+  		out.println(key + ": " + session.getValue(key) + "<br>");
+		} %> --%>
  	
  	<!-- FOOTER INCLUDE  -->
  	<jsp:include page="partials/footer.jsp" />

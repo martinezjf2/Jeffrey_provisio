@@ -21,10 +21,10 @@
                     <a href="index.jsp" class="d-inline-block mb-2 text-white text-decoration-none ">Home</a><br>
                     <a href="about.jsp" class="d-inline-block mb-2 text-white text-decoration-none ">About</a><br>
                     <a href="contact.jsp" class="d-inline-block mb-2 text-white text-decoration-none ">Contact Us</a><br>
-                    <% if (session.getAttribute("email") == null){ %>
+                    <% if (session.getAttribute("first_name") == null){ %>
 						<a href="registerUser.jsp" class="d-inline-block mb-2 text-white text-decoration-none ">Register</a><br>
 					<% } else { %>
-						 <a href="reservations.jsp" class="d-inline-block mb-2 text-white text-decoration-none ">Reservations</a><br>
+						 <a href="/Jeffrey_provisio/reservations" class="d-inline-block mb-2 text-white text-decoration-none ">Reservations</a><br>
 						 <a href="rewards.jsp" class="d-inline-block mb-2 text-white text-decoration-none ">Rewards</a><br>
 					<% } %>
                 </div> 

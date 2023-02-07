@@ -40,7 +40,7 @@ public class TestServlet extends HttpServlet {
 		
 		conn = dataSource.getConnection();
 		// Step 3: Create a SQL Statements
-		String sql = "SELECT * FROM user;";
+		String sql = "SELECT * FROM reservation";
 		stmt = conn.createStatement();
 		
 		// Step 4: Execute SQL query
@@ -48,10 +48,23 @@ public class TestServlet extends HttpServlet {
 		
 		// Step 5: Process the result set
 		while (rs.next()) {
-			String email = rs.getString("email");
-			String firstName = rs.getString("first_name");
-			out.println(firstName);
-			out.println(email);
+			int reservation_id = rs.getInt("reservation_id");
+			int user_id = rs.getInt("user_id");
+			int hotel_id = rs.getInt("hotel_id");
+			int adults = rs.getInt("adults");
+			int children = rs.getInt("children");
+			String check_in = rs.getString("check_in");
+			String check_out = rs.getString("check_out");
+			String room_type = rs.getString("room_type");
+			String instructions = rs.getString("instructions");
+			out.println(reservation_id);
+			out.println(user_id);
+			out.println(hotel_id);
+			out.println(adults);
+			out.println(check_in);
+			out.println(check_out);
+			out.println(room_type);
+			out.println(instructions);
 		}
 		
 		

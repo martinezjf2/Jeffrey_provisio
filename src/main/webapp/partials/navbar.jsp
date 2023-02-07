@@ -18,11 +18,11 @@
                 	<a href="about.jsp">about</a>
                 	<a href="contact.jsp">contact</a>
                 	
-                	<% if (session.getAttribute("email") == null){ %>
+                	<% if (session.getAttribute("first_name") == null){ %>
                 		<a class="btn" id="btn1"data-bs-toggle="modal" data-bs-target="#loginModal">Log In</a>
             			<a class="btn" id="btn2" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
             		<% } else { %>
-            			<a href="reservations.jsp">Reservations</a>
+            			<a href="/Jeffrey_provisio/reservations">Reservations</a>
             			<a href="rewards.jsp">Rewards</a>
             			<a href="logout" class="btn" id="btn1">Log Out</a>
             		<% } %>
