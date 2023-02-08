@@ -14,18 +14,28 @@
 </head>
 <body>
 
+<% String name = (String)session.getAttribute("first_name"); %>
 	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
 	<div id="landingHeader">
     	<div class="container">
         	<div class="content">
             	<div class="text">
-            		<h1 style="text-align: center;">Be Vibrant, Enjoy Life, <br> <span>Book Provisio</span></h1>
-            		<p class="text-white h1" style="font-size: 25px; text-align: center;">Welcome home at Provisio Beach and Resorts.<br>Family vacations to appeal each member. <br>and a getaway to achieve your relation needs.</p>
-            		<% if (session.getAttribute("email") == null){ %>
-           			<div id="headerButton">
-           				<a class="btn3" data-bs-toggle="modal" data-bs-target="#registerModal">Book Now</a>
-           			</div>
-           			<% } %>
+            	
+            	
+            		<% if (session.getAttribute("first_name") == null){ %>
+            			<h1 style="text-align: center;">Be Vibrant, Enjoy Life, <br> <span>Book Provisio</span></h1>
+            			<p class="text-white h1" style="font-size: 25px; text-align: center;">Welcome home at Provisio Beach and Resorts.<br>Family vacations to appeal each member. <br>and a getaway to achieve your relation needs.</p>
+            			<div id="headerButton">
+           					<a class="btn3" data-bs-toggle="modal" data-bs-target="#registerModal">Book Now</a>
+           				</div>
+            		<% } else { %>
+						<h1 style="text-align: center;">Be Vibrant, Enjoy Life, <br> <span>Welcome, <%= name %></span></h1>
+						<div id="headerButton">
+           					<a class="btn3" href="rewards.jsp">Rewards</a>
+           				</div>
+            		<% } %>
+
+           			
            		</div>
        		</div>
    		</div>

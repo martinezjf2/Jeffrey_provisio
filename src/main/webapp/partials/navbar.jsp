@@ -17,14 +17,16 @@
  					<a href="index.jsp">Home</a>
                 	<a href="about.jsp">about</a>
                 	<a href="contact.jsp">contact</a>
+                	<a href="/Jeffrey_provisio/hotels">Hotels</a>
                 	
                 	<% if (session.getAttribute("first_name") == null){ %>
                 		<a class="btn" id="btn1"data-bs-toggle="modal" data-bs-target="#loginModal">Log In</a>
             			<a class="btn" id="btn2" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
+            			
             		<% } else { %>
             			<a href="/Jeffrey_provisio/reservations">Reservations</a>
             			<a href="rewards.jsp">Rewards</a>
-            			<a href="logout" class="btn" id="btn1">Log Out</a>
+            			<button onclick="window.location.href='/Jeffrey_provisio/logout'" type="submit" name="logout" class="btn" id="btn1">Log Out</button>
             		<% } %>
  				</div>     
             </nav>

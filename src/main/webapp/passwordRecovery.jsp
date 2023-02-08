@@ -14,8 +14,6 @@
 </head>
 <body>
 
-<section>
-
 <!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
 	<jsp:include page="partials/navbar.jsp" />
 
@@ -24,49 +22,54 @@
 
  	<!--Modal fade for User Registration-->
  	<jsp:include page="partials/registration.jsp" />
- 	
- 	
 
-	<div class="modal-content">
-    	<form action="info" method="GET">
-    	<div id="backToHomepageLink">
-			<a href="index.jsp">Click here to go back to Homepage</a>
-		</div>
-            <div class="modal-header">
-                <h5 class="modal-title d-flex align-items-center">
-                <i class="bi bi-person-lines-fill fs-3 me-2"></i> Forgot Password?
-                </h5>
+
+
+
+	<section>
+		<div class="modal-content">
+    		<form action="info" method="GET">
+    		<div id="backToHomepageLink">
+				<a href="index.jsp">Click here to go back to Homepage</a>
+			</div>
+            	<div class="modal-header">
+                	<h5 class="modal-title d-flex align-items-center">
+                		<i class="bi bi-person-lines-fill fs-3 me-2"></i> Forgot Password?
+                	</h5>
                 
-            </div>
-            <div class="modal-body">
-                <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">
-                   Note: Details must match with your form of I.D.
-                </span>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 ps-0 mb-3">
-                            <label class="form-label">First Name</label>
-                            <input type="text" class="form-control shadow-none" name="firstName" required>
-                        </div>
-                        <div class="col-md-6 p-0 mb-3">
-                            <label class="form-label">Last Name</label>
-                            <input type="text" class="form-control shadow-none" name="lastName" required>
-                        </div>
-                        <div class="col-md-12 ps-0 mb-3">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-control shadow-none" name="email" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center my-1">
-                    <button type="submit" class="btn btn-dark shadow-none">Get Info</button>
-                </div>
-            </div>
-        </form>
-    </div>
-</section>
+            	</div>
+            	<div class="modal-body">
+                	<span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">Note: Details must match with your form of I.D.</span>
+                	<div class="container-fluid">
+                    	<div class="row">
+                        	<div class="col-md-6 ps-0 mb-3">
+                            	<label class="form-label">First Name</label>
+                            	<input type="text" class="form-control shadow-none" name="firstName" required>
+                        	</div>
+                        	<div class="col-md-6 p-0 mb-3">
+                            	<label class="form-label">Last Name</label>
+                            	<input type="text" class="form-control shadow-none" name="lastName" required>
+                        	</div>
+                        	<div class="col-md-12 ps-0 mb-3">
+                            	<label class="form-label">Email</label>
+                            	<input type="email" class="form-control shadow-none" name="email" required>
+                        	</div>
+                    	</div>
+                	</div>
+                	<div class="text-center my-1">
+                    	<button type="submit" class="btn btn-dark shadow-none">Get Info</button>
+                	</div>
+            	</div>
+        	</form>
+   		</div>
+	</section>
 
-<!-- FOOTER INCLUDE  -->
+
+
+
+
+
+	<!-- FOOTER INCLUDE  -->
  	<jsp:include page="partials/footer.jsp" />
 
 </body>

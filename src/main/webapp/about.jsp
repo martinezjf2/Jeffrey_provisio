@@ -30,7 +30,13 @@
  	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
 	<jsp:include page="partials/header.jsp"/>
 	
-<section class="hero py-4 py-lg-5">
+	
+	
+	
+	
+	
+	
+	<section class="hero py-4 py-lg-5">
 		<div class="row">
 			<div class="col-xl-8 mx-auto">
 				<p class="text-muted">Provisio Hotels Beach and Resort was established in 2022 by a group of software developers
@@ -51,6 +57,12 @@
 			</div>
 		</div>
 	</section>
+
+
+
+
+
+
 
 
 

@@ -16,15 +16,22 @@
 
 	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
 	<jsp:include page="partials/navbar.jsp" />
-
-	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
-	<jsp:include page="partials/header.jsp"/>
-
-   <!--Modal fade for User Login-->
+	
+	<!--Modal fade for User Login-->
    <jsp:include page="partials/loginForm.jsp" />
 
  	<!--Modal fade for User Registration-->
  	<jsp:include page="partials/registration.jsp" />
+	
+	
+	<% if (request.getParameter("submit") != null) { %>
+		<jsp:include page="partials/createAccountAlert.jsp" />
+	<% } %>
+	
+	
+
+	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
+	<jsp:include page="partials/header.jsp"/>
  	
  	<!-- FOOTER INCLUDE  -->
  	<jsp:include page="partials/footer.jsp" />

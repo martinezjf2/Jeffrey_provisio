@@ -47,7 +47,9 @@ public class RegistrationServlet extends HttpServlet {
 //			String sql = "INSERT INTO user(first_name, last_name, email, passphrase, points) VALUES('Jeffrey', 'Martinez', 'jeffreypowerhouseandcallitaday@gmail.com', 'Python%78', 0)";
 			String sql = "INSERT INTO user(first_name, last_name, email, passphrase, points) VALUES('" +  firstName + "', "  + "'" + lastName + "', " + "'" + email + "', " + "'" + password + "', 0);";			
 			stmt.executeUpdate(sql);
-			response.sendRedirect("newUserHomepage.jsp");
+			request.setAttribute("submit", request.getParameter("submit"));
+			request.getRequestDispatcher("index.jsp").forward(request, response);
+//			response.sendRedirect("index.jsp");
 			
 			con.close();
 		} catch(Exception e) {

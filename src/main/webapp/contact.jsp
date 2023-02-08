@@ -26,10 +26,18 @@
 	<jsp:include page="partials/header.jsp"/>
  	
  	
- 	<div class="container overlay-content">
+ 	
+ 	
+ 	
+
+	<div class="container overlay-content">
 		<h1 class="hero-heading">How can we help you?</h1>
 	</div>
 	
+
+
+
+
 
 	<section class="py-6">
 		<div class="container">
@@ -80,7 +88,15 @@
  	
  	
  	
+ 	
+ 	
+ 	
  	<!-- FOOTER INCLUDE  -->
  	<jsp:include page="partials/footer.jsp" />
+ 	
+ 	
+ 	
+ 	
+ 	
 </body>
 </html>

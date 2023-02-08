@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" import="java.util.*, hotel.*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,16 +15,103 @@
 <body>
 
 
-<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
+
+
+
+	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
 	<jsp:include page="partials/navbar.jsp" />
 	
+	  <!--Modal fade for User Login-->
+   <jsp:include page="partials/loginForm.jsp" />
 
- 	<h1>Hotels Page</h1>
- 	
- 	<!-- List all hotels using a scriplet, have a reserve button that will redirect to the booking.jsp that will have a form, and action to a servlet.  -->
- 	
+ 	<!--Modal fade for User Registration-->
+ 	<jsp:include page="partials/registration.jsp" />
+	
+
+<!--  	
+
+<div class="input-wrapper">
+  <div class="fa-solid fa-magnifying-glass"></div>	
+  <input type="text" placeholder="Search"/>
+  <div class="fa-solid fa-xmark"></div>
+</div>
+
+<div class="places">
+  <div class="clearfix">
+    <img class="img2" src="images/rio.jpg" alt="rio.jpg" width="170" height="170">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+  </div>
+  <div class="clearfix">
+    <img class="img2" src="images/newyork.jpg" alt="rio.jpg" width="170" height="170">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+  </div>
+  <div class="clearfix">
+    <img class="img2" src="images/miami.jpg" alt="rio.jpg" width="170" height="170">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+  </div>
+</div> 
+
+
+-->
+
+
+ 	<% List<Hotel> theHotels = (List<Hotel>)request.getAttribute("hotels"); %>
+
+
+
+
+
+
+
+	<div id="wrapper">
+ 		<div class="my-5 px-5">
+ 			<h1 class="text-center fw-bold h-line">Hotels</h1>
+ 			<br><br>
+ 		</div>
+ 	</div>
+
+
+
+
+
+
+
+	<div style="">
+ 		<% for (Hotel hot : theHotels) { %>
+ 			<div class="card" style="width:80%; padding:50px">
+ 				<div class="card-body">
+ 					<h4>Hotel Name: </h4><h5><%= hot.getHotel_name() %></h5>
+ 					<h4>Price: </h4><h5><%= hot.getPrice() %></h5>
+ 					<h4>Amenities: </h4><h5><%= hot.getAmenities() %></h5>
+ 					<h4>Description: </h4><h3><%= hot.getDescrip() %></h3>
+ 				</div>
+ 				
+ 					<% if (session.getAttribute("first_name") == null){ %>
+ 						<a class="btn" id="btn1"data-bs-toggle="modal" data-bs-target="#loginModal">Log In To Reserve</a>
+ 					<% } else { %>
+ 						<a href="booking.jsp">Reserve Hotel</a>
+ 					<% } %> 
+ 			</div>
+ 		<% } %>
+ 	</div>
+
+
+
+
+
+
+
+  
+  
  	<!-- FOOTER INCLUDE  -->
  	<jsp:include page="partials/footer.jsp" />
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
 
 </body>
 </html>

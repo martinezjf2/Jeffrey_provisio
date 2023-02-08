@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="text-center my-1">
-                    <button type="submit" class="btn btn-dark shadow-none">REGISTER</button>
+                    <button type="submit" name="submit" class="btn btn-dark shadow-none">REGISTER</button>
                 </div>
             </div>
             </form>
