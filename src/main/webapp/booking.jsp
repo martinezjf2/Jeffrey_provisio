@@ -4,7 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+   <link rel="stylesheet" type="text/css" href="./booking.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<title>Provisio Booking Page</title>
 </head>
 <body>
 
@@ -17,25 +21,139 @@
  	<!--Modal fade for User Registration-->
  	<jsp:include page="partials/registration.jsp" />
  	
- 	
-
-
-	<h1>Booking JSP should have a form here</h1>
 
 	<!-- FORM GOES HERE FOR A NEW RESERVATION -->
 
+<!-- <div style="width: 80%; margin: 0 auto">
+
+<form action="/action_page.php">
+
+<div class="mb-3 mt-3">
+<label for="email" class="form-label">Email:</label>
+<input type="text" class="form-control" placeholder="User Name" name="" readonly>
+</div>
+  
+<div class="mb-3 mt-3">
+<label for="email" class="form-label">Email:</label>
+<input type="text" class="form-control" placeholder="User Email" name="" readonly>
+</div>
+  
+<div class="mb-3 mt-3">
+<label for="email" class="form-label">Email:</label>
+<input type="text" class="form-control" placeholder="Hotel Selected" name="" readonly>
+</div>
+  
+<div class="mb-3 mt-3">
+<label for="email" class="form-label">Email:</label>
+<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+</div>
+
+<div class="row">
+    <div class="col">
+    <label for="email" class="form-label">Adults:</label>
+      <input type="text" class="form-control" placeholder="Enter email" name="email">
+    </div>
+    <div class="col">
+    <label for="email" class="form-label">Email:</label>
+      <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+    </div>
+  </div>
+
+<div class="mb-3 mt-3">
+<label for="email" class="form-label">Email:</label>
+<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+</div>
+  
+  
+<div class="mb-3">
+<label for="pwd" class="form-label">Password:</label>
+<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+</div> 
+  
+  
+<div class="mb-3">
+<label for="comment">Comments:</label>
+<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+</div>
+  
+  
+<div class="form-check mb-3">
+<label class="form-check-label">
+<input class="form-check-input" type="checkbox" name="remember"> Remember me
+</label>
+</div>
+  
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+
+-->
+
+
+
+<section class="banner">
+        <h2>BOOK YOUR ROOM NOW</h2>
+        <div class="card-container">
+            <div class="card-img">
+                <!-- image here -->
+            </div>
+            
+            <div class="card-content" style="height: auto;">
+                <h3>Make Your Reservation</h3>
+                <form style="margin: 0; padding: 0; width: 100%; border: none;">
+                    <div class="form-row">
+                        <input type="text" placeholder="Check-in" readonly>
+                        <input type="date" placeholder="Check-in"required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Check-out" readonly>
+                        <input type="date" placeholder="Check-in" required>
+                    </div>
+                    <div class="form-row">
+                        <select name="Rooms" required>
+                            <option value="room-type">Room Type</option>
+                            <option value="Deluxe">Deluxe</option>
+                            <option value="Standard">Standard</option>
+                            <option value="Suite">Suite</option>
+                            
+                        </select>
+                        <select name="Hotels" required>
+                            <option value="hotel-select">Choose Hotel</option>
+                            <option value="Old Key West">Old Key West</option>
+                            <option value="Provisio South Beach">Provisio South Beach</option>
+                            <option value="Grand Provisio">Grand Provisio</option>
+                        </select>
+                          </div>
+                          
+                        <div class="form-row">
+                        
+                        <input type="number" placeholder="Adults?" required>
+                      	 <input type="number" placeholder="Children?"required>
+                        </div>
+                          
+                          <!-- Textarea 4 rows height -->
+                        <div class="form-row">
+                            <textarea class="form-control" id="instructions" rows="10" placeholder="List Special Instruction Here"></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <input type="submit"  value="RESERVE ROOM" class="center">
+                        </div>
+                  </form>
+               </div>
+            </div>
+    </section>
 
 
 
 
 
-
-
-
-
-
-
-
+<!-- 
+Resource: https://www.quora.com/How-can-I-send-data-from-one-JSP-page-to-another-JSP-page 
+Use this resource to send data from one jsp to another. when the reserve button gets clicked, 
+I want data from the hotel sent to the form as well
+ -->
 
 
 

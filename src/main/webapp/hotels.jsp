@@ -84,13 +84,15 @@
  					<h4>Price: </h4><h5><%= hot.getPrice() %></h5>
  					<h4>Amenities: </h4><h5><%= hot.getAmenities() %></h5>
  					<h4>Description: </h4><h3><%= hot.getDescrip() %></h3>
- 				</div>
- 				
  					<% if (session.getAttribute("first_name") == null){ %>
  						<a class="btn" id="btn1"data-bs-toggle="modal" data-bs-target="#loginModal">Log In To Reserve</a>
  					<% } else { %>
  						<a href="booking.jsp">Reserve Hotel</a>
  					<% } %> 
+ 				</div>
+ 				
+ 				
+ 					
  			</div>
  		<% } %>
  	</div>

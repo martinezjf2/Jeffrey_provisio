@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.banner{
+    min-height: 100vh ;
+    background: linear-gradient(rgba(0,0, 0, 0.5),rgba(0,0, 0, 0.5)), url(images/home.png) center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+
+.card-img{
+    background: url(images/australia.jpg) center/cover no-repeat ;
+}
+
+.banner h2{
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.card-content{
+    background: black;
+    height: 400px;
+}
+.card-content h3{
+    text-align: center;
+    color: white;
+    padding: 25px 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+.form-row{
+   display: flex;
+   width: 90%;
+   margin: 0 auto;
+}
+textarea{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+}
+form select, form input{
+    display: block;
+    width: 100;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+
+form input[type=text], form input[type=number] 
+form input::placeholder, 
+select{
+ color: #9a9a9a;
+}
+
+input[type=submit]{
+    color: black;
+    background: gold;
+    border-radius: 4px;
+    cursor: pointer; 
+    text-align: center;
+
+    
+}
+ input[type=submit]:hover{
+    opacity: 0.9;
+}
+
+section form {
+	width: 100%;
+	padding:0;
+	margin: 0;
+}
+
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+    }
+    .card-img{
+        height: 330px;
+    }
+}

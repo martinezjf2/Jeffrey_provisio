@@ -18,13 +18,15 @@
 	
 	<!--Modal fade for User Login-->
    <jsp:include page="partials/loginForm.jsp" />
+   
+   <h1>This email already exists, please return to the home screen to Login</h1>
 
  	<!--Modal fade for User Registration-->
  	<jsp:include page="partials/registration.jsp" />
  	
  	<!-- FOOTER INCLUDE  -->
  	<jsp:include page="partials/footer.jsp" />
-<h1>This email already exists, please return to the home screen to Login</h1>
+
 
 </body>
 </html>

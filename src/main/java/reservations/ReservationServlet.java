@@ -42,7 +42,7 @@ public class ReservationServlet extends HttpServlet {
 			if (rs.next() != false) {
 				
 				session.setAttribute("reservations", rs);
-				request.getRequestDispatcher("reservations.jsp").forward(request, response);
+				request.getRequestDispatcher("reservationsSummary.jsp").forward(request, response);
 				
 			} else {
 				response.sendRedirect("wrongInformationLogin.jsp");

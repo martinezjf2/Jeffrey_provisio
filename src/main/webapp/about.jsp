@@ -36,28 +36,40 @@
 	
 	
 	
-	<section class="hero py-4 py-lg-5">
-		<div class="row">
-			<div class="col-xl-8 mx-auto">
-				<p class="text-muted">Provisio Hotels Beach and Resort was established in 2022 by a group of software developers
-				turned land developers. We offer multiple locations throughout the United States. We take pride in accommodating
-				remote work, extended stays, business, and pleasure for our loyal customers. Our staff is built on Integrity, 
-				Inclusion, Growth, and most of all a good time with great customer service.</p>
-				<p class="text-muted">Many of our hotels offer 5 star dining, room service,
-					swimming pools, and fitness centers. So no matter the occasion, we have you covered!</p>
-				<ul class="text-muted fw-light" style="text-align: left;">
-					<li>Room service is available 24/7</li>
-					<li>Every room is equipped with a fridge stocked with water, soft drinks and a complementary bottle of our
-					in house wine. A Kurig coffee maker, 55" Smart TV, and a working desk space.</li>
-					<li>Wake up and relax in your room with your included breakfast room service option.</li>
-					<li>Wi-Fi is available at all locations for high speed connections please contact the hotel manager.</li>
-					<li>Covered parking is available at all locations.</li>
-				</ul>
+	<body>
 
-			</div>
-		</div>
-	</section>
+                        <!-- About Company-->
+                        <div class="my-5 px-5">  
+                            <h3 class="text-center fw-bold h-font">ABOUT OUR COMPANY</h3>
+                            <div class="h-line">
+                                   <p class="text-center mt-3 ">
+                                    Provisio Hotels Beach and Resort was established in 2022 by a group of software developers
+                                    turned land developers. We offer multiple locations throughout the United States. We take pride in accommodating
+                                    remote work, extended stays, business, and pleasure for our loyal customers. Our staff is built on Integrity, 
+                                    Inclusion, Growth, and most of all a good time with great customer service
+                                   </p>
+                            </div>
+                        </div>
+                         
+                 
+               
+                   <div class="container">
+                     <div class="row align-items-center"> 
+                       <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">  
+                           <h3 class="mb-3">Message from our C.E.O.</h3>
+                           <p>
+                           Welcome to Provisio Beach and Resorts. I'm thrilled to take the time to say thank you
+                           for coming and visiting our website and our company. We take pride in creating a relationship with
+                           our guests, each and every day. I hope to have the opportunity to meet each and every one of you soon!
+                           </p>
+                       </div>
+                        <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
+                        <img src="images/provisioceo.jpg" class="w-50  rounded ">
+                       </div>
+                     </div>  
+                   </div>
 
+</body>
 
 
 

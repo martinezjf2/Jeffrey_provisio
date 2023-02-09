@@ -56,7 +56,7 @@ public class ReservationControllerServlet extends HttpServlet {
 	
 		List<Reservation> reservations = reservationDbUtil.getReservations();
 		request.setAttribute("reservations", reservations);
-		request.getRequestDispatcher("reservations.jsp").forward(request, response);
+		request.getRequestDispatcher("reservationsSummary.jsp").forward(request, response);
 		
 	}
 

@@ -30,6 +30,11 @@ public class ReservationDBUtil {
 			
 			myConn = dataSource.getConnection();
 			String sql = "SELECT * FROM reservation";
+			
+			// want to display reservation just from the user
+			// want to display the hotel information based on the hotel_id
+			
+			
 			myStmt = myConn.createStatement();
 			
 			

@@ -18,12 +18,13 @@
 	
 	<!--Modal fade for User Login-->
    <jsp:include page="partials/loginForm.jsp" />
+   
+   	<h1>Unable to login</h1>
 
  	<!--Modal fade for User Registration-->
  	<jsp:include page="partials/registration.jsp" />
  	
- 	<h1>Unable to login</h1>
- 	
+ 
  	<!-- FOOTER INCLUDE  -->
  	<jsp:include page="partials/footer.jsp" />
  	

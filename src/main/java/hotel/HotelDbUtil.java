@@ -29,6 +29,8 @@ public class HotelDbUtil {
 			try {
 				myConn = dataSource.getConnection();
 				String sql =  "select * from hotel order by hotel_name";
+				
+				// also want to see the place_id to see the location of the hotel
 
 				myStmt = myConn.createStatement();
 
