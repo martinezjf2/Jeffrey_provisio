@@ -46,7 +46,7 @@ public class LoginServlet extends HttpServlet {
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/provisio", "provisio_user", "password");
 			Statement stmt = con.createStatement();
 //			Resource: https://docs.oracle.com/javase/tutorial/jdbc/basics/retrieving.html
-			ResultSet rs = stmt.executeQuery("SELECT user_id, first_name, last_name, email, passphrase, points FROM user WHERE email = '" + email + "' AND passphrase = '" + password + "';");
+			ResultSet rs = stmt.executeQuery("SELECT * FROM user WHERE email = '" + email + "' AND passphrase = '" + password + "';");
 //			Resource: https://javarevisited.blogspot.com/2016/10/how-to-check-if-resultset-is-empty-in-Java-JDBC.html#axzz7rZ0UhPlW
 //			Resource: https://www.garron.me/en/bits/mysql-select-multiple-conditions.html
 //			String sqlEmail = rs.getString(4);

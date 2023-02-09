@@ -41,12 +41,7 @@
  		</div>
  	</div>
  	
- 	
- 	
- 	
- 	
- 	
- 	
+ 
  	
  	<div class="">
  		<% for (Reservation res : theReservations) { %>

@@ -102,6 +102,28 @@
             <div class="card-content" style="height: auto; width: auto;">
                 <h3>Make Your Reservation</h3>
                 <form style="margin: 0; padding: 0; width: 100%; border: none;">
+                
+                 <div class="form-row">
+                 <% 
+                 String first = (String)session.getAttribute("first_name");
+                 String last = (String)session.getAttribute("last_name"); 
+                 String email = (String)session.getAttribute("email");
+                 
+                 %>
+                 
+                 
+                        <input type="text" style="width: 50%" placeholder=<%= first %> disabled>
+                        <input type="text" style="width: 50%" placeholder=<%= last %> disabled>
+                    </div>
+                    
+                     <div class="form-row">
+                        <input type="text" style="width: 100%" placeholder=<%= email %> disabled>
+                        <input type="text" style="width: 100%" placeholder="<%= request.getParameter("hotel_name") %>" disabled >
+                        
+                    </div>
+                    
+                    
+                    
                     <div class="form-row">
                         <input type="text" style="width: 50%" placeholder="Check-in" readonly>
                         <input type="date" style="width: 50%" placeholder="Check-in"required>
@@ -111,18 +133,12 @@
                         <input type="date" style="width: 50%" placeholder="Check-in" required>
                     </div>
                     <div class="form-row">
-                        <select name="Rooms" required>
-                            <option value="room-type">Room Type</option>
+						<input type="text" style="width: 50%" placeholder="Room Type" readonly>
+                        <select name="rooms" required>
+                            <option value="room-type">Select One</option>
                             <option value="Deluxe">Deluxe</option>
                             <option value="Standard">Standard</option>
                             <option value="Suite">Suite</option>
-                            
-                        </select>
-                        <select name="Hotels" required>
-                            <option value="hotel-select">Choose Hotel</option>
-                            <option value="Old Key West">Old Key West</option>
-                            <option value="Provisio South Beach">Provisio South Beach</option>
-                            <option value="Grand Provisio">Grand Provisio</option>
                         </select>
                           </div>
                           
