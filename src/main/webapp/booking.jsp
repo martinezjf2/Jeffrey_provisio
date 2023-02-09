@@ -94,21 +94,21 @@
 
 <section class="banner">
         <h2>BOOK YOUR ROOM NOW</h2>
-        <div class="card-container">
+        <div class="card-container" >
             <div class="card-img">
                 <!-- image here -->
             </div>
             
-            <div class="card-content" style="height: auto;">
+            <div class="card-content" style="height: auto; width: auto;">
                 <h3>Make Your Reservation</h3>
                 <form style="margin: 0; padding: 0; width: 100%; border: none;">
                     <div class="form-row">
-                        <input type="text" placeholder="Check-in" readonly>
-                        <input type="date" placeholder="Check-in"required>
+                        <input type="text" style="width: 50%" placeholder="Check-in" readonly>
+                        <input type="date" style="width: 50%" placeholder="Check-in"required>
                     </div>
                     <div class="form-row">
-                        <input type="text" placeholder="Check-out" readonly>
-                        <input type="date" placeholder="Check-in" required>
+                        <input type="text" style="width: 50%" placeholder="Check-out" readonly>
+                        <input type="date" style="width: 50%" placeholder="Check-in" required>
                     </div>
                     <div class="form-row">
                         <select name="Rooms" required>
@@ -127,9 +127,8 @@
                           </div>
                           
                         <div class="form-row">
-                        
-                        <input type="number" placeholder="Adults?" required>
-                      	 <input type="number" placeholder="Children?"required>
+                        <input type="number" style="width: 50%" placeholder="Adults?" required>
+                      	 <input type="number" style="width: 50%" placeholder="Children?"required>
                         </div>
                           
                           <!-- Textarea 4 rows height -->

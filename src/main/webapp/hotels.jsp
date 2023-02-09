@@ -80,10 +80,11 @@
  		<% for (Hotel hot : theHotels) { %>
  			<div class="card" style="width:80%; padding:50px">
  				<div class="card-body">
- 					<h4>Hotel Name: </h4><h5><%= hot.getHotel_name() %></h5>
+ 					<h4 value=<%= hot.getHotel_id() %> >Hotel Name: </h4><h5><%= hot.getHotel_name() %></h5>
  					<h4>Price: </h4><h5><%= hot.getPrice() %></h5>
  					<h4>Amenities: </h4><h5><%= hot.getAmenities() %></h5>
  					<h4>Description: </h4><h3><%= hot.getDescrip() %></h3>
+ 					
  					<% if (session.getAttribute("first_name") == null){ %>
  						<a class="btn" id="btn1"data-bs-toggle="modal" data-bs-target="#loginModal">Log In To Reserve</a>
  					<% } else { %>
@@ -96,8 +97,6 @@
  			</div>
  		<% } %>
  	</div>
-
-
 
 
 

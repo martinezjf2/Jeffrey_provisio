@@ -29,7 +29,7 @@ public class ReservationDBUtil {
 //			int session_user_id = (int)session.getAttribute("user_id");
 			
 			myConn = dataSource.getConnection();
-			String sql = "SELECT * FROM reservation";
+			String sql = "SELECT * FROM reservation order by reservation_id desc";
 			
 			// want to display reservation just from the user
 			// want to display the hotel information based on the hotel_id
