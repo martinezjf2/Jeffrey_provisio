@@ -27,66 +27,118 @@
  	
  	
  	
- 	
- 	
-
-	<div class="container overlay-content">
-		<h1 class="hero-heading">How can we help you?</h1>
-	</div>
+ 
 	
 
 
 
 
 
-	<section class="py-6">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
-					<div class="icon-rounded mb-4 bg-primary-light">
-						<i class="fa fa-2x text-primary fa-map-marker-alt"></i>
-					</div>
-					<h3 class="h5">Address</h3>
-					<p class="text-muted">
-						1000 Galvin Road South<br>Bellevue, NE 68005
-					</p>
-				</div>
-				<div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
-					<div class="icon-rounded mb-4 bg-primary-light">
-						<i class="fa fa-2x text-primary fa-phone"></i>
-					</div>
-					<h3 class="h5">Customer Service</h3>
-					<p class="text-muted">Our customer service is available 24 hours a
-						day to assist with reservations, accommodations, amenities, and any questions you may have.</p>
-					<p class="text-muted">
-						<strong>1 (800) 555-5555</strong>
-					</p>
-				</div>
-				<div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
-					<div class="icon-rounded mb-4 bg-primary-light">
-						<i class="fa fa-2x text-primary fa-envelope"></i>
-					</div>
-					<h3 class="h5">Email Us</h3>
-					<p class="text-muted">Please feel free to email us, sometimes for time and convenience this is the best option.</p>
-					<ul class="list-unstyled text-muted">
-						<li>
-							<a href="mailto:info@provisio.com?subject=Comments and Inquires from Provisio.com">
-								info@provisio.com 
-							</a>
-						</li>
-						<li>
-							<a href="mailto:support@provisio.com?subject=Technical Support Request Provisio.com">
-							support@provisio.com 
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
+	<div class="my-5 px-4">
+    <h2 class="fw-bold h-font text-center"> CONTACT US</h2>
+    <div class="h-line bg-dark"></div>
+    <p class="text-center mt-3 mb-3  color-white" style=" margin-bottom: 20%; width:70%; text-align-center; margin: 0 auto; font-size: 22px;">
+		At Provsio Beach and Resorts we always want to hear how we can better serve our guests.
+		Get in contact with us through our many avenues. 
+		If there anything that we can do to make your stay better,
+		 don't hesitate to ask!   
+	</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-6 mb-5 px-4">
+                <div class="bg-white rounded shadow p-4 ">
+                    <iframe class="w-100 rounded mb-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28083.146936283563!2d-81.58824960796433!3d28.377184581214436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd7ee634caa5f7%3A0xa71e391fd01cf1a0!2sWalt%20Disney%20World%C2%AE%20Resort!5e0!3m2!1sen!2sus!4v1675958836208!5m2!1sen!2sus" height="320px"></iframe>                   
+                    <h5>Address</h5>
+                    <a href="https://goo.gl/maps/sKbX8inBBoV2of139" target="_blank" class="d-inline-block text-decoration-none text-dark mb-2">
+                        <i class="bi bi-geo-alt"></i> Provisio Beach and Resorts, Orlando, Florida
+                    </a>
+                    <h5 class="mt-4">Call us</h5>
+                    <a href="tel: 3214436963" class="d-inline-block text-decoration-none text-dark mb-2">
+                        <i class="bi bi-telephone-fill"></i> 321-443-6963
+                    </a>
+                    <h5 class="mt-4">Email</h5>
+                    <a href="maito:ask.provisio@gmail.com" class="d-inline-block text-decoration-none text-dark">
+                        <i class="bi bi-envelope-fill"></i>ask.provisio@gmail.com
+                    </a>
+                    <h5 class="mt-4">Follow us</h5>
+                    <a href="https://twitter.com" class="d-inline-block text-dark fs-5 me-2">
+                            <i class="bi bi-twitter me-1"></i>
+                     </a>
+                    <a href="https://facebook.com" class="d-inline-block text-dark fs-5 me-2">
+                            <i class="bi bi-facebook me-1"></i>
+                     </a>
+                     <a href="https://instagram.com" class="d-inline-block text-dark fs-5 me-2">
+                             <i class="bi bi-instagram me-1"></i>
+                     </a>
+                </div>
+            </div>
+                <div class="col-6 col-md-6 mb-5 px-4">
+                    <div class="bg-white rounded shadow p-4"> 
+                     <form id="contact-form">
+                        <h4 style="text-align: center">Fill out the form below:</h4>
+                        <div class="mt-3">
+                            <label class="form-label" style="font-weight: 500;">Name</label>
+                            <input type="text" name="user_name" class="form-control shadow-none" required>
+                        </div>
+                        <div class="mt-3">
+                            <label class="form-label" style="font-weight: 500;">Email</label>
+                            <input type="email" name="email" class="form-control shadow-none" required>
+                        </div>
+                        <div class="mt-3">
+                            <label class="form-label" style="font-weight: 500;">Subject</label>
+                            <input type="text" name="subject" class="form-control shadow-none" required>
+                        </div>
+                        <div class="mt-3">
+                            <label class="form-label" style="font-weight: 500;">Message</label>
+                            <textarea class="form-control shadow-none" name="message" rows="5" style="resize: none;" required></textarea>
+                        </div>
+                        <button type="submit" style="background: #149ddd; border:0; padding: 10px 24px; color: #fff; transition: 0.4s; border-radius: 4px;" id="sendButton" onclick='sendMail()' class="btn-primary mt-3 outline shadow">SEND</button>
+                     </form>         
+            </div>
+        </div>
+    </div>
+    </div>
  	
  	
  	
+ 	<!-- Add EmailJS Functionality to send email to my email -->
+ 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('user_RYevFp6mtIxGCcmTimhuP');
+        })();
+    </script>
+    <script type="text/javascript">
+    
+    function sendMail() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // This method is provided within documentation: https://www.emailjs.com/docs/sdk/send-form/
+            emailjs.sendForm('service_3n8xbix', "contact_form", '#contact-form')
+                .then(function() {
+                    console.log('SUCCESS!');
+                    // Get the button element
+                    let success = document.getElementById("sendButton");
+                    // Get the contact-form
+                    let contactForm = document.getElementById('contact-form');
+                    // reset will clear the form
+                    contactForm.reset();
+                    // Underneath will change the html of the button to ay Successfully Sent if succesful
+                    success.innerHTML = "Successfully Sent";
+                    // Change the backgroundColor of the button if successful
+                    success.style.backgroundColor = "green";
+                    // Within 3 seconds, the page will reload
+                    setInterval(() => window.location.reload(true), 3000)
+                    // If there is an error, it will log "FAILED..., and console log the error"
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+    
+    </script>
  	
  	
  	

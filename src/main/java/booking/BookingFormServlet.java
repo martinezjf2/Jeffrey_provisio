@@ -82,6 +82,7 @@ public class BookingFormServlet extends HttpServlet {
 		
 //		request.setAttribute("hotel_descrip", hotel_descrip);
 //		request.getRequestDispatcher("booking.jsp").forward(request,response);
+
 		
 	}
 

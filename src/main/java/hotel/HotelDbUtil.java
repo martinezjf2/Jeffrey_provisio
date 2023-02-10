@@ -31,7 +31,8 @@ public class HotelDbUtil {
 				String sql =  "select * from hotel order by hotel_id desc";
 				
 				// also want to see the place_id to see the location of the hotel
-
+				// Use an inner Join to get the place as well: https://www.w3resource.com/sql/joins/perform-an-inner-join.php
+				// setAttributes for the place for each hotel, and 
 				myStmt = myConn.createStatement();
 
 				myRs = myStmt.executeQuery(sql);

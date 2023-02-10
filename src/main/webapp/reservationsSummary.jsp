@@ -31,7 +31,7 @@
  	<% List<Reservation> theReservations = (List<Reservation>)request.getAttribute("reservations"); %>
 
  	
- 	
+ 	<!-- Add an alert to let the user now that the reservation was created successfully -->
  	
  	
  	<div id="wrapper">
