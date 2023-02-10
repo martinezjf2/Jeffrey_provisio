@@ -64,6 +64,7 @@ INSERT INTO user(first_name, last_name, email, passphrase, points)
     VALUES('Isabella', 'Holmes', 'holmesbella@icloud.com', 'Detective#700', 2560);
 
 --DELETE FROM user WHERE first_name = 'Jeffrey'; done for testing purposes
+--Delete FROM reservation WHERE adults = 23;
 
 -- CREATE TABLE PLACE (LOCATION IS A KEYWORD IN MYSQL)
 

@@ -101,7 +101,7 @@
             
             <div class="card-content" style="height: auto; width: auto;">
                 <h3>Make Your Reservation</h3>
-                <form style="margin: 0; padding: 0; width: 100%; border: none;" method="POST" action="BookingFormServlet">
+                <form style="margin: 0; padding: 0; width: 100%; border: none;" method="GET" action="BookingFormServlet">
                 
                  <div class="form-row">
                  <% 
@@ -159,7 +159,7 @@
                         </div>
                         
                         <div class="form-row">
-                            <input type="submit"  value="RESERVE ROOM" class="center">
+                            <input type="submit" name="submit" value="RESERVE ROOM" class="center">
                         </div>
                   </form>
                </div>

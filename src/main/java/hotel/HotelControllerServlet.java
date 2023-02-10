@@ -66,6 +66,8 @@ public class HotelControllerServlet extends HttpServlet {
 
 	private void listHotels(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		List<Hotel> hotels = hotelDbUtil.getHotels();
+		
+		// Do all the steps here as a refractoring	
 		// create another connection here so we can pass down attributes from the place to the JSP
 		// use an sql inner join so can join the location, make sure to pass down the img,
 		// we will create an img tag that will display an image of the city for each hotel
