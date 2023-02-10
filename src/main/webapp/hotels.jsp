@@ -88,7 +88,7 @@
  					<% if (session.getAttribute("first_name") == null){ %>
  						<a  class="btn" id="btn1"data-bs-toggle="modal" data-bs-target="#loginModal">Log In To Reserve</a>
  					<% } else { %>
- 					    <form action="booking" method="GET">
+ 					    <form action="booking" method="POST">
  					    <input type="hidden" name="hotel_id" value="<%= hot.getHotel_id() %>" ><br>
  					    <input type="hidden" name="hotel_name" value="<%= hot.getHotel_name() %>" ><br>
  					    <input type="hidden" name="hotel_amenities" value="<%= hot.getAmenities() %>" ><br>

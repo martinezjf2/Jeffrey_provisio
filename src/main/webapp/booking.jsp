@@ -107,18 +107,19 @@
                  <% 
                  String first = (String)session.getAttribute("first_name");
                  String last = (String)session.getAttribute("last_name"); 
-                 String email = (String)session.getAttribute("email");
-                 
+                 String email = (String)session.getAttribute("email"); 
                  %>
                  
-                 
+                 		<input type="hidden" style="width: 100%" value="<%= session.getAttribute("user_id") %>" >
                         <input type="text" style="width: 50%" placeholder=<%= first %> disabled>
                         <input type="text" style="width: 50%" placeholder=<%= last %> disabled>
+                        
                     </div>
                     
                      <div class="form-row">
                         <input type="text" style="width: 100%" placeholder=<%= email %> disabled>
                         <input type="text" style="width: 100%" placeholder="<%= request.getParameter("hotel_name") %>" disabled >
+                        <input type="hidden" style="width: 100%" value="<%= request.getParameter("hotel_id") %>" >
                         
                     </div>
                     
