@@ -25,6 +25,12 @@
 
  	<!--Modal fade for User Registration-->
  	<jsp:include page="partials/registration.jsp" />
+ 	
+ 	
+ 	<% if (request.getParameter("submit") != null) { %>
+		<jsp:include page="partials/reservationAlert.jsp" />
+	<% } %>
+	
 	
  	
  	<!-- List all reservations from the user, may need a scriplet instead of a servlet  -->
