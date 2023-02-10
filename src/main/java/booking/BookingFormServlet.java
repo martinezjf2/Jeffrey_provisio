@@ -38,7 +38,7 @@ public class BookingFormServlet extends HttpServlet {
 		out.println("<html><body>");
 		HttpSession session = request.getSession();
 		
-		
+//		Resource: https://www.freecodecamp.org/news/java-string-to-int-how-to-convert-a-string-to-an-integer/
 		int user_id = Integer.parseInt(request.getParameter("user_id"));
 		String user_first = (String)session.getAttribute("first_name");
 		String user_last = (String)session.getAttribute("last_name");
