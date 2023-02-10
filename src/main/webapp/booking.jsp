@@ -101,7 +101,7 @@
             
             <div class="card-content" style="height: auto; width: auto;">
                 <h3>Make Your Reservation</h3>
-                <form style="margin: 0; padding: 0; width: 100%; border: none;">
+                <form style="margin: 0; padding: 0; width: 100%; border: none;" method="POST" action="BookingFormServlet">
                 
                  <div class="form-row">
                  <% 
@@ -110,47 +110,52 @@
                  String email = (String)session.getAttribute("email"); 
                  %>
                  
-                 		<input type="hidden" style="width: 100%" value="<%= session.getAttribute("user_id") %>" >
-                        <input type="text" style="width: 50%" placeholder=<%= first %> disabled>
-                        <input type="text" style="width: 50%" placeholder=<%= last %> disabled>
+                 		<input type="hidden" style="width: 100%" name="user_id" value="<%= session.getAttribute("user_id") %>" >
+                        <input type="text" style="width: 50%" name="user_first" disabled value="<%= session.getAttribute("first_name") %>" >
+                        <input type="text" style="width: 50%" name="user_last"  disabled placeholder=<%= last %> >
                         
                     </div>
                     
                      <div class="form-row">
-                        <input type="text" style="width: 100%" placeholder=<%= email %> disabled>
-                        <input type="text" style="width: 100%" placeholder="<%= request.getParameter("hotel_name") %>" disabled >
-                        <input type="hidden" style="width: 100%" value="<%= request.getParameter("hotel_id") %>" >
-                        
+                        <input type="text" style="width: 100%" name="user_email" placeholder=<%= email %> disabled>
+                        <input type="text" style="width: 100%" value="<%= request.getParameter("hotel_name") %>" disabled >
+                        <input type="hidden" style="width: 100%" name="hotel_id" value="<%= request.getParameter("hotel_id") %>" >
+                        <input type="hidden" style="width: 100%" name="hotel_name" value="<%= request.getParameter("hotel_name") %>" >
+                        <input type="hidden" style="width: 100%" name="hotel_amenities" value="<%= request.getParameter("hotel_amenities") %>" >
+                        <input type="hidden" style="width: 100%" name="hotel_descrip" value="<%= request.getParameter("hotel_descrip") %>" >
                     </div>
                     
                     
                     
                     <div class="form-row">
                         <input type="text" style="width: 50%" placeholder="Check-in" readonly>
-                        <input type="date" style="width: 50%" placeholder="Check-in"required>
+                        <input type="date" style="width: 50%" name="check_in" placeholder="Check-in"required>
                     </div>
                     <div class="form-row">
                         <input type="text" style="width: 50%" placeholder="Check-out" readonly>
-                        <input type="date" style="width: 50%" placeholder="Check-in" required>
+                        <input type="date" style="width: 50%" name="check_out" placeholder="Check-out" required>
                     </div>
                     <div class="form-row">
 						<input type="text" style="width: 50%" placeholder="Room Type" readonly>
-                        <select name="rooms" required>
+                        <select name="room_type" required>
                             <option value="room-type">Select One</option>
                             <option value="Deluxe">Deluxe</option>
                             <option value="Standard">Standard</option>
+                            <option value="1 Bedroom">1 Bedroom</option>
+                            <option value="2 Bedroom">2 Bedroom</option>
+                            <option value="3 Bedroom">3 Bedroom</option>
                             <option value="Suite">Suite</option>
                         </select>
                           </div>
                           
                         <div class="form-row">
-                        <input type="number" style="width: 50%" placeholder="Adults?" required>
-                      	 <input type="number" style="width: 50%" placeholder="Children?"required>
+                        <input type="number" style="width: 50%" name="adults" placeholder="Adults?" required>
+                      	 <input type="number" style="width: 50%" name="children" placeholder="Children?"required>
                         </div>
                           
                           <!-- Textarea 4 rows height -->
                         <div class="form-row">
-                            <textarea class="form-control" id="instructions" rows="10" placeholder="List Special Instruction Here"></textarea>
+                            <textarea class="form-control" id="instructions" name="instructions" rows="10" placeholder="List Special Instruction Here"></textarea>
                         </div>
                         
                         <div class="form-row">

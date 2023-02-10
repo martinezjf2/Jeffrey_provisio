@@ -40,6 +40,10 @@ public class BookingServlet extends HttpServlet {
 		out.println(hotel_name);
 		out.println(hotel_amenities);
 		out.println(hotel_descrip);
+		request.setAttribute("hotel_id", hotel_id);
+		request.setAttribute("hotel_name", hotel_name);
+		request.setAttribute("hotel_amenities", hotel_amenities);
+		request.setAttribute("hotel_descrip", hotel_descrip);
 		request.getRequestDispatcher("booking.jsp").forward(request,response);
 		
 	}

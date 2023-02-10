@@ -107,7 +107,7 @@
 
 
 
-
+<!-- Resource: how to pass down data from one jsp to another. Having a servlet in between. Check out this article: https://stackoverflow.com/questions/45802338/how-can-i-send-data-from-one-jsp-to-other-pressing-a-button -->
   
   
  	<!-- FOOTER INCLUDE  -->
