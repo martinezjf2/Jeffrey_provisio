@@ -14,19 +14,19 @@
 </head>
 <body>
 <!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
-	<jsp:include page="partials/navbar.jsp" />
+	<jsp:include page="./partials/navbar.jsp" />
 	
 	<!--Modal fade for User Login-->
-   <jsp:include page="partials/loginForm.jsp" />
+   <jsp:include page="./partials/forms/loginForm.jsp" />
    
    	<h1>Unable to login</h1>
 
  	<!--Modal fade for User Registration-->
- 	<jsp:include page="partials/registration.jsp" />
+ 	<jsp:include page="./partials/forms/registration.jsp" />
  	
  
  	<!-- FOOTER INCLUDE  -->
- 	<jsp:include page="partials/footer.jsp" />
+ 	<jsp:include page="./partials/footer.jsp" />
  	
  <!-- Adjust the catch for each servlet to pass down a attribute of error, pass in a specific message. Make sure that all servlets have the same attribute so you can reuse the alert error jsp
  		Use bootstrap to display the alert box before the header component. 

@@ -17,14 +17,14 @@
 
 
 <!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
-	<jsp:include page="partials/navbar.jsp" />
+	<jsp:include page="./partials/navbar.jsp" />
 	
 
  	<h1>Rewards Page</h1>
  	
  	
  	<!-- FOOTER INCLUDE  -->
- 	<jsp:include page="partials/footer.jsp" />
+ 	<jsp:include page="./partials/footer.jsp" />
 
 </body>
 </html>

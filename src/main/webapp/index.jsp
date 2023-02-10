@@ -18,22 +18,22 @@
 	<jsp:include page="partials/navbar.jsp" />
 	
 	<!--Modal fade for User Login-->
-   <jsp:include page="partials/loginForm.jsp" />
+   <jsp:include page="partials/forms/loginForm.jsp" />
 
  	<!--Modal fade for User Registration-->
- 	<jsp:include page="partials/registration.jsp" />
+ 	<jsp:include page="partials/forms/registration.jsp" />
 	
 	
 	<% if (request.getParameter("submit") != null) { %>
-		<jsp:include page="partials/createAccountAlert.jsp" />
+		<jsp:include page="partials/alerts/createAccountAlert.jsp" />
 	<% } %>
 	
 	<% if (request.getParameter("loggedIn") != null) { %>
-		<jsp:include page="partials/loggedInAlert.jsp" />
+		<jsp:include page="partials/alerts/loggedInAlert.jsp" />
 	<% } %>
 	
 	<% if (request.getParameter("loggedOut") != null) { %>
-		<jsp:include page="partials/logoutAlert.jsp" />
+		<jsp:include page="partials/alerts/logoutAlert.jsp" />
 	<% } %>
 	
 	
