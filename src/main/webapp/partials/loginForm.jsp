@@ -28,7 +28,7 @@
                         <input name="password" type="password" class="form-control shadow-none" required>
                     </div>
                     <div class= "d-flex align-items-center justify-content-between mb-2">
-                    	<button type="submit" class="btn btn-dark shadow-none">LOGIN</button>
+                    	<button type="submit" name="loggedIn" class="btn btn-dark shadow-none">LOGIN</button>
                     	<a href="registerUser.jsp" class="text-secondary text-decoration-none">New User? Register Here</a>
                     	<a href="passwordRecovery.jsp" class="text-secondary text-decoration-none">Forgot Password?</a>
                     </div>

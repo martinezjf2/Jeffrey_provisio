@@ -64,8 +64,10 @@ public class LoginServlet extends HttpServlet {
 				session.setAttribute("first_name", rs.getString("first_name"));
 				session.setAttribute("last_name", rs.getString("last_name"));
 				session.setAttribute("email", rs.getString("email"));
+				request.setAttribute("loggedIn", request.getAttribute("loggedIn"));
 //				Set session attribute for user_id, first_name, last_name, email
-				response.sendRedirect("index.jsp");
+//				response.sendRedirect("index.jsp");
+				request.getRequestDispatcher("index.jsp").forward(request, response);
 			} else {
 				response.sendRedirect("wrongInformationLogin.jsp");
 			}

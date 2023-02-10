@@ -15,8 +15,8 @@
 <body>
 
 	
-	<div style="margin:0" class="alert alert-success alert-dismissible fade show align-items-center" role="alert">
-  		<strong>Congratulations</strong> Your Account was Successfully Created! Log In to Access Your Account!
+	<div style="margin:0; text-align: center;" class="alert alert-success alert-dismissible fade show align-items-center" role="alert">
+  		<strong>We're sad to see you go! </strong> You have successfully logged out! 
  		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 	</div>
 	

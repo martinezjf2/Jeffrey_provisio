@@ -26,7 +26,9 @@
             		<% } else { %>
             			<a href="/Jeffrey_provisio/reservations">Reservations</a>
             			<a href="rewards.jsp">Rewards</a>
-            			<button onclick="window.location.href='/Jeffrey_provisio/logout'" type="submit" name="logout" class="btn" id="btn1">Log Out</button>
+            			<form style="display: inline;" action="logout" method="POST">
+            				<button type="submit" name="loggedOut" class="btn" id="btn1">Log Out</button>
+            			</form>
             		<% } %>
  				</div>     
             </nav>
