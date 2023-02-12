@@ -33,7 +33,7 @@
                             <label class="form-label">First Name</label>
                             <input type="text" class="form-control shadow-none" name="firstName" required>
                         </div>
-                        <div class="col-md-6 p-0 mb-3">
+                        <div class="col-md-6 ps-0 mb-3">
                             <label class="form-label">Last Name</label>
                             <input type="text" class="form-control shadow-none" name="lastName" required>
                         </div>

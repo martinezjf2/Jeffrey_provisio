@@ -19,13 +19,13 @@
                 <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                	<div class="mb-3">
+                	<div class="col-md-12 mb-3">
                         <label class="form-label">Email address</label>
-                        <input name="email" type="email" class="form-control shadow-none" required>
+                        <input style="margin-left: 0;" name="email" type="email" class="form-control shadow-none" required>
                     </div>
-                    <div class="mb-4">
+                    <div class="col-md-12 mb-3">
                         <label class="form-label">Password</label>
-                        <input name="password" type="password" class="form-control shadow-none" required>
+                        <input style="margin-left: 0;" name="password" type="password" class="form-control shadow-none" required>
                     </div>
                     <div class= "d-flex align-items-center justify-content-between mb-2">
                     	<button type="submit" name="loggedIn" class="btn btn-dark shadow-none">LOGIN</button>
