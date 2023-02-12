@@ -20,7 +20,6 @@
                     <h5 class="mb-3 text-white h4">Links</h5>
                     <a href="index.jsp" class="d-inline-block mb-2 text-white text-decoration-none ">Home</a><br>
                     <a href="about.jsp" class="d-inline-block mb-2 text-white text-decoration-none ">About</a><br>
-                    <a href="contact.jsp" class="d-inline-block mb-2 text-white text-decoration-none ">Contact Us</a><br>
                     <a href="hotels" class="d-inline-block mb-2 text-white text-decoration-none ">Hotels</a><br>
                     <% if (session.getAttribute("first_name") == null){ %>
 						<a href="registerUser.jsp" class="d-inline-block mb-2 text-white text-decoration-none ">Register</a><br>
@@ -31,12 +30,16 @@
                 </div> 
                 <div class="col-lg-3 bg-primary" id="thirdDiv">
                 <h5 class="mb-3 text-white h4">Follow Us</h5>
-                <a href="https://www.facebook.com" class="d-inline-block mb-3 text-white text-decoration-none">
+                		<a href="contact.jsp" class="d-inline-block mb-3 text-white text-decoration-none ">
+                			<i class="bi bi-facebook me-1"></i>Contact Us
+                		</a><br>
+                		<a href="https://www.facebook.com" class="d-inline-block mb-3 text-white text-decoration-none">
                             <i class="bi bi-facebook me-1"></i> Facebook
                         </a><br>
                         <a href="https://www.linkedin.com/" class="d-inline-block mb-3 text-white text-decoration-none">
                             <i class="bi bi-linkedin me-1"></i> Linkedin
                         </a><br>
+                         
                 </div>
             </div>
          </div>

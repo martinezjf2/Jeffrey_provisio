@@ -20,7 +20,7 @@
                 	<a href="hotels">Hotels</a>
                 	
                 	<% if (session.getAttribute("first_name") == null){ %>
-                		<a class="btn" id="btn1"data-bs-toggle="modal" data-bs-target="#loginModal">Log In</a>
+                		<a class="btn" id="btn1" data-bs-toggle="modal" data-bs-target="#loginModal">Log In</a>
             			<a class="btn" id="btn2" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
             			
             		<% } else { %>
