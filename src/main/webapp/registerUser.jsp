@@ -17,7 +17,7 @@
 <section>
 
 <!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
-	<jsp:include page="./partials/navbar.jsp" />
+	<jsp:include page="./partials/navbar-two.jsp" />
 
    <!--Modal fade for User Login-->
    <jsp:include page="./partials/forms/loginForm.jsp" />

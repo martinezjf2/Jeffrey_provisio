@@ -17,7 +17,7 @@
 
 
 <!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
-	<jsp:include page="./partials/navbar.jsp" />
+	<jsp:include page="./partials/navbar-two.jsp" />
 	
 
  	<h1>Rewards Page</h1>

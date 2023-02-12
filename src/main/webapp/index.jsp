@@ -15,7 +15,7 @@
 <body>
 
 	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
-	<jsp:include page="partials/navbar.jsp" />
+	<jsp:include page="./partials/navbar-two.jsp" />
 	
 	<!--Modal fade for User Login-->
    <jsp:include page="partials/forms/loginForm.jsp" />
@@ -23,8 +23,7 @@
  	<!--Modal fade for User Registration-->
  	<jsp:include page="partials/forms/registration.jsp" />
  	
- 	<!-- NAVBAR 2 JSP INCLUDE FOR FLEXIBILITY -->
-	<jsp:include page="partials/navbar-two.jsp" />
+
 	
 	
 	<% if (request.getParameter("submit") != null) { %>

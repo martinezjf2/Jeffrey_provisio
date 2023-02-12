@@ -9,10 +9,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+
+ <!-- START NAVBAR -->
 <div class="header bg-primary">
 		
-            		
-
 <nav class="navbar navbar-expand-lg" style="padding: 10px 100px">
 
 <a href="index.jsp" class="navbar-brand"><img src="./images/logo1.png" class="logo"></a>  
@@ -51,15 +51,15 @@
   <% } else { %>
   
  	<li class="nav-item">
-   		<a class="nav-link" href="reservations">Reservations</a>
+   		<a class="nav-link text-white" href="reservations">Reservations</a>
   	</li>
   	<li class="nav-item">
-    	<a class="nav-link" href="rewards.jsp">Rewards</a>
+    	<a class="nav-link text-white" href="rewards.jsp">Rewards</a>
   	</li>
    
    	<li class="nav-item">
   		<form class="" action="logout" method="POST">
-        	<a class="nav-link"><button type="submit" name="loggedOut" class="btn btn-primary">Log Out</button></a>
+        	<button type="submit" name="loggedOut" id="btn1" class="btn nav-link">Log Out</button>
     	</form>
    </li>
    	<% } %>
@@ -69,31 +69,9 @@
 </div>
 
 
-<!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)">Logo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link</a>
-        </li>
-      </ul>
-     <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary" type="button">Search</button>
-      </form>
-    </div>
-  </div>
-</nav> -->
+        <!-- ENDING NAVBAR -->
+        <!-- Resource on the log out functionality: -->
+<!-- https://www.javatpoint.com/servlet-http-session-login-and-logout-example -->
 
 
 
