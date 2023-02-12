@@ -17,11 +17,11 @@
 <body>
 
 
-<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
+	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
 	<jsp:include page="./partials/navbar.jsp" />
 	
-	  <!--Modal fade for User Login-->
-   <jsp:include page="./partials/forms/loginForm.jsp" />
+	<!--Modal fade for User Login-->
+   	<jsp:include page="./partials/forms/loginForm.jsp" />
 
  	<!--Modal fade for User Registration-->
  	<jsp:include page="./partials/forms/registration.jsp" />
@@ -43,11 +43,11 @@
  	<div id="wrapper">
  		<div class="my-5 px-5">
  			<h3 class="text-center fw-bold h-line">Reservations</h3>
- 			<br><br>
  		</div>
  	</div>
  	
- 
+	 <!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
+	<jsp:include page="partials/forms/reservationSearchbar.jsp" />
  	
  	<div class="">
  		<% for (Reservation res : theReservations) { %>

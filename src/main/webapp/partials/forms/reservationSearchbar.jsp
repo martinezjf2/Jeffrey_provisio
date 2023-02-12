@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,40 +11,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <title>Provisio Landing Page </title>
+
 </head>
 <body>
-
-	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
-	<jsp:include page="partials/navbar.jsp" />
-	
-	<!--Modal fade for User Login-->
-   <jsp:include page="partials/forms/loginForm.jsp" />
-
- 	<!--Modal fade for User Registration-->
- 	<jsp:include page="partials/forms/registration.jsp" />
- 	
- 	<!-- NAVBAR 2 JSP INCLUDE FOR FLEXIBILITY -->
-	<jsp:include page="partials/navbar-two.jsp" />
-	
-	
-	<% if (request.getParameter("submit") != null) { %>
-		<jsp:include page="partials/alerts/createAccountAlert.jsp" />
-	<% } %>
-	
-	<% if (request.getParameter("loggedIn") != null) { %>
-		<jsp:include page="partials/alerts/loggedInAlert.jsp" />
-	<% } %>
-	
-	<% if (request.getParameter("loggedOut") != null) { %>
-		<jsp:include page="partials/alerts/logoutAlert.jsp" />
-	<% } %>
-	
-	
-
-	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
-	<jsp:include page="partials/header.jsp"/>
- 	
- 	<!-- FOOTER INCLUDE  -->
- 	<jsp:include page="partials/footer.jsp" />
+	<section class="search-sec">
+            <form action="#" method="post" novalidate="novalidate" style="margin: 0 auto;">
+                <h1> Reservation Lookup</h1>
+                <div class="row">
+                    <div class="col-lg-12">
+                      <div class="row align-items-center">
+                            <div class="col-lg-12 col-md-12 col-sm-12 px-0 ">
+                                <input type="text" class="form-control search-slt"  placeholder="Search by hotel name">
+                            </div>
+                          
+                            <div class="col-lg-3 col-lg-3 col-sm-12 ">
+                                <button type="button" class="btn btn-warning btn-lg">SEARCH</button>
+                            </div>
+                              </div>
+                        </div>
+                    </div>
+            </form>
+    </section>
 </body>
 </html>
