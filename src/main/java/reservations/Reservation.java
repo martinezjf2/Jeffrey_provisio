@@ -14,7 +14,7 @@ public class Reservation {
 	
 	
 
-	public Reservation(int reservation_id, int user_id, int hotel_id, String confirmation_code, int adults, int children, String check_in,
+	public Reservation(int reservation_id, int user_id, int hotel_id, int adults, int children, String confirmation_code, String check_in,
 			String check_out, String room_type, String instructions) {
 		super();
 		this.reservation_id = reservation_id;
@@ -29,7 +29,7 @@ public class Reservation {
 		this.instructions = instructions;
 	}
 	
-	public Reservation(int user_id, int hotel_id, String confirmation_code, int adults, int children, String check_in, String check_out,
+	public Reservation(int user_id, int hotel_id, int adults, int children, String confirmation_code, String check_in, String check_out,
 			String room_type, String instructions) {
 		super();
 		this.user_id = user_id;
