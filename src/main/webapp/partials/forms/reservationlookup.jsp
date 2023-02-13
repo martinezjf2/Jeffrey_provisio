@@ -15,17 +15,17 @@
 <body>
 
     <section class="">
-           <form action="#" method="post" style="margin:0 auto; border: none; width: 80%; padding: 25px;">
+           <form action="search" method="GET" style="margin:0 auto; border: none; width: 80%; padding: 25px;">
                 <h5>Need to find a reservation?</h5>
                 <div class="row">
                     <div class="col-lg-12">
                       <div class="row align-items-center">
                             <div class="col-lg-12  px-0 ">
-                                <input type="text" class="form-control search-slt"  placeholder="Type in your Confirmation Code" required>
+                                <input type="text" class="form-control search-slt" name="confirmation_code"  placeholder="Type in your Confirmation Code" required>
                             </div>
                             
                             <div class="col-lg-3 col-lg-3 col-sm-12 ">
-                                <button type="button" class="btn btn-warning btn-lg">Search</button>
+                                <button type="submit" class="btn btn-warning btn-lg">Search</button>
                             </div>
                               </div>
                         </div>
