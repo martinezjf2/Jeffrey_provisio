@@ -24,6 +24,16 @@
  	<!--Modal fade for User Registration-->
  	<jsp:include page="./partials/forms/registration.jsp" />
  	
+ 	
+ 	
+ 	<div>
+ 		<% if (request.getAttribute("error") != null){ %>
+        	<h1 style="text-align: center;"><%= request.getAttribute("error") %></h1>
+    	<% } %>
+    </div>
+ 	
+ 	
+ 	
  
  	<!-- FOOTER INCLUDE  -->
  	<jsp:include page="./partials/footer.jsp" />

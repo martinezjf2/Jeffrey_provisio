@@ -63,7 +63,8 @@ public class RetrievePassword extends HttpServlet {
 				con.close();
 				
 			} else {
-				response.sendRedirect("http://localhost:8080/Jeffrey_provisio/wrongInformationLogin.jsp");
+				request.setAttribute("error", "Unable to Retrieve Information, please go back and type in correct information");
+				request.getRequestDispatcher("error.jsp").forward(request, response);
 			}
 			
 //			*******         Resource: https://initialcommit.com/blog/how-to-send-data-from-servlet-to-jsp         *********

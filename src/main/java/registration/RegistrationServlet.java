@@ -54,7 +54,8 @@ public class RegistrationServlet extends HttpServlet {
 			con.close();
 		} catch(Exception e) {
 			out.println(e);
-			response.sendRedirect("userAlreadyExistsPage.jsp");
+			request.setAttribute("error", "Unable to register, please make sure to fill out all fields");
+			request.getRequestDispatcher("error.jsp").forward(request, response);
 
 		}
 		out.println("</body></html>");

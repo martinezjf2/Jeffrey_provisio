@@ -54,6 +54,8 @@ public class BookingFormServlet extends HttpServlet {
 		String hotel_amenities = request.getParameter("hotel_amenities");
 		String hotel_descrip = request.getParameter("hotel_descrip");
 		
+//		Create an random generated number for confirmation
+		
 //		out.println("<br><br><h2>User Information</h2><br><br>");
 //		out.println("User ID: " + user_id + "<br>");
 //		out.println("User FIRST Name: " + user_first + "<br>");

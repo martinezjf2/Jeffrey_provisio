@@ -69,7 +69,8 @@ public class LoginServlet extends HttpServlet {
 //				response.sendRedirect("index.jsp");
 				request.getRequestDispatcher("index.jsp").forward(request, response);
 			} else {
-				response.sendRedirect("wrongInformationLogin.jsp");
+				request.setAttribute("error", "Unable to Login");
+				request.getRequestDispatcher("error.jsp").forward(request, response);
 			}
 			
 //			Add Session to the email, when the user logs in
