@@ -19,11 +19,10 @@
 	<!--Modal fade for User Login-->
    <jsp:include page="./partials/forms/loginForm.jsp" />
    
-   	<h1>Unable to login</h1>
+
 
  	<!--Modal fade for User Registration-->
  	<jsp:include page="./partials/forms/registration.jsp" />
- 	
  	
  	
  	<div>
@@ -31,16 +30,9 @@
         	<h1 style="text-align: center;"><%= request.getAttribute("error") %></h1>
     	<% } %>
     </div>
- 	
- 	<!-- added comment -->
- 	
- 
+
  	<!-- FOOTER INCLUDE  -->
  	<jsp:include page="./partials/footer.jsp" />
- 	
- <!-- Adjust the catch for each servlet to pass down a attribute of error, pass in a specific message. Make sure that all servlets have the same attribute so you can reuse the alert error jsp
- 		Use bootstrap to display the alert box before the header component. 
-  -->
 
 
 </body>
