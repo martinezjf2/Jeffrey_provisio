@@ -65,8 +65,8 @@ public class SearchFormServlet extends HttpServlet {
 			con.close();
 
 		} catch(Exception e) {
-			out.println(e);
-			response.sendRedirect("wrongInformationLogin.jsp");
+			request.setAttribute("error", "Was unable to search for a reservation. Please make sure to fill out all the fields.");
+			response.sendRedirect("error.jsp");
 
 		}
 		
