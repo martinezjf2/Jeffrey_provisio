@@ -13,49 +13,27 @@
     <title>Provisio Beach and Resorts -Reservation Lookup Page </title>
 </head>
 <body>
-<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY --> 
-	<jsp:include page="../navbar-two.jsp" />
 
-	<!--Modal fade for User Login-->
-   <jsp:include page="../forms/loginForm.jsp" />
-
- 	<!--Modal fade for User Registration-->
- 	 <jsp:include page="../forms/registration.jsp" />
-
-
-
-    <section class="search-sec">
-        <div class="container">
-            
-            <form action="#" method="post" novalidate="novalidate">
-                <h1> Reservation Lookup</h1>
+    <section class="">
+           <form action="#" method="post" style="margin:0 auto; border: none; width: 80%; padding: 25px;">
+                <h5>Need to find a reservation?</h5>
                 <div class="row">
                     <div class="col-lg-12">
                       <div class="row align-items-center">
-                            <div class="col-lg-3 col-lg-3 col-sm-12  px-0 ">
-                                <input type="date" class="form-control search-slt"  placeholder="Check-in">
+                            <div class="col-lg-12  px-0 ">
+                                <input type="text" class="form-control search-slt"  placeholder="Type in your Confirmation Code" required>
                             </div>
-                            <div class="col-lg-3 col-lg-3 col-sm-12 px-0  ">
-                                <input type="date" class="form-control search-slt"  placeholder="Check-out">
-                            </div>
-                            <div class="col-lg-3 col-lg-3 col-sm-12 px-0  ">
-                                <input type="number" class="form-control search-slt"  placeholder="Reservation Number">
-                            </div>
+                            
                             <div class="col-lg-3 col-lg-3 col-sm-12 ">
-                                <button type="button" class="btn btn-warning btn-lg">SEARCH</button>
+                                <button type="button" class="btn btn-warning btn-lg">Search</button>
                             </div>
                               </div>
                         </div>
                     </div>
-                </div>
             </form>
-        </div>
+
     </section>
     
-    
- 	<!-- FOOTER INCLUDE  -->
- 	<jsp:include page="../footer.jsp" />
- 	
-    
+
 </body>
 </html>

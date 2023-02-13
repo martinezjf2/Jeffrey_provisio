@@ -296,7 +296,7 @@ input[type=submit]{
 }
 
 
-
+/* 
 
 
 .height{
@@ -347,7 +347,7 @@ input[type=submit]{
 
     }
 
-   /*search box css start here*/
+   search box css start here
  .search-sec{
      padding: 2rem;
  }
@@ -485,7 +485,7 @@ input[type=submit]{
 
  .points{
      box-sizing: border-box
- }
+ } */
 
 
 /* Comment out the below code that is affecting the navbar buttons as well. Change them to be a specific id to the a tags or a specific class to the elements */

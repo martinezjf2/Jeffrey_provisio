@@ -76,7 +76,8 @@ public class ReservationServlet extends HttpServlet {
 				String check_out = rs.getString("check_out");
 				String room_type = rs.getString("room_type");
 				String instructions = rs.getString("instructions");
-				Reservation tempRes = new Reservation(reservation_id, user_id, hotel_id, adults, children, check_in, check_out, room_type, instructions);
+				String confirmation_code = rs.getString("confirmation_code");
+				Reservation tempRes = new Reservation(reservation_id, user_id, hotel_id, confirmation_code, adults, children, check_in, check_out, room_type, instructions);
 				reservations.add(tempRes);
 			}
 			

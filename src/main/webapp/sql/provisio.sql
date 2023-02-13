@@ -142,6 +142,7 @@ CREATE TABLE reservation (
     hotel_id           INT             NOT NULL,
     adults             INT             NOT NULL,
     children           INT             NOT NULL,
+    confirmation_code  VARCHAR(50)	   NOT NULL,
     check_in           VARCHAR(100)    NOT NULL,
     check_out		   VARCHAR(100)    NOT NULL,
     room_type		   VARCHAR(100)    NOT NULL,
@@ -153,36 +154,39 @@ CREATE TABLE reservation (
         REFERENCES hotel(hotel_id)
 ); 
 
-INSERT INTO reservation(user_id, hotel_id, adults, children, check_in, check_out, room_type, instructions) 
+INSERT INTO reservation(user_id, hotel_id, adults, children, confirmation_code, check_in, check_out, room_type, instructions) 
     VALUES (
         (SELECT user_id FROM user WHERE first_name = 'Darell'),
         (SELECT hotel_id FROM hotel WHERE hotel_name = 'Old Key West'),
         5,
         2,
+        '82HDJ345',
         '2019-08-21',
         '2019-08-28',
         'Standard',
         'Make sure to have it close to the lobby'
     );
 
-INSERT INTO reservation(user_id, hotel_id, adults, children, check_in, check_out, room_type, instructions) 
+INSERT INTO reservation(user_id, hotel_id, adults, children, confirmation_code, check_in, check_out, room_type, instructions) 
     VALUES (
         (SELECT user_id FROM user WHERE first_name = 'Isabella'),
         (SELECT hotel_id FROM hotel WHERE hotel_name = 'Provisio South Beach'),
         10,
         6,
+        '3TIM4XOZ',
         '2020-09-27',
         '2020-10-14',
         'Deluxe',
         'Would like to have it close to the pool'
     );
 
-INSERT INTO reservation(user_id, hotel_id, adults, children, check_in, check_out, room_type, instructions) 
+INSERT INTO reservation(user_id, hotel_id, adults, children, confirmation_code, check_in, check_out, room_type, instructions) 
     VALUES (
         (SELECT user_id FROM user WHERE first_name = 'Austin'),
         (SELECT hotel_id FROM hotel WHERE hotel_name = 'Grand Provisio'),
         2,
         0,
+        '4HTU9384',
         '2022-07-21',
         '2022-08-09',
         'Suite',

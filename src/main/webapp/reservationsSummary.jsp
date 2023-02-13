@@ -59,6 +59,7 @@
  					<h4>Adults: </h4><h3><%= res.getAdults() %></h3>
  					<h4>Children: </h4><h5><%= res.getChildren() %></h5>
  					<h4>Room Type: </h4><h5><%= res.getRoom_type() %></h5>
+ 					<h4>Confirmation Code: </h4><h5><%= res.getConfirmation_code() %></h5>
  					<h4>Instructions: </h4><h5><%= res.getInstructions() %></h5>
  				</div>
  			</div>

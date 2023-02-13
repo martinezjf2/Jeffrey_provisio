@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import java.util.Random;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -55,44 +56,55 @@ public class BookingFormServlet extends HttpServlet {
 		String hotel_descrip = request.getParameter("hotel_descrip");
 		
 //		Create an random generated number for confirmation
+		String candidateStrings = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+		int lengthOfCand = 8;
+		StringBuilder sb = new StringBuilder();
+		Random random = new Random();
+	
+		for (int i = 0; i < lengthOfCand; i++) {
+	        sb.append(candidateStrings.charAt(random.nextInt(candidateStrings.length())));
+	    }
 		
-//		out.println("<br><br><h2>User Information</h2><br><br>");
-//		out.println("User ID: " + user_id + "<br>");
-//		out.println("User FIRST Name: " + user_first + "<br>");
-//		out.println("User LAST Name: " + user_last + "<br>");
-//		out.println("User EMAIL: " + user_email + "<br><br>");
-//		
-//		out.println("<h2>Hotel Information</h2><br><br>");
-//		out.println("Hotel NAME: " + hotel_name + "<br>");
-//		out.println("Hotel ID: " + hotel_id + "<br>");
-//		out.println("Hotel AMENITIES: " + hotel_amenities + "<br>");
-//		out.println("Hotel DESCRIPTION: " + hotel_descrip + "<br><br>");
-//		
-//		out.println("<h2>Reservation Information</h2><br><br>");
-//		out.println("Check IN: " + check_in + "<br>");
-//		out.println("Check OUT: " + check_out + "<br>");
-//		out.println("Room TYPE: " + room_type + "<br>");
-//		out.println("Adults: " + adults + "<br>");
-//		out.println("Children: " + children + "<br>");
-//		out.println("Instructions: " + instructions + "<br>");
-//		
-		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/provisio", "provisio_user", "password");
-			Statement stmt = con.createStatement();
-			String sql = "INSERT INTO reservation(user_id, hotel_id, adults, children, check_in, check_out, room_type, instructions) VALUES (" + user_id + ", " + hotel_id + ", " + adults + ", " + children + ", '" + check_in + "', '" + check_out + "', '" + room_type + "', '" + instructions + "');";	
-//			out.println(sql);
-			stmt.executeUpdate(sql);
-			request.setAttribute("submit", request.getParameter("submit"));
-			request.getRequestDispatcher("reservations").forward(request, response);
-//			response.sendRedirect("index.jsp");
-			
-			con.close();
-		} catch(Exception e) {
-			out.println(e);
-			response.sendRedirect("userAlreadyExistsPage.jsp");
-
-		} 
+		String confirmationCode = sb.toString();
+		
+		
+		
+		out.println("<br><br><h2>User Information</h2><br><br>");
+		out.println("User ID: " + user_id + "<br>");
+		out.println("User FIRST Name: " + user_first + "<br>");
+		out.println("User LAST Name: " + user_last + "<br>");
+		out.println("User EMAIL: " + user_email + "<br><br>");
+		
+		out.println("<h2>Hotel Information</h2><br><br>");
+		out.println("Hotel NAME: " + hotel_name + "<br>");
+		out.println("Hotel ID: " + hotel_id + "<br>");
+		out.println("Hotel AMENITIES: " + hotel_amenities + "<br>");
+		out.println("Hotel DESCRIPTION: " + hotel_descrip + "<br><br>");
+		
+		out.println("<h2>Reservation Information</h2><br><br>");
+		out.println("Check IN: " + check_in + "<br>");
+		out.println("Check OUT: " + check_out + "<br>");
+		out.println("Room TYPE: " + room_type + "<br>");
+		out.println("Adults: " + adults + "<br>");
+		out.println("Children: " + children + "<br>");
+		out.println("Instructions: " + instructions + "<br>");
+		out.println("Confirmation Code: " +  confirmationCode);
+		
+		
+//		try {
+//			Class.forName("com.mysql.jdbc.Driver");
+//			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/provisio", "provisio_user", "password");
+//			Statement stmt = con.createStatement();
+//			String sql = "INSERT INTO reservation(user_id, hotel_id, confirmation_code, adults, children, check_in, check_out, room_type, instructions) VALUES (" + user_id + ", " + hotel_id + ", '" + confirmationCode + ", " + adults + ", " + children + ", '" + check_in + "', '" + check_out + "', '" + room_type + "', '" + instructions + "');";	
+//			stmt.executeUpdate(sql);
+//			request.setAttribute("submit", request.getParameter("submit"));
+//			request.getRequestDispatcher("reservations").forward(request, response);
+//			con.close();
+//		} catch(Exception e) {
+//			out.println(e);
+//			response.sendRedirect("userAlreadyExistsPage.jsp");
+//
+//		} 
 		
 		
 		
