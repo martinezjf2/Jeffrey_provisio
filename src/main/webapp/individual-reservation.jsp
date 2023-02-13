@@ -33,6 +33,7 @@
 	<h1>Here are you results</h1>
 	
 	<h3>Check In</h3>
+	<input type="hidden" value="<%= request.getAttribute("reservation_id") %>" />
 	<h4><%= request.getAttribute("check_in") %></h4>
 	<h3>Check Out</h3>
 	<h4><%= request.getAttribute("check_out") %></h4>
@@ -48,6 +49,13 @@
 	<h4><%= request.getAttribute("instructions") %></h4><br>
 
 	<a href="reservations" id="btn2"> Go back to reservations</a>
+	
+	
+	<form style="display: inline">
+		<input type="hidden" value="<%= request.getAttribute("reservation_id") %>" />
+		<button name="submit" id="btn2">Cancel Reservation</button>
+	</form>
+	
 	</div>
 
  
