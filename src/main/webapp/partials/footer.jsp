@@ -9,7 +9,7 @@
 <body>
 
 <div class="container-fluid ">    
-            <div class="row" id="footer">
+            <div class="row bg-primary" id="footer">
                 <div class="col-lg-6 bg-primary" id="firstDiv">
                     <h3 class="h-font fw-bold fs-3 mb-2 text-white">Provisio Hotel and Resorts</h3>
                     <p class="text-white" style="font-size: 20px">
