@@ -48,6 +48,7 @@ public class SearchFormServlet extends HttpServlet {
 
 
 			if (rs.next() != false) {
+				request.setAttribute("reservation_id", rs.getInt("reservation_id"));
 				request.setAttribute("check_in", rs.getString("check_in"));
 				request.setAttribute("check_out", rs.getString("check_out"));
 				request.setAttribute("adults", rs.getString("adults"));
@@ -55,7 +56,7 @@ public class SearchFormServlet extends HttpServlet {
 				request.setAttribute("room_type", rs.getString("room_type"));
 				request.setAttribute("confirmation_code", rs.getString("confirmation_code"));
 				request.setAttribute("instructions", rs.getString("instructions"));
-				request.getRequestDispatcher("foundReservation.jsp").forward(request, response);
+				request.getRequestDispatcher("individual-reservation.jsp").forward(request, response);
 			} else {
 				request.setAttribute("error", "Can't find a reservation, please make sure to type exact confirmation code");
 				request.getRequestDispatcher("error.jsp").forward(request, response);
