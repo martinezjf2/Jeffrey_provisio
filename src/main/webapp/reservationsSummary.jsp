@@ -51,7 +51,7 @@
  	
  	<div class="">
  		<% for (Reservation res : theReservations) { %>
- 			<div class="card stretched-link" style="width:80%; padding:50px">
+ 			<div class="card" style="width:80%; padding:50px">
  				<div class="card-body">
  				    <p hidden value=<%= res.getReservation_id() %>></p>
  					<h4>Check In: </h4><h5><%= res.getCheck_in() %></h5>
@@ -61,33 +61,21 @@
  					<h4>Room Type: </h4><h5><%= res.getRoom_type() %></h5>
  					<h4>Confirmation Code: </h4><h5><%= res.getConfirmation_code() %></h5>
  					<h4>Instructions: </h4><h5><%= res.getInstructions() %></h5>
- 					
- 					
- 					
- 					
- 					<form action="#" method="GET">
- 					<input type="hidden" name="reservation_id" value=<%= res.getReservation_id() %> />
- 					<input type="hidden" name="check_in" value=<%= res.getCheck_in() %> />
- 					<input type="hidden" name="check_out" value=<%= res.getCheck_out() %> />
- 					<input type="hidden" name="adults" value=<%= res.getAdults() %> />
- 					<input type="hidden" name="children" value=<%= res.getChildren() %> />
- 					<input type="hidden" name="room_type" value=<%= res.getRoom_type() %> />
- 					<input type="hidden" name="confirmation_code" value=<%= res.getConfirmation_code() %> />
- 					<input type="hidden" name="instructions" value=<%= res.getInstructions() %> />
- 					<button name="submit" id="btn1">View Reservation</button>
- 					
- 					<!-- May need to establish the place in here as well -->
- 					</form>
- 					
- 					
- 					
- 					
- 					
- 					
- 					
- 					
- 					
+
  				</div>
+ 				<form action="IndividualResSum" method="GET">
+ 					<input type="hidden" name="reservation_id" value="<%= res.getReservation_id() %>" />
+ 					<input type="hidden" name="check_in" value="<%= res.getCheck_in() %>" />
+ 					<input type="hidden" name="check_out" value="<%= res.getCheck_out() %>" />
+ 					<input type="hidden" name="adults" value="<%= res.getAdults() %>" />
+ 					<input type="hidden" name="children" value="<%= res.getChildren() %>" />
+ 					<input type="hidden" name="room_type" value="<%= res.getRoom_type() %>" />
+ 					<input type="hidden" name="confirmation_code" value="<%= res.getConfirmation_code() %>" />
+ 					<input type="hidden" name="instructions" value="<%= res.getInstructions() %>" />
+ 					
+ 					<input type="submit" name="submit" id="btn2" value="View Reservation" />
+ 				</form>
+ 				
  			</div>
  		<% } %>
  	</div>
