@@ -47,7 +47,7 @@
  	</div>
  	
 	 <!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
-	<jsp:include page="partials/forms/reservationSearchbar.jsp" />
+	<jsp:include page="partials/forms/reservationlookup.jsp" />
  	
  	<div class="">
  		<% for (Reservation res : theReservations) { %>
