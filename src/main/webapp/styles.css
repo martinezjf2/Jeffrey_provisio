@@ -296,6 +296,20 @@ input[type=submit]{
 }
 
 
+#values {
+	padding: 50px 100px;
+	height: auto;
+}
+
+#touristicPlaces {
+	height: 75rem;
+}
+
+.aboutParagraph {
+	margin: 0 auto;
+}
+
+
 /* 
 
 
