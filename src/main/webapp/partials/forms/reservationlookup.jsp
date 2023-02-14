@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <section class="">
+    <section class="" style="width: 80%; margin: 0 auto;">
            <form action="search" method="GET" style="margin:0 auto; border: none; width: 80%; padding: 25px;">
                 <h5>Need to find a reservation?</h5>
                 <div class="row">
