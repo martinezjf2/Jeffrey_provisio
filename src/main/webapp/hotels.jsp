@@ -93,7 +93,7 @@
  					    <input type="hidden" name="hotel_name" value="<%= hot.getHotel_name() %>" ><br>
  					    <input type="hidden" name="hotel_amenities" value="<%= hot.getAmenities() %>" ><br>
  					    <input type="hidden" name="hotel_descrip" value="<%= hot.getDescrip() %>" ><br>
- 						<button type="submit" class="btn">Reserve Hotel</button>
+ 						<button type="submit" class="btn" id="btn2">Reserve Hotel</button>
  						</form>
  					<% } %> 
  				</div>
