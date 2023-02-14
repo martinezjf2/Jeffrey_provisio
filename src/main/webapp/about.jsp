@@ -41,8 +41,8 @@
                         <!-- About Company-->
                         <div class="my-5 px-5">  
                             <h3 class="text-center fw-bold h-font">ABOUT OUR COMPANY</h3>
-                            <div class="h-line">
-                                   <p class="text-center mt-3 ">
+                            <div class="h-line" style="margin: 0 auto; width: 65%">
+                                   <p class="text-center mt-3" >
                                     Provisio Hotels Beach and Resort was established in 2022 by a group of software developers
                                     turned land developers. We offer multiple locations throughout the United States. We take pride in accommodating
                                     remote work, extended stays, business, and pleasure for our loyal customers. Our staff is built on Integrity, 
@@ -54,8 +54,8 @@
                  
                
                    <div class="container">
-                     <div class="row align-items-center"> 
-                       <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">  
+                     <div class="row align-items-center w-50" style="margin: 0 auto;"> 
+                       <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2" style="width: 70%">  
                            <h3 class="mb-3">Message from our C.E.O.</h3>
                            <p>
                            Welcome to Provisio Beach and Resorts. I'm thrilled to take the time to say thank you
@@ -63,8 +63,8 @@
                            our guests, each and every day. I hope to have the opportunity to meet each and every one of you soon!
                            </p>
                        </div>
-                        <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
-                        <img src="images/provisioceo.jpg" class="w-50  rounded ">
+                        <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1" style="padding: 0; width: 30%;">
+                        <img src="images/provisioceo.jpg" class="w-100  rounded ">
                        </div>
                      </div>  
                    </div>
