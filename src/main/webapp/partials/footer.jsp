@@ -39,6 +39,9 @@
                         <a href="https://www.linkedin.com/" class="d-inline-block mb-3 text-white text-decoration-none">
                             <i class="bi bi-linkedin me-1"></i> Linkedin
                         </a><br>
+                        <a href="locations" class="d-inline-block mb-3 text-white text-decoration-none">
+                            <i class="bi bi-linkedin me-1"></i> Locations
+                        </a><br>
                          
                 </div>
             </div>

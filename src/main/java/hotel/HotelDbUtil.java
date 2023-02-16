@@ -32,7 +32,14 @@ public class HotelDbUtil {
 				
 				// also want to see the place_id to see the location of the hotel
 				// Use an inner Join to get the place as well: https://www.w3resource.com/sql/joins/perform-an-inner-join.php
-				// setAttributes for the place for each hotel, and 
+				// setAttributes for the place for each hotel,
+				
+				// Resource: https://www.freecodecamp.org/news/sql-inner-join-how-to-join-3-tables-in-sql-and-mysql/
+				
+				
+				// have an inner join here, also create variable inside the while loop that will retrieve the place as well. 
+				// Then readjust the Hotel Class to also have attributes from the place so that it can be rendered with the hotel
+				
 				myStmt = myConn.createStatement();
 
 				myRs = myStmt.executeQuery(sql);
