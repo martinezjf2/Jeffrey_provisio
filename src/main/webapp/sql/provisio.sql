@@ -88,6 +88,26 @@ INSERT INTO place(city, ind_state, zip, picture)
 INSERT INTO place(city, ind_state, zip, picture)
     VALUES('New York', 'New York', '10011', 'newyork.jpg');
 
+INSERT INTO place(city, ind_state, zip, picture)
+    VALUES('Melbourne', 'Australia', '89432', 'australia.jpg');
+    
+INSERT INTO place(city, ind_state, zip, picture)
+    VALUES('Las Vegas', 'Nevada', '32093', 'lasvegas.jpg');
+    
+INSERT INTO place(city, ind_state, zip, picture)
+    VALUES('Paris', 'France', '93849', 'paris.jpg');
+   
+INSERT INTO place(city, ind_state, zip, picture)
+    VALUES('Venice', 'Italy', '38473', 'venice.jpg');
+ 
+INSERT INTO place(city, ind_state, zip, picture)
+    VALUES('Lake Tahoe', 'Florida', '77833', 'laketahoe.jpg');
+
+INSERT INTO place(city, ind_state, zip, picture)
+    VALUES('London', 'England', '56748', 'london.jpg');
+
+
+
 
 -- CREATE TABLE HOTEL
 
