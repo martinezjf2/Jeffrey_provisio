@@ -31,7 +31,7 @@
                 <div class="col-lg-3 bg-primary" id="thirdDiv">
                 <h5 class="mb-3 text-white h4">Follow Us</h5>
                 		<a href="contact.jsp" class="d-inline-block mb-3 text-white text-decoration-none ">
-                			<i class="bi bi-facebook me-1"></i>Contact Us
+                			<i class="bi bi-envelope-fill"></i> Contact Us
                 		</a><br>
                 		<a href="https://www.facebook.com" class="d-inline-block mb-3 text-white text-decoration-none">
                             <i class="bi bi-facebook me-1"></i> Facebook

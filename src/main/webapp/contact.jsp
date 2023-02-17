@@ -59,7 +59,7 @@
                     </a>
                     <h5 class="mt-4">Email</h5>
                     <a href="maito:ask.provisio@gmail.com" class="d-inline-block text-decoration-none text-dark">
-                        <i class="bi bi-envelope-fill"></i>ask.provisio@gmail.com
+                        <i class="bi bi-envelope-fill"></i> ask.provisio@gmail.com
                     </a>
                     <h5 class="mt-4">Follow us</h5>
                     <a href="https://twitter.com" class="d-inline-block text-dark fs-5 me-2">
