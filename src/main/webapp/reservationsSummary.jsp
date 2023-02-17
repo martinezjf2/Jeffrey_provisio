@@ -27,6 +27,15 @@
  	<jsp:include page="./partials/forms/registration.jsp" />
  	
  	
+ 	<!-- Checking if there is a session, if there isn't, user does not have access to go to the path -->
+ 	<% if (session.getAttribute("first_name") == null){ 
+ 		response.sendRedirect("index.jsp");
+ 	} else { %>
+ 	
+ 	
+ 	
+ 	
+ 	
  	<% if (request.getParameter("submit") != null) { %>
 		<jsp:include page="./partials/alerts/reservationAlert.jsp" />
 	<% } %>
@@ -94,7 +103,7 @@
 		
 		
 		
-		
+		<% } %>
 		
 		
  	
