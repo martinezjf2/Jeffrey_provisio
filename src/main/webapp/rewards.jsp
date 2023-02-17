@@ -20,7 +20,18 @@
 	<jsp:include page="./partials/navbar-two.jsp" />
 	
 
+<!-- Checking if there is a session, if there isn't, user does not have access to go to the path -->
+ 	<% if (session.getAttribute("first_name") == null){ 
+ 		response.sendRedirect("index.jsp");
+ 	} else { %>
+
+
+
  	<h1>Rewards Page</h1>
+ 	
+ 	
+ 	
+ 	<% } %>
  	
  	
  	<!-- FOOTER INCLUDE  -->
