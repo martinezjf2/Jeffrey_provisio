@@ -1,26 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
- <html>
- <head>
- <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" type="text/css" href="./styles.css">
-     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <title>Provisio Beach and Resorts -Reservation Lookup Page </title>
- </head>
- <body>
- <!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY --> 
- 	<jsp:include page="./partials/navbar-two.jsp" />
 
- 	<!--Modal fade for User Login-->
-    <jsp:include page="./partials/forms/loginForm.jsp" />
-
-  	<!--Modal fade for User Registration-->
-  	 <jsp:include page="./partials/forms/registration.jsp" />
 
        <!DOCTYPE html>
        <html lang="en">
@@ -46,13 +26,25 @@
 
        </head>
        <body>
+       
+       
+ <!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY --> 
+ 	<jsp:include page="./partials/navbar-two.jsp" />
+
+ 	<!--Modal fade for User Login-->
+    <jsp:include page="./partials/forms/loginForm.jsp" />
+
+  	<!--Modal fade for User Registration-->
+  	 <jsp:include page="./partials/forms/registration.jsp" />
+  	 
+  	 
        <h1 class="loyalty">Provisio Loyalty Points</h1>
 
        <div class="line"></div>
 
        <div class="points mx-5">
            <div class="pointsdesc mx-5">
-               <img src="images/cancun.jpg" alt="200pts">
+               <img id="loyaltyPageImage" src="images/cancun.jpg" alt="200pts">
 
                <p>Room Type:Basic Room</p>
                <p>Price Point: $250 per night</p>
@@ -62,7 +54,7 @@
                <a href="#" target="_blank">Get Points</a>
            </div>
            <div class="pointsdesc mx-5">
-               <img src="images/london.jpg" alt="500pts">
+               <img id="loyaltyPageImage" src="images/london.jpg" alt="500pts">
                <p>Room Type:Luxury Room</p>
                <p>Price Point: $750 per night</p>
                <p>US and Int'l Resort</p>
@@ -70,13 +62,18 @@
                <a href="#" target="_blank">Get Points</a>
            </div>
                <div class="pointsdesc">
-               <img src="images/newyork.jpg" alt="1000 pts">
+               <img id="loyaltyPageImage" src="images/newyork.jpg" alt="1000 pts">
                <p>Room Type: Suites</p>
                <p>Price Point: $1200 per night</p>
                <p>US and Int'l Resort</p>
                <p>Points earned: 1000pts</p>
                <a href="#" target="_blank">Get Points</a>
            </div>
+           
+           </div>
+           
+      <!-- FOOTER INCLUDE  -->
+  	<jsp:include page="partials/footer.jsp" />
 
        </body>
        </html>
@@ -84,9 +81,4 @@
 
 
 
-      <!-- FOOTER INCLUDE  -->
-  	<jsp:include page="partials/footer.jsp" />
 
-
- </body>
- </html>

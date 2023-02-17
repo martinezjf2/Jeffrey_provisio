@@ -28,38 +28,8 @@
  	<jsp:include page="./partials/forms/registration.jsp" />
 	
 
-<!--  	
-
-<div class="input-wrapper">
-  <div class="fa-solid fa-magnifying-glass"></div>	
-  <input type="text" placeholder="Search"/>
-  <div class="fa-solid fa-xmark"></div>
-</div>
-
-<div class="places">
-  <div class="clearfix">
-    <img class="img2" src="images/rio.jpg" alt="rio.jpg" width="170" height="170">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
-  </div>
-  <div class="clearfix">
-    <img class="img2" src="images/newyork.jpg" alt="rio.jpg" width="170" height="170">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
-  </div>
-  <div class="clearfix">
-    <img class="img2" src="images/miami.jpg" alt="rio.jpg" width="170" height="170">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
-  </div>
-</div> 
-
-
--->
-
 
  	<% List<Place> places = (List<Place>)request.getAttribute("places"); %>
-
-
-
-
 
 
 
@@ -79,7 +49,7 @@
 	<div style="margin: 0 auto; width: 60%">
  		<% for (Place loc : places) { %>
  			<div class="card py-3" style="padding:50px; margin: 30px 0px">
- 				<div class="card-body location-parent-div">
+ 				<div class="card-body grow location-parent-div">
  					<div class="flex-child-element">
  						<h4>City: </h4><h5><%= loc.getCity() %></h5>
  						<h4>State: </h4><h5><%= loc.getInd_state() %></h5>

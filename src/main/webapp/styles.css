@@ -328,6 +328,12 @@ input[type=submit]{
   	padding: 25px;
 }
 
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+
+/* Copied in, will comment if code is hurting other code */
+
 .height{
      height: 100vh;
     }
@@ -469,13 +475,13 @@ input[type=submit]{
      margin-bottom: 4%
  }
 
-/*  img{
+ #loyaltyPageImage{
      width: 100%;
      object-fit: cover;
      border-radius: 10px 10px 0px 0px;
      margin-bottom: 0%;
      height: 36%;
- } */
+ } 
 
 
 
@@ -500,11 +506,11 @@ input[type=submit]{
  }
 
 
- p{
+ /* p{
      left: 10%;
      position: relative;
      font-family: sans-serif;
- }
+ } */
 
  .lin2{
      top: -49%;
