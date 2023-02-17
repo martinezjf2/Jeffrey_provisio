@@ -58,22 +58,12 @@
  	<% List<Hotel> theHotels = (List<Hotel>)request.getAttribute("hotels"); %>
 
 
-
-
-
-
-
 	<div id="wrapper">
  		<div class="my-5 px-5">
  			<h3 class="text-center fw-bold h-line">Hotels</h3>
  			<br><br>
  		</div>
  	</div>
-
-
-
-
-
 
 
 	<div style="margin: 0 auto; width: 60%">
@@ -97,9 +87,6 @@
  						</form>
  					<% } %> 
  				</div>
- 				
- 				
- 					
  			</div>
  		<% } %>
  	</div>
