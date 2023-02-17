@@ -56,7 +56,7 @@
  						<h4>Zip Code: </h4><h5><%= loc.getZip() %></h5>
  					</div>
  					<div class="flex-child-element">
- 						<img src="./images/<%= loc.getPicture() %>" id="location-image" alt="<%= loc.getPicture() %>"/>
+ 						<img src="./images/<%= loc.getPicture() %>" id="location-image" class="grow" alt="<%= loc.getPicture() %>"/>
  					</div>
  				</div>
  				
