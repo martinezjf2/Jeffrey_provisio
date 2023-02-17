@@ -68,7 +68,7 @@
 
 	<div style="margin: 0 auto; width: 60%">
  		<% for (Hotel hot : theHotels) { %>
- 			<div class="card py-3" style="padding:50px; margin: 30px 0px">
+ 			<div class="card py-3 grow" style="padding:50px; margin: 30px 0px">
  				<div class="card-body">
  					<h4 value=<%= hot.getHotel_id() %> >Hotel Name: </h4><h5><%= hot.getHotel_name() %></h5>
  					<h4>Price: </h4><h5><%= hot.getPrice() %></h5>

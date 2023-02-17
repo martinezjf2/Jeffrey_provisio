@@ -60,7 +60,7 @@
  	
  	<div style="margin: 0 auto; width: 60%">
  		<% for (Reservation res : theReservations) { %>
- 			<div class="card py-3" style="margin: 30px 0px; padding:50px">
+ 			<div class="card py-3 grow" style="margin: 30px 0px; padding:50px">
  				<div class="card-body">
  				    <p hidden value=<%= res.getReservation_id() %>></p>
  					<h4>Check In: </h4><h5><%= res.getCheck_in() %></h5>
