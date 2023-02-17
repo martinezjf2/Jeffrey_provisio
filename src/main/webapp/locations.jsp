@@ -35,7 +35,7 @@
 
 	<div id="wrapper">
  		<div class="my-5 px-5">
- 			<h3 class="text-center fw-bold h-line">Locations</h3>
+ 			<h1 class="text-center fw-bold h-line">Locations</h1>
  			<br><br>
  		</div>
  	</div>
@@ -46,14 +46,14 @@
 
 
 
-	<div style="margin: 0 auto; width: 60%">
+	<div class="row" style="margin: 10px auto; width: 80%; padding: 30px">
  		<% for (Place loc : places) { %>
- 			<div class="card py-3" style="padding:50px; margin: 30px 0px">
+ 			<div class="card py-3 col-lg-4 col-md-6 col-sm-12" style="padding:50px; margin: 0px">
  				<div class="card-body grow location-parent-div">
  					<div class="flex-child-element">
- 						<h4>City: </h4><h5><%= loc.getCity() %></h5>
- 						<h4>State: </h4><h5><%= loc.getInd_state() %></h5>
- 						<h4>Zip Code: </h4><h5><%= loc.getZip() %></h5>
+ 						<h2><%= loc.getCity() %></h2>
+ 						<h3><%= loc.getInd_state() %></h3>
+ 						<h4><%= loc.getZip() %></h4>
  					</div>
  					<div class="flex-child-element">
  						<img src="./images/<%= loc.getPicture() %>" id="location-image" class="grow" alt="<%= loc.getPicture() %>"/>

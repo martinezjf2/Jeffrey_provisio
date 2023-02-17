@@ -314,18 +314,18 @@ input[type=submit]{
 }
 
 .location-parent-div {
-	display: flex;
-	width: 50%;
+	/* display: flex; */
 	margin: 0 auto;
 	height: auto;
 	
 }
 
-.flex-child-element {
+ .flex-child-element {
   	margin: 10px;
-  	width: 50%;
+  	width: 100%;
   	text-align: center;
   	padding: 25px;
+  	height: auto;
 }
 
 .grow { transition: all .2s ease-in-out; }
