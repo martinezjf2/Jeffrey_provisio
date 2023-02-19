@@ -52,7 +52,7 @@ public class ReservationDBUtil {
 				String room_type = myRs.getString("room_type");
 				String instructions = myRs.getString("instructions");
 				String confirmation_code = myRs.getString("confirmation_code");
-				Reservation tempRes = new Reservation(reservation_id, user_id, hotel_id, adults, children, points, confirmation_code, check_in, check_out, room_type, instructions);
+				Reservation tempRes = new Reservation(reservation_id, user_id, hotel_id, adults, children, points, check_in, check_out, room_type, instructions, confirmation_code);
 				reservations.add(tempRes);
 			}
 			
