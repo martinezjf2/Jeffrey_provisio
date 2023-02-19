@@ -50,7 +50,8 @@ public class RewardsServlet extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/provisio", "provisio_user", "password");
 			Statement stmt = con.createStatement();
-			ResultSet rs = stmt.executeQuery("SELECT * FROM reservation INNER JOIN hotel ON reservation.hotel_id = hotel.hotel_id INNER JOIN place ON hotel.place_id = place.place_id INNER JOIN user ON reservation.user_id = user_id WHERE reservation.user_id = " + user_id);
+//			Resource: https://www.freecodecamp.org/news/sql-inner-join-how-to-join-3-tables-in-sql-and-mysql/
+			ResultSet rs = stmt.executeQuery("SELECT * FROM reservation INNER JOIN user ON reservation.user_id = user.user_id INNER JOIN hotel ON reservation.hotel_id = hotel.hotel_id INNER JOIN place ON hotel.place_id = place.place_id WHERE reservation.user_id = " + user_id);
 			
 			while (rs.next()) {
 //				User Table
@@ -78,19 +79,48 @@ public class RewardsServlet extends HttpServlet {
 				String amenities = rs.getString("amenities");
 				int zip = rs.getInt("zip");
 				
+				out.println("<h3>User Table</h3>");
+				out.println("<strong>First Name: </strong>" + first_name);
+				out.println("<br>");
+				out.println("<strong>Last Name: </strong>" + last_name);
+				out.println("<br>");
+				out.println("<strong>Email: </strong>" + email);
+				out.println("<br>");
 				
-				out.println(first_name);
-				out.println(last_name);
-				out.println(email);
-				out.println(confirmation_code);
-				out.println(check_in);
-				out.println(check_out);
-				out.println(room_type);
-				out.println(city);
-				out.println(ind_state);
-				out.println(hotel_name);
-				out.println(zip);
-				out.println(points);
+				out.println("<h3>Reservation Table</h3>");
+				out.println("<strong>Confirmation Code: </strong>" + confirmation_code);
+				out.println("<br>");
+				out.println("<strong>Check In: </strong>" + check_in);
+				out.println("<br>");
+				out.println("<strong>Check Out: </strong>" + check_out);
+				out.println("<br>");
+				out.println("<strong>Room Type: </strong>" + room_type);
+				out.println("<br>");
+				out.println("<strong>Points: </strong>" + points);
+				out.println("<br>");
+				out.println("<strong>Adults: </strong>" + adults);
+				out.println("<br>");
+				out.println("<strong>Children: </strong>" + children);
+				out.println("<br>");
+				out.println("<strong>Instructions: </strong>" + instructions);
+				out.println("<br>");
+				
+				out.println("<h3>Place Table</h3>");
+				out.println("<strong>City: </strong>" + city);
+				out.println("<br>");
+				out.println("<strong>State: </strong>" + ind_state);
+				out.println("<br>");
+								
+				out.println("<h3>Place Table</h3>");
+				out.println("<strong>Hotel Name: </strong>" + hotel_name);
+				out.println("<br>");
+				out.println("<strong>Amenities: </strong>" + amenities);
+				out.println("<br>");
+				out.println("<strong>Description: </strong>" + descrip);
+				out.println("<br>");
+				out.println("<strong>Zip Code: </strong>" + zip);
+				out.println("<br>");
+				
 				
 				
 			}
