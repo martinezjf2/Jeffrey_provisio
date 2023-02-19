@@ -157,16 +157,17 @@ INSERT INTO hotel(hotel_name, price, descrip, amenities, place_id)
 -- CREATE TABLE RESERVATIONS, to have the check_in and check_out
 
 CREATE TABLE reservation (
-    reservation_id     INT             NOT NULL        AUTO_INCREMENT,
-    user_id            INT             NOT NULL,
-    hotel_id           INT             NOT NULL,
-    adults             INT             NOT NULL,
-    children           INT             NOT NULL,
-    confirmation_code  VARCHAR(50)	   NOT NULL,
-    check_in           VARCHAR(100)    NOT NULL,
-    check_out		   VARCHAR(100)    NOT NULL,
-    room_type		   VARCHAR(100)    NOT NULL,
-    instructions	   VARCHAR(400),
+    reservation_id     		INT             NOT NULL        AUTO_INCREMENT,
+    user_id            		INT             NOT NULL,
+    hotel_id           		INT             NOT NULL,
+    adults             		INT             NOT NULL,
+    children           		INT             NOT NULL,
+    points					INT				NOT NULL,
+    confirmation_code  		VARCHAR(50)	   	NOT NULL,
+    check_in           		VARCHAR(100)    NOT NULL,
+    check_out		   		VARCHAR(100)    NOT NULL,
+    room_type		   		VARCHAR(100)    NOT NULL,
+    instructions	   		VARCHAR(400),
     PRIMARY KEY(reservation_id),
     FOREIGN KEY (user_id)
         REFERENCES user(user_id),
@@ -174,42 +175,45 @@ CREATE TABLE reservation (
         REFERENCES hotel(hotel_id)
 ); 
 
-INSERT INTO reservation(user_id, hotel_id, adults, children, confirmation_code, check_in, check_out, room_type, instructions) 
+INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmation_code, check_in, check_out, room_type, instructions) 
     VALUES (
         (SELECT user_id FROM user WHERE first_name = 'Darell'),
         (SELECT hotel_id FROM hotel WHERE hotel_name = 'Old Key West'),
         5,
         2,
+        150,
         '82HDJ345',
         '2019-08-21',
         '2019-08-28',
-        'Standard',
+        'Double Queen Beds',
         'Make sure to have it close to the lobby'
     );
 
-INSERT INTO reservation(user_id, hotel_id, adults, children, confirmation_code, check_in, check_out, room_type, instructions) 
+INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmation_code, check_in, check_out, room_type, instructions) 
     VALUES (
         (SELECT user_id FROM user WHERE first_name = 'Isabella'),
         (SELECT hotel_id FROM hotel WHERE hotel_name = 'Provisio South Beach'),
         10,
         6,
+        150,
         '3TIM4XOZ',
         '2020-09-27',
         '2020-10-14',
-        'Deluxe',
+        'Double Full Beds',
         'Would like to have it close to the pool'
     );
 
-INSERT INTO reservation(user_id, hotel_id, adults, children, confirmation_code, check_in, check_out, room_type, instructions) 
+INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmation_code, check_in, check_out, room_type, instructions) 
     VALUES (
         (SELECT user_id FROM user WHERE first_name = 'Austin'),
         (SELECT hotel_id FROM hotel WHERE hotel_name = 'Grand Provisio'),
         2,
         0,
+        150,
         '4HTU9384',
         '2022-07-21',
         '2022-08-09',
-        'Suite',
+        'King',
         'Would love to have it next to a restaurant'
     );
 
