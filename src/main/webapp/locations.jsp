@@ -41,11 +41,6 @@
  	</div>
 
 
-
-
-
-
-
 	<div class="row" style="margin: 10px auto; width: 80%; padding: 30px">
  		<% for (Place loc : places) { %>
  			<div class="card py-3 col-lg-4 col-md-6 col-sm-12" style="padding:50px; margin: 0px">
@@ -59,9 +54,6 @@
  						<img src="./images/<%= loc.getPicture() %>" id="location-image" class="grow" alt="<%= loc.getPicture() %>"/>
  					</div>
  				</div>
- 				
- 				
- 					
  			</div>
  		<% } %>
  	</div>
