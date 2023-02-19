@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" import="java.util.*, rewards.*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,9 +28,55 @@
 
 
  	<h1>Rewards Page</h1>
- 	
- 	
- 	
+ 		<% List<RewardsRes> resList = (List<RewardsRes>)request.getAttribute("rewardsResList"); %>
+ 		
+ 	<div style="margin: 0 auto; width: 65%; text-align: center;">
+ 			<table class="table table-hover table-bordered">
+ 				<thead>
+    				<tr>
+      					<th scope="col">Name</th>
+				      	<th scope="col">Confirmation Code</th>
+				      	<th scope="col">Location</th>
+				      	<th scope="col">Hotel Name</th>
+				      	<th scope="col">Check-in</th>
+				      	<th scope="col">Check-out</th>
+				      	<th scope="col">Rewards Points</th>
+				      	<th scope="col"></th>
+    				</tr>
+  				</thead>
+  				
+ 		<% for (RewardsRes res : resList) { %>
+ 				<tbody>
+ 					<tr class="table-primary">
+      					<th scope="row"><%=res.getFirst_name() + " " + res.getLast_name() %></th>
+      					<td><%=res.getConfirmation_code() %></td>
+      					<td><%=res.getCity() + ", " + res.getInd_state() %></td>
+      					<td><%=res.getHotel_name() %></td>
+      					<td><%=res.getCheck_in() %></td>
+      					<td><%=res.getCheck_out() %></td>
+      					<td><%=res.getPoints() %></td>
+      					<td>
+      						<form action="IndividualResSum" method="GET" style="margin:0 auto;">
+ 								<input type="hidden" name="reservation_id" value="<%= res.getId() %>" />
+ 								<input type="hidden" name="check_in" value="<%= res.getCheck_in() %>" />
+ 								<input type="hidden" name="check_out" value="<%= res.getCheck_out() %>" />
+ 								<input type="hidden" name="adults" value="<%= res.getAdults() %>" />
+ 								<input type="hidden" name="children" value="<%= res.getChildren() %>" />
+ 								<input type="hidden" name="room_type" value="<%= res.getRoom_type() %>" />
+ 								<input type="hidden" name="confirmation_code" value="<%= res.getConfirmation_code() %>" />
+ 								<input type="hidden" name="instructions" value="<%= res.getInstructions() %>" />
+ 								<input type="submit" name="submit" id="btn2" value="View Reservation" />
+ 							</form> 
+      					</td>
+    				</tr>
+    			</tbody>
+
+ 				
+
+ 			<% } %>
+    		</table>
+    	</div>
+
  	<% } %>
  	
  	
