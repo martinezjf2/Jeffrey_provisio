@@ -35,7 +35,7 @@
   <% if (session.getAttribute("first_name") == null){ %>
   
    <li class="nav-item">
-  	<form class="">
+  	<form class="" action="">
         <a id="btn1" data-bs-toggle="modal" data-bs-target="#loginModal" class="nav-link text-white">Log In</a>
       </form>
    </li>
@@ -54,7 +54,10 @@
    		<a class="nav-link text-white" href="reservations">Reservations</a>
   	</li>
   	<li class="nav-item">
-    	<a class="nav-link text-white" href="rewards.jsp">Rewards</a>
+  		<form action="rewards" method="POST">
+  			<input type="hidden" name="user_id" value="<%=session.getAttribute("user_id") %>" />
+  			<button type="submit" id="btn1" class="btn nav-link">Rewards</button>
+    	</form>
   	</li>
    
    	<li class="nav-item">
