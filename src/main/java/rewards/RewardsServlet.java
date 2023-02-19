@@ -16,6 +16,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
+
+
 /**
  * Servlet implementation class RewardsServlet
  */
@@ -79,51 +81,57 @@ public class RewardsServlet extends HttpServlet {
 				String amenities = rs.getString("amenities");
 				int zip = rs.getInt("zip");
 				
-				out.println("<h3>User Table</h3>");
-				out.println("<strong>First Name: </strong>" + first_name);
-				out.println("<br>");
-				out.println("<strong>Last Name: </strong>" + last_name);
-				out.println("<br>");
-				out.println("<strong>Email: </strong>" + email);
-				out.println("<br>");
+//				out.println("<h3>User Table</h3>");
+//				out.println("<strong>First Name: </strong>" + first_name);
+//				out.println("<br>");
+//				out.println("<strong>Last Name: </strong>" + last_name);
+//				out.println("<br>");
+//				out.println("<strong>Email: </strong>" + email);
+//				out.println("<br>");
+//				
+//				out.println("<h3>Reservation Table</h3>");
+//				out.println("<strong>Confirmation Code: </strong>" + confirmation_code);
+//				out.println("<br>");
+//				out.println("<strong>Check In: </strong>" + check_in);
+//				out.println("<br>");
+//				out.println("<strong>Check Out: </strong>" + check_out);
+//				out.println("<br>");
+//				out.println("<strong>Room Type: </strong>" + room_type);
+//				out.println("<br>");
+//				out.println("<strong>Points: </strong>" + points);
+//				out.println("<br>");
+//				out.println("<strong>Adults: </strong>" + adults);
+//				out.println("<br>");
+//				out.println("<strong>Children: </strong>" + children);
+//				out.println("<br>");
+//				out.println("<strong>Instructions: </strong>" + instructions);
+//				out.println("<br>");
+//				
+//				out.println("<h3>Place Table</h3>");
+//				out.println("<strong>City: </strong>" + city);
+//				out.println("<br>");
+//				out.println("<strong>State: </strong>" + ind_state);
+//				out.println("<br>");
+//								
+//				out.println("<h3>Place Table</h3>");
+//				out.println("<strong>Hotel Name: </strong>" + hotel_name);
+//				out.println("<br>");
+//				out.println("<strong>Amenities: </strong>" + amenities);
+//				out.println("<br>");
+//				out.println("<strong>Description: </strong>" + descrip);
+//				out.println("<br>");
+//				out.println("<strong>Zip Code: </strong>" + zip);
+//				out.println("<br>");
 				
-				out.println("<h3>Reservation Table</h3>");
-				out.println("<strong>Confirmation Code: </strong>" + confirmation_code);
-				out.println("<br>");
-				out.println("<strong>Check In: </strong>" + check_in);
-				out.println("<br>");
-				out.println("<strong>Check Out: </strong>" + check_out);
-				out.println("<br>");
-				out.println("<strong>Room Type: </strong>" + room_type);
-				out.println("<br>");
-				out.println("<strong>Points: </strong>" + points);
-				out.println("<br>");
-				out.println("<strong>Adults: </strong>" + adults);
-				out.println("<br>");
-				out.println("<strong>Children: </strong>" + children);
-				out.println("<br>");
-				out.println("<strong>Instructions: </strong>" + instructions);
-				out.println("<br>");
-				
-				out.println("<h3>Place Table</h3>");
-				out.println("<strong>City: </strong>" + city);
-				out.println("<br>");
-				out.println("<strong>State: </strong>" + ind_state);
-				out.println("<br>");
-								
-				out.println("<h3>Place Table</h3>");
-				out.println("<strong>Hotel Name: </strong>" + hotel_name);
-				out.println("<br>");
-				out.println("<strong>Amenities: </strong>" + amenities);
-				out.println("<br>");
-				out.println("<strong>Description: </strong>" + descrip);
-				out.println("<br>");
-				out.println("<strong>Zip Code: </strong>" + zip);
-				out.println("<br>");
 				
 				
+				RewardsRes tempRes = new RewardsRes(first_name, last_name, email, adults, children, instructions, confirmation_code, check_in, check_out, room_type, points, city, ind_state, hotel_name, descrip, amenities, zip);;
+				rewardsRes.add(tempRes);
 				
 			}
+			
+			request.setAttribute("rewardsResList", rewardsRes);
+			request.getRequestDispatcher("rewards.jsp").forward(request, response);
 			
 		} catch (Exception exc) {
 			out.println(exc);
