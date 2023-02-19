@@ -6,6 +6,7 @@ public class Reservation {
 	private int hotel_id;
 	private int adults;
 	private int children;
+	private int points;
 	private String check_in;
 	private String check_out;
 	private String room_type;
@@ -14,34 +15,38 @@ public class Reservation {
 	
 	
 
-	public Reservation(int reservation_id, int user_id, int hotel_id, int adults, int children, String confirmation_code, String check_in,
-			String check_out, String room_type, String instructions) {
+	public Reservation(int reservation_id, int user_id, int hotel_id, int adults, int children, int points,
+			String check_in, String check_out, String room_type, String instructions, String confirmation_code) {
 		super();
 		this.reservation_id = reservation_id;
 		this.user_id = user_id;
 		this.hotel_id = hotel_id;
-		this.confirmation_code = confirmation_code;
 		this.adults = adults;
 		this.children = children;
+		this.points = points;
 		this.check_in = check_in;
 		this.check_out = check_out;
 		this.room_type = room_type;
 		this.instructions = instructions;
+		this.confirmation_code = confirmation_code;
 	}
 	
-	public Reservation(int user_id, int hotel_id, int adults, int children, String confirmation_code, String check_in, String check_out,
-			String room_type, String instructions) {
+
+	public Reservation(int user_id, int hotel_id, int adults, int children, int points, String check_in,
+			String check_out, String room_type, String instructions, String confirmation_code) {
 		super();
 		this.user_id = user_id;
 		this.hotel_id = hotel_id;
-		this.confirmation_code = confirmation_code;
 		this.adults = adults;
 		this.children = children;
+		this.points = points;
 		this.check_in = check_in;
 		this.check_out = check_out;
 		this.room_type = room_type;
 		this.instructions = instructions;
+		this.confirmation_code = confirmation_code;
 	}
+
 
 	public int getReservation_id() {
 		return reservation_id;
@@ -91,6 +96,14 @@ public class Reservation {
 		this.children = children;
 	}
 
+	public int getPoints() {
+		return points;
+	}
+
+	public void setPoints(int points) {
+		this.points = points;
+	}
+
 	public String getCheck_in() {
 		return check_in;
 	}
@@ -126,11 +139,12 @@ public class Reservation {
 	@Override
 	public String toString() {
 		return "Reservation [reservation_id=" + reservation_id + ", user_id=" + user_id + ", hotel_id=" + hotel_id
-				+ ", adults=" + adults + ", children=" + children + ", check_in=" + check_in + ", check_out="
-				+ check_out + ", room_type=" + room_type + ", instructions=" + instructions + ", confirmation_code="
-				+ confirmation_code + "]";
+				+ ", adults=" + adults + ", children=" + children + ", points=" + points + ", check_in=" + check_in
+				+ ", check_out=" + check_out + ", room_type=" + room_type + ", instructions=" + instructions
+				+ ", confirmation_code=" + confirmation_code + "]";
 	}
 
+	
 
 	
 	

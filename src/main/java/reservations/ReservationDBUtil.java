@@ -46,12 +46,13 @@ public class ReservationDBUtil {
 				int hotel_id = myRs.getInt("hotel_id");
 				int adults = myRs.getInt("adults");
 				int children = myRs.getInt("children");
+				int points = 150;
 				String check_in = myRs.getString("check_in");
 				String check_out = myRs.getString("check_out");
 				String room_type = myRs.getString("room_type");
 				String instructions = myRs.getString("instructions");
 				String confirmation_code = myRs.getString("confirmation_code");
-				Reservation tempRes = new Reservation(reservation_id, user_id, hotel_id, adults, children, confirmation_code, check_in, check_out, room_type, instructions);
+				Reservation tempRes = new Reservation(reservation_id, user_id, hotel_id, adults, children, points, confirmation_code, check_in, check_out, room_type, instructions);
 				reservations.add(tempRes);
 			}
 			
