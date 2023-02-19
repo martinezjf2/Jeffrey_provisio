@@ -24,72 +24,11 @@
 
 	<!-- FORM GOES HERE FOR A NEW RESERVATION -->
 
-<!-- <div style="width: 80%; margin: 0 auto">
 
-<form action="/action_page.php">
 
-<div class="mb-3 mt-3">
-<label for="email" class="form-label">Email:</label>
-<input type="text" class="form-control" placeholder="User Name" name="" readonly>
-</div>
-  
-<div class="mb-3 mt-3">
-<label for="email" class="form-label">Email:</label>
-<input type="text" class="form-control" placeholder="User Email" name="" readonly>
-</div>
-  
-<div class="mb-3 mt-3">
-<label for="email" class="form-label">Email:</label>
-<input type="text" class="form-control" placeholder="Hotel Selected" name="" readonly>
-</div>
-  
-<div class="mb-3 mt-3">
-<label for="email" class="form-label">Email:</label>
-<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-</div>
-
-<div class="row">
-    <div class="col">
-    <label for="email" class="form-label">Adults:</label>
-      <input type="text" class="form-control" placeholder="Enter email" name="email">
-    </div>
-    <div class="col">
-    <label for="email" class="form-label">Email:</label>
-      <input type="password" class="form-control" placeholder="Enter password" name="pswd">
-    </div>
-  </div>
-
-<div class="mb-3 mt-3">
-<label for="email" class="form-label">Email:</label>
-<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-</div>
-  
-  
-<div class="mb-3">
-<label for="pwd" class="form-label">Password:</label>
-<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-</div> 
-  
-  
-<div class="mb-3">
-<label for="comment">Comments:</label>
-<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-</div>
-  
-  
-<div class="form-check mb-3">
-<label class="form-check-label">
-<input class="form-check-input" type="checkbox" name="remember"> Remember me
-</label>
-</div>
-  
-<button type="submit" class="btn btn-primary">Submit</button>
-</form>
-
-</div>
-
--->
-
+<% if (session.getAttribute("first_name") == null){ 
+ 		response.sendRedirect("index.jsp");
+ 	} else { %>
 
 
 <section class="banner">
@@ -137,14 +76,11 @@
                     </div>
                     <div class="form-row">
 						<input type="text" style="width: 50%" placeholder="Room Type" readonly>
-                        <select name="room_type" required>
-                            <option value="room-type">Select One</option>
-                            <option value="Deluxe">Deluxe</option>
-                            <option value="Standard">Standard</option>
-                            <option value="1 Bedroom">1 Bedroom</option>
-                            <option value="2 Bedroom">2 Bedroom</option>
-                            <option value="3 Bedroom">3 Bedroom</option>
-                            <option value="Suite">Suite</option>
+                        <select name="room_type" placeholder="Select Room Type" required>
+                            <option value="Double Full Beds">Double Full Beds</option>
+                            <option value="Queen">Queen</option>
+                            <option value="Double Queen Beds">Double Queen Beds</option>
+                            <option value="King">King</option>
                         </select>
                           </div>
                           
@@ -165,9 +101,7 @@
                </div>
             </div>
     </section>
-
-
-
+<% } %>
 
 
 <!-- 
