@@ -51,7 +51,7 @@
 	<a href="reservations" id="btn2"> Go back to reservations</a>
 	
 	
-	<form style="display: inline">
+	<form style="display: inline" action="" method="POST">
 		<input type="hidden" value="<%= request.getAttribute("reservation_id") %>" />
 		<button name="submit" id="btn2">Cancel Reservation</button>
 	</form>
