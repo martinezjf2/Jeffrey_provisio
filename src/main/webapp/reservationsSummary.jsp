@@ -81,7 +81,6 @@
  					<input type="hidden" name="room_type" value="<%= res.getRoom_type() %>" />
  					<input type="hidden" name="confirmation_code" value="<%= res.getConfirmation_code() %>" />
  					<input type="hidden" name="instructions" value="<%= res.getInstructions() %>" />
- 					
  					<input type="submit" name="submit" id="btn2" value="View Reservation" />
  				</form>
  				
