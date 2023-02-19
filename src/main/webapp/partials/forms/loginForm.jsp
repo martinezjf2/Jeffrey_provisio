@@ -11,7 +11,7 @@
 <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
             <div class="modal-content">
-                <form id="register-form" action="login" method="GET">
+                <form id="register-form" action="login" method="POST">
             <div class="modal-header">
                 <h5 class="modal-title d-flex align-items-center">
                 <i class="bi bi-person-circle fs-3 me-2"></i> Login
