@@ -31,7 +31,10 @@
             		<% } else { %>
 						<h1 style="text-align: center;">Be Vibrant, Enjoy Life, <br> <span>Welcome, <%= name %></span></h1>
 						<div id="headerButton">
-           					<a class="btn3" href="rewards.jsp">Rewards</a>
+							<form action="rewards" method="POST">
+  								<input type="hidden" name="user_id" value="<%=session.getAttribute("user_id") %>" />
+  								<button type="submit" id="btn2" class="">Rewards</button>
+    						</form>
            				</div>
             		<% } %>
 
