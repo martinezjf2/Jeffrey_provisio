@@ -14,7 +14,7 @@ DROP DATABASE provisio;
 -- show databases
 SHOW DATABASES;
 
--- create whatabook database
+-- create provisio database
 CREATE DATABASE provisio;
 
 -- activate database
@@ -24,22 +24,24 @@ USE provisio;
 -- drop test user if exists 
 DROP USER IF EXISTS 'provisio_user'@'localhost';
 
--- Create whatabook_user and grant them all privileges to the whatabook database 
+-- Create provisio_user and grant them all privileges to the provisio database 
 CREATE USER 'provisio_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 
--- Grant all privileges to the whatabook database to user whatabook_user on localhost 
+-- Grant all privileges to the provisio database to user provisio_user on localhost 
 GRANT ALL PRIVILEGES ON provisio.* TO'provisio_user'@'localhost';
 
 FLUSH PRIVILEGES;
 
 USE provisio;
 
+
+
+
 -- DROP TABLES IF THEY EXISTS
 DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS hotel;
 DROP TABLE IF EXISTS place;
 DROP TABLE IF EXISTS reservation;
-
 DROP TABLE IF EXISTS history;
 
 
@@ -50,18 +52,17 @@ CREATE TABLE user (
     last_name       VARCHAR(75)     NOT NULL,
     email           VARCHAR(255)    NOT NULL 			UNIQUE,
     passphrase      VARCHAR(255)    NOT NULL,
-    points          INT             NOT NULL,
     PRIMARY KEY(user_id)
 );
--- INSERT INTO SQL COMMANDS FOR USERS
-INSERT INTO user(first_name, last_name, email, passphrase, points)
-    VALUES('Darell', 'Reese', 'dreese@gmail.com', 'Python%78', 300);
 
 INSERT INTO user(first_name, last_name, email, passphrase, points)
-    VALUES('Austin', 'Powers', 'yeahbaby@hotmail.com', 'hahaYEAH!', 1200);
+    VALUES('Darell', 'Reese', 'dreese@gmail.com', 'Python%78');
 
 INSERT INTO user(first_name, last_name, email, passphrase, points)
-    VALUES('Isabella', 'Holmes', 'holmesbella@icloud.com', 'Detective#700', 2560);
+    VALUES('Austin', 'Powers', 'yeahbaby@hotmail.com', 'hahaYEAH!');
+
+INSERT INTO user(first_name, last_name, email, passphrase, points)
+    VALUES('Isabella', 'Holmes', 'holmesbella@icloud.com', 'Detective#700');
 
 --DELETE FROM user WHERE first_name = 'Jeffrey'; done for testing purposes
 --Delete FROM reservation WHERE adults = 23;
@@ -76,8 +77,6 @@ CREATE TABLE place (
     picture         VARCHAR(300)    NOT NULL,
     PRIMARY KEY(place_id)
 );
-
--- INSERT INTO PLACE TABLE
 
 INSERT INTO place(city, ind_state, zip, picture)
     VALUES('Orlando', 'Florida', '32819', 'orlando.jpg');
@@ -124,8 +123,6 @@ CREATE TABLE hotel (
 );
 
 
--- INSERT INTO SQL COMMANDS
-
 INSERT INTO hotel(hotel_name, price, descrip, amenities, place_id)
     VALUES(
         'Old Key West', 
@@ -153,8 +150,7 @@ INSERT INTO hotel(hotel_name, price, descrip, amenities, place_id)
         (SELECT place_id FROM place where city = 'New York')
         );
 
-
--- CREATE TABLE RESERVATIONS, to have the check_in and check_out
+-- CREATE TABLE RESERVATION
 
 CREATE TABLE reservation (
     reservation_id     		INT             NOT NULL        AUTO_INCREMENT,
@@ -219,36 +215,6 @@ INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmatio
 
 
 
-CREATE TABLE history (
-    id                        INT              NOT NULL        AUTO_INCREMENT,
-    reservation_id            INT              NOT NULL,
-    points                    INT              NOT NULL,
-    user_id                   INT              NOT NULL, 
-    PRIMARY KEY(id),
-    FOREIGN KEY(user_id) 
-        REFERENCES user(user_id)
-);
-
-INSERT INTO history(reservation_id, points, user_id) 
-    VALUES (
-        (SELECT reservation_id FROM reservation WHERE adults = 10),
-        200,
-        (SELECT user_id FROM reservation WHERE adults = 10)
-    );
-
-INSERT INTO history(reservation_id, points, user_id) 
-    VALUES (
-        (SELECT reservation_id FROM reservation WHERE adults = 5),
-        1800,
-        (SELECT user_id FROM reservation WHERE adults = 5)
-    );
-
-INSERT INTO history(reservation_id, points, user_id) 
-    VALUES (
-        (SELECT reservation_id FROM reservation WHERE adults = 2),
-        2840,
-        (SELECT user_id FROM reservation WHERE adults = 2)
-    );
 
 
 
@@ -256,7 +222,7 @@ SELECT * FROM user;
 SELECT * FROM place;
 SELECT * FROM hotel;
 SELECT * FROM reservation;
-SELECT * FROM history;
 
 
---Notes for the context.xml page resource: http://wiki.metawerx.net/wiki/Context.xml
+
+
