@@ -25,7 +25,11 @@
 						<a href="registerUser.jsp" class="d-inline-block mb-2 text-white text-decoration-none ">Register</a><br>
 					<% } else { %>
 						 <a href="reservations" class="d-inline-block mb-2 text-white text-decoration-none ">Reservations</a><br>
-						 <a href="rewards.jsp" class="d-inline-block mb-2 text-white text-decoration-none ">Rewards</a><br>
+						 <form action="rewards" method="POST" id="myForm">
+						 	<input type="hidden" name="user_id" value="<%=session.getAttribute("user_id") %>" />
+  							<a style="cursor: pointer;" class="d-inline-block mb-2 text-white text-decoration-none" onclick="document.getElementById('myForm').submit()">Rewards</a>
+						 </form>
+						 <br>
 					<% } %>
                 </div> 
                 <div class="col-lg-3 bg-primary" id="thirdDiv">
