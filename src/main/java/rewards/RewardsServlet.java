@@ -43,6 +43,7 @@ public class RewardsServlet extends HttpServlet {
 		out.println("<html><body>");
 		
 		List<RewardsRes> rewardsRes = new ArrayList<>();
+		int totalPoints = 0;
 		
 		
 		int user_id = Integer.parseInt(request.getParameter("user_id"));
@@ -126,10 +127,12 @@ public class RewardsServlet extends HttpServlet {
 				
 				
 				RewardsRes tempRes = new RewardsRes(first_name, last_name, email, adults, children, instructions, confirmation_code, check_in, check_out, room_type, points, city, ind_state, hotel_name, descrip, amenities, zip);;
+				totalPoints += points;
 				rewardsRes.add(tempRes);
 				
 			}
 			
+			request.setAttribute("totalPoints", totalPoints);
 			request.setAttribute("rewardsResList", rewardsRes);
 			request.getRequestDispatcher("rewards.jsp").forward(request, response);
 			
