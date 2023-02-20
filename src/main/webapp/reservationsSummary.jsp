@@ -41,6 +41,10 @@
 	<% } %>
 	
 	
+	<% if (request.getParameter("cancelled") != null) { %>
+		<jsp:include page="partials/alerts/deletedSuccess.jsp" />
+	<% } %>
+	
  	
  	<!-- List all reservations from the user, may need a scriplet instead of a servlet  -->
  	<% List<Reservation> theReservations = (List<Reservation>)request.getAttribute("reservations"); %>
@@ -55,8 +59,13 @@
  		</div>
  	</div>
  	
+ 	
+ 	<% if (theReservations.isEmpty() == false) { %>
+ 	
 	 <!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
 	<jsp:include page="partials/forms/reservationlookup.jsp" />
+	
+	
  	
  	<div style="margin: 0 auto; width: 60%">
  		<% for (Reservation res : theReservations) { %>
@@ -88,7 +97,11 @@
  		<% } %>
  	</div>
  	
- 	
+ 	<% } else { %>
+ 	<div>
+ 	<h1>There are no reservations</h1>
+ 	</div>
+ 	<% } %>
  	
  	
  	
