@@ -23,8 +23,8 @@
   <div class="col-sm-12 col-md-3 mb-3">
     <div class="card text-center">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">We Put People First</h5>
+        <p class="card-text">"Take care of guests and they will take care of your business."</p>
       </div>
     </div>
   </div>
@@ -32,8 +32,8 @@
   <div class="col-sm-12 col-md-3 mb-3">
     <div class="card text-center">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">We Pursue Excellence</h5>
+        <p class="card-text">Our dedication to the customer shows in everything we do.</p>
       </div>
     </div>
   </div>
@@ -41,8 +41,8 @@
   <div class="col-sm-12 col-md-3 mb-3">
     <div class="card text-center">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">We Embrace Change</h5>
+        <p class="card-text">Innovation has always been part of the Provisio Resorts story.</p>
       </div>
     </div>
   </div>
@@ -50,8 +50,8 @@
    <div class="col-sm-12 col-md-3 mb-3">
     <div class="card text-center">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">We Act with Integrity</h5>
+        <p class="card-text">How we do business is as important as the business we do.</p>
       </div>
     </div>
   </div>
