@@ -113,7 +113,9 @@ INSERT INTO place(city, ind_state, zip, picture)
 CREATE TABLE hotel (
     hotel_id        INT             NOT NULL        AUTO_INCREMENT,
     hotel_name      VARCHAR(75)     NOT NULL,
-    price           INT             NOT NULL,
+    address			VARCHAR(200)	NOT NULL,
+    phone_number	VARCHAR(10)				NOT NULL,
+    price          	 INT            	 NOT NULL,
     descrip         VARCHAR(255)    NOT NULL,
     amenities       VARCHAR(300)    NOT NULL,
     place_id        INT             NOT NULL,
@@ -123,27 +125,33 @@ CREATE TABLE hotel (
 );
 
 
-INSERT INTO hotel(hotel_name, price, descrip, amenities, place_id)
+INSERT INTO hotel(hotel_name, address, phone_number, price, descrip, amenities, place_id)
     VALUES(
         'Old Key West', 
+        '123 Madison St',
+        '6317283948',
         500, 
         'Family fun resort style stay', 
         'Pool, Tennis, Gym, Amusement Parks, Restaurants', 
         (SELECT place_id FROM place where city = 'Orlando')
         );
 
-INSERT INTO hotel(hotel_name, price, descrip, amenities, place_id)
+INSERT INTO hotel(hotel_name, address, phone_number, price, descrip, amenities, place_id)
     VALUES(
         'Provisio South Beach', 
+        '786 Hollywood Blvd',
+        '5162837483',
         1000, 
         'Adult Hideaway', 
         'Pool, Clubs, Gym, Restaurants, Bars', 
         (SELECT place_id FROM place where city = 'Miami')
         );
 
-INSERT INTO hotel(hotel_name, price, descrip, amenities, place_id)
+INSERT INTO hotel(hotel_name, address, phone_number, price, descrip, amenities, place_id)
     VALUES(
         'Grand Provisio', 
+        '362 Grand Way',
+        '3237483928',
         2000, 
         'Executive Business Stays', 
         'Pool, Gym, Conference Areas, Restaurants, Free Wifi', 
