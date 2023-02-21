@@ -42,7 +42,7 @@ DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS hotel;
 DROP TABLE IF EXISTS place;
 DROP TABLE IF EXISTS reservation;
-DROP TABLE IF EXISTS history;
+
 
 
 -- CREATE USER TABLE
@@ -113,8 +113,8 @@ INSERT INTO place(city, ind_state, zip, picture)
 CREATE TABLE hotel (
     hotel_id        INT             NOT NULL        AUTO_INCREMENT,
     hotel_name      VARCHAR(75)     NOT NULL,
-    address			VARCHAR(200)	NOT NULL,
-    phone_number	VARCHAR(10)				NOT NULL,
+    address      VARCHAR(200)     NOT NULL,
+    phone_number      VARCHAR(10)     NOT NULL,
     price          	 INT            	 NOT NULL,
     descrip         VARCHAR(255)    NOT NULL,
     amenities       VARCHAR(300)    NOT NULL,
@@ -166,7 +166,7 @@ CREATE TABLE reservation (
     hotel_id           		INT             NOT NULL,
     adults             		INT             NOT NULL,
     children           		INT             NOT NULL,
-    points					INT				NOT NULL,
+    points           		INT             NOT NULL,
     confirmation_code  		VARCHAR(50)	   	NOT NULL,
     check_in           		VARCHAR(100)    NOT NULL,
     check_out		   		VARCHAR(100)    NOT NULL,
