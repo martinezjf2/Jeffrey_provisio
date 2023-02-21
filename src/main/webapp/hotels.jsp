@@ -134,7 +134,7 @@
  	<!-- FOOTER INCLUDE  -->
  	<jsp:include page="./partials/footer.jsp" />
  	
- 	
+ 	<!-- comment  -->
  	
  	
  	
