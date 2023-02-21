@@ -43,8 +43,8 @@ private DataSource dataSource;
                     String zip = myRs.getString("zip");
                     String picture = myRs.getString("picture");
 
-					Place tempPlace = new Place(city,ind_state,zip, picture);
-            
+					Place tempPlace = new Place(city, ind_state, zip, picture);
+					
 					places.add(tempPlace);
 				}
 			
