@@ -41,7 +41,7 @@
  			<p class="justify-content-end">Total Points: <%=request.getAttribute("totalPoints") %></p>
  		</div>
  		
- 	<div style="margin: 0 auto; width: 65%; text-align: center;">
+ 	<div style="margin: 0 auto; width: 75%; text-align: center;">
  			<table class="table table-hover table-bordered">
  				<thead>
     				<tr>
