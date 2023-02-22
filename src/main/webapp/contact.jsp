@@ -126,7 +126,7 @@
                     // reset will clear the form
                     contactForm.reset();
                     // Underneath will change the html of the button to ay Successfully Sent if succesful
-                    success.innerHTML = "Successfully Sent";
+                    success.innerHTML = "Successfully Sent <i style='padding-left: 5px' class='bi bi-envelope-check me-1 me-2'></i>";
                     // Change the backgroundColor of the button if successful
                     success.style.backgroundColor = "green";
                     // Within 3 seconds, the page will reload
