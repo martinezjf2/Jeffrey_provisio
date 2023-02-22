@@ -14,9 +14,12 @@
 </head>
 <body>
 
-<div style="padding-bottom: 25px">
-	<h3 class="text-center">Our Values</h3>
-</div>
+<div id="wrapper">
+ 		<div style="margin-top: 25px;">
+ 			<h3 class="text-center fw-bold h-line">Our Values</h3>
+ 			<br><br>
+ 		</div>
+ 	</div>
 
 
 	<div class="row">
@@ -25,6 +28,7 @@
       <div class="card-body">
         <h5 class="card-title">We Put People First</h5>
         <p class="card-text">"Take care of guests and they will take care of your business."</p>
+        <h1><i class="bi bi-person-hearts"></i></h1>
       </div>
     </div>
   </div>
@@ -34,6 +38,7 @@
       <div class="card-body">
         <h5 class="card-title">We Pursue Excellence</h5>
         <p class="card-text">Our dedication to the customer shows in everything we do.</p>
+        <h1><i class="bi bi-star-fill"></i></h1>
       </div>
     </div>
   </div>
@@ -43,6 +48,7 @@
       <div class="card-body">
         <h5 class="card-title">We Embrace Change</h5>
         <p class="card-text">Innovation has always been part of the Provisio Resorts story.</p>
+        <h1><i class="bi bi-laptop"></i></h1>
       </div>
     </div>
   </div>
@@ -52,6 +58,7 @@
       <div class="card-body">
         <h5 class="card-title">We Act with Integrity</h5>
         <p class="card-text">How we do business is as important as the business we do.</p>
+        <h1><i class="bi bi-bag-heart-fill"></i></h1>
       </div>
     </div>
   </div>
