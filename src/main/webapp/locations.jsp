@@ -41,7 +41,7 @@
  	</div>
 
 
-	<div class="row" style="margin: 10px auto; width: 80%; padding: 30px">
+<%-- 	<div class="row" style="margin: 10px auto; width: 80%; padding: 30px">
  		<% for (Place loc : places) { %>
  			<div class="card py-3 col-lg-4 col-md-6 col-sm-12" style="padding:50px; margin: 0px">
  				<div class="card-body grow location-parent-div">
@@ -56,7 +56,25 @@
  				</div>
  			</div>
  		<% } %>
- 	</div>
+ 	</div> --%>
+ 	
+ 	
+ 		<div style="width: 80%; margin: 0 auto;" class="row row-cols-1 row-cols-md-4 gx-2 mt-0">
+	<% for (Place loc : places) { %>
+		<div class="col grow py-5">
+			<div class="location-card h-75 rounded">
+				<img style="width: 100%; height: 200px" src="images/<%=loc.getPicture()%>" class="card-img-top-locations rounded"
+					alt="<%=loc.getPicture() %>">
+				<div class="card-body text-center">
+					<h5 class="card-title  mt-2 fw-bold fst-italic"><%=loc.getCity() %> <br> </h5>
+					<p class="card-text mt-2 fst-italic"><%=loc.getCity() %>, <%=loc.getInd_state() %> <%=loc.getZip() %> <br></p>
+				</div>
+
+			</div>
+		</div>
+		<% } %>
+	</div>
+ 	
 
 
 
