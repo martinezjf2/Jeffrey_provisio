@@ -57,11 +57,12 @@
  						<a  class="btn" id="btn1"data-bs-toggle="modal" data-bs-target="#loginModal">Log In To Reserve</a>
  					<% } else { %>
  					    <form action="booking" method="POST">
+ 					    <button type="submit" class="btn" id="btn2">Reserve Hotel</button>
  					    <input type="hidden" name="hotel_id" value="<%= hot.getHotel_id() %>" ><br>
  					    <input type="hidden" name="hotel_name" value="<%= hot.getHotel_name() %>" ><br>
  					    <input type="hidden" name="hotel_amenities" value="<%= hot.getAmenities() %>" ><br>
  					    <input type="hidden" name="hotel_descrip" value="<%= hot.getDescrip() %>" ><br>
- 						<button type="submit" class="btn" id="btn2">Reserve Hotel</button>
+ 						
  						</form>
  					<% } %>
 				</div>
