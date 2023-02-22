@@ -39,7 +39,7 @@
 	<body>
 
                         <!-- About Company-->
-                        <div class="my-5 px-5">  
+                        <div class="px-5" style="margin-top: 100px; margin-bottom: 50px">  
                             <h3 class="text-center fw-bold h-font">ABOUT OUR COMPANY</h3>
                             <div class="h-line" style="margin: 0 auto; width: 65%">
                                    <p class="text-center mt-3" >
@@ -53,7 +53,7 @@
                          
                  
                
-                   <div class="container">
+                   <div class="container" style="margin-bottom: 10px">
                      <div class="row align-items-center w-50" style="margin: 0 auto;"> 
                        <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2" style="width: 70%">  
                            <h3 class="mb-3">Message from our C.E.O.</h3>
@@ -73,7 +73,11 @@
 
 
 
-
+<div id="values">
+	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
+	<jsp:include page="partials/values.jsp"/>
+	</div>
+	
 
 
 
