@@ -16,29 +16,30 @@
 </head>
 <body>
 
+
 <div id="carouselExampleIndicators touristicPlaces" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
-    <div class="carousel-inner" style="height: 50rem">
+    <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="images/cancun.jpg" alt="First slide">
+            <img class="d-block w-100" src="images/cancun.jpg" alt="First slide" style="height: 1200px">
            <!--  <div class="carousel-caption d-none d-md-block">
                 <h5>My Caption Title (1st Image)</h5>
                 <p>The whole caption will only show up if the screen is at least medium size.</p>
             </div> -->
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="images/miami.jpg" alt="Second slide">
+            <img class="d-block w-100" src="images/miami.jpg" alt="Second slide" style="height: 1200px">
             <!-- <div class="carousel-caption d-none d-md-block">
                 <h5>My Caption Title (1st Image)</h5>
                 <p>The whole caption will only show up if the screen is at least medium size.</p>
             </div> -->
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="images/laketahoe.jpg" alt="Third slide">
+            <img class="d-block w-100" src="images/laketahoe.jpg" alt="Third slide" style="height: 1200px">
             <!-- <div class="carousel-caption d-none d-md-block">
                 <h5>My Caption Title (1st Image)</h5>
                 <p>The whole caption will only show up if the screen is at least medium size.</p>
@@ -47,6 +48,7 @@
     </div>
  
 </div>
+
 
 </body>
 

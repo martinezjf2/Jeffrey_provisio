@@ -301,8 +301,8 @@ input[type=submit]{
 	height: auto;
 }
 
-#touristicPlaces {
-	height: 75rem;
+.carousel {
+	height: auto;
 }
 
 .aboutParagraph {
