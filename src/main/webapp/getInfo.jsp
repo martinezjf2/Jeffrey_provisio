@@ -24,19 +24,35 @@
  	<jsp:include page="./partials/forms/registration.jsp" />
  	
  	
- 	
- 	
- 	<h1>Hello</h1>
- 	
- 	<h3>Full Name: ${name}</h3>
- 	<h3>Email: ${email}</h3>
- 	<h3>Password: ${password}</h3>
- 	
- 	<div id="backToHomepageLink">
+ 		<div id="backToHomepageLink" style="margin-top: 30px; padding: 10px;">
 			<a href="index.jsp">Click here to go back to Homepage</a>
 		</div>
  	
  	
+ 		<div class="card text-center"  style="margin: 105px auto; width: 80%">
+  			<div class="card-header">
+   				 Here are your details
+  		</div>
+  			<div class="card-body" style="padding: 25px;">
+   				<h4 class="card-title">${name}</h4>
+    			<h5>Email: <span>${email}</span></h5>
+    			<h5>Password: <span>${password}</span></h5>
+    			<!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+    			<!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+  			</div>
+  			<div class="card-footer text-muted">
+  			</div>
+		</div>
+		
+ 	
+ 	<div id="values">
+	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
+	<jsp:include page="partials/values.jsp"/>
+	</div>
+	
+	
+	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
+	<jsp:include page="partials/touristicPlaces.jsp"/>
  	
  	
  	<!-- FOOTER INCLUDE  -->
