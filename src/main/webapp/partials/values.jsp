@@ -14,6 +14,7 @@
 </head>
 <body>
 
+<div id="values">
 <div id="wrapper">
  		<div style="margin-top: 25px;">
  			<h3 class="text-center fw-bold h-line">Our Values</h3>
@@ -65,7 +66,7 @@
 
 </div>
 
-
+</div>
 
 
 </body>
