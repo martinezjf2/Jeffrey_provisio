@@ -91,6 +91,17 @@
  	<% } %>
  	
  	
+ 	
+ 		<div id="values">
+	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
+	<jsp:include page="partials/values.jsp"/>
+	</div>
+	
+	
+	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
+	<jsp:include page="partials/touristicPlaces.jsp"/>
+ 	
+ 	
  	<!-- FOOTER INCLUDE  -->
  	<jsp:include page="./partials/footer.jsp" />
 
