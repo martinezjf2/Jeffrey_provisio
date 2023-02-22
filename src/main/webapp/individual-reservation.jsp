@@ -48,7 +48,6 @@
 	<h3>Instructions</h3>
 	<h4><%= request.getAttribute("instructions") %></h4><br>
 
-	<a href="reservations" id="btn2"> Go back to reservations</a>
 	
 	
 	<form style="display: inline" action="cancel-reservation" method="GET">

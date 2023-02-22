@@ -21,8 +21,8 @@
 	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
 	<jsp:include page="./partials/navbar-two.jsp" />
 	
-	  <!--Modal fade for User Login-->
-   <jsp:include page="./partials/forms/loginForm.jsp" />
+	<!--Modal fade for User Login-->
+   	<jsp:include page="./partials/forms/loginForm.jsp" />
 
  	<!--Modal fade for User Registration-->
  	<jsp:include page="./partials/forms/registration.jsp" />
@@ -62,11 +62,9 @@
  					    <input type="hidden" name="hotel_name" value="<%= hot.getHotel_name() %>" ><br>
  					    <input type="hidden" name="hotel_amenities" value="<%= hot.getAmenities() %>" ><br>
  					    <input type="hidden" name="hotel_descrip" value="<%= hot.getDescrip() %>" ><br>
- 						
  						</form>
  					<% } %>
 				</div>
-
 			</div>
 		</div>
 		<% } %>
@@ -78,7 +76,7 @@
 
 
 
-<!-- Resource: how to pass down data from one jsp to another. Having a servlet in between. Check out this article: https://stackoverflow.com/questions/45802338/how-can-i-send-data-from-one-jsp-to-other-pressing-a-button -->
+	<!-- Resource: how to pass down data from one jsp to another. Having a servlet in between. Check out this article: https://stackoverflow.com/questions/45802338/how-can-i-send-data-from-one-jsp-to-other-pressing-a-button -->
   
   
  	<!-- FOOTER INCLUDE  -->
