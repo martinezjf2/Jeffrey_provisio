@@ -54,8 +54,9 @@
  	
  	
  	<div id="wrapper">
- 		<div class="my-5 px-5">
+ 		<div style="margin-top: 100px">
  			<h3 class="text-center fw-bold h-line">Reservations</h3>
+ 			<br><br>
  		</div>
  	</div>
  	
