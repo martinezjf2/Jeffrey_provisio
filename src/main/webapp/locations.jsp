@@ -34,8 +34,8 @@
 
 
 	<div id="wrapper">
- 		<div class="my-5 px-5">
- 			<h1 class="text-center fw-bold h-line">Locations</h1>
+ 		<div style="margin-top: 100px">
+ 			<h3 class="text-center fw-bold h-line">Locations</h3>
  			<br><br>
  		</div>
  	</div>
