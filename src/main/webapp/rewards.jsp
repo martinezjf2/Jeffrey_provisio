@@ -26,14 +26,16 @@
  	} else { %>
 
 
-
+	
  	
  		<% List<RewardsRes> resList = (List<RewardsRes>)request.getAttribute("rewardsResList"); %>
  		
  		<div id="wrapper">
  		<div style="margin-top: 100px">
  			<h3 class="text-center fw-bold h-line">Rewards</h3>
+ 			
  			<br><br>
+ 			<h2 class="text-center fw-bold h-line"><%=session.getAttribute("first_name")%> <%=session.getAttribute("last_name") %></h2>
  		</div>
  	</div>
  		
