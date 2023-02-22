@@ -27,8 +27,15 @@
 
 
 
- 	<h1>Rewards Page</h1>
+ 	
  		<% List<RewardsRes> resList = (List<RewardsRes>)request.getAttribute("rewardsResList"); %>
+ 		
+ 		<div id="wrapper">
+ 		<div style="margin-top: 100px">
+ 			<h3 class="text-center fw-bold h-line">Rewards</h3>
+ 			<br><br>
+ 		</div>
+ 	</div>
  		
  		<div style="width:60%; text-align: right; margin: 0 auto;">
  			<p class="justify-content-end">Total Points: <%=request.getAttribute("totalPoints") %></p>
