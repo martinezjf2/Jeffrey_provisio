@@ -44,8 +44,7 @@ public class RegistrationServlet extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/provisio", "provisio_user", "password");
 			Statement stmt = con.createStatement();
-//			String sql = "INSERT INTO user(first_name, last_name, email, passphrase, points) VALUES('Jeffrey', 'Martinez', 'jeffreypowerhouseandcallitaday@gmail.com', 'Python%78', 0)";
-			String sql = "INSERT INTO user(first_name, last_name, email, passphrase, points) VALUES('" +  firstName + "', "  + "'" + lastName + "', " + "'" + email + "', " + "'" + password + "', 0);";			
+			String sql = "INSERT INTO user(first_name, last_name, email, passphrase) VALUES('" +  firstName + "', '"  + lastName + "', '"  + email + "', '"  + password + "');";			
 			stmt.executeUpdate(sql);
 			request.setAttribute("submit", request.getParameter("submit"));
 			request.getRequestDispatcher("index.jsp").forward(request, response);
