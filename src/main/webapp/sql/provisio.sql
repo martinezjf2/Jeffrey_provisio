@@ -55,13 +55,13 @@ CREATE TABLE user (
     PRIMARY KEY(user_id)
 );
 
-INSERT INTO user(first_name, last_name, email, passphrase, points)
+INSERT INTO user(first_name, last_name, email, passphrase)
     VALUES('Darell', 'Reese', 'dreese@gmail.com', 'Python%78');
 
-INSERT INTO user(first_name, last_name, email, passphrase, points)
+INSERT INTO user(first_name, last_name, email, passphrase)
     VALUES('Austin', 'Powers', 'yeahbaby@hotmail.com', 'hahaYEAH!');
 
-INSERT INTO user(first_name, last_name, email, passphrase, points)
+INSERT INTO user(first_name, last_name, email, passphrase)
     VALUES('Isabella', 'Holmes', 'holmesbella@icloud.com', 'Detective#700');
 
 --DELETE FROM user WHERE first_name = 'Jeffrey'; done for testing purposes
