@@ -45,11 +45,11 @@
 
 	<div style="width: 80%; margin: 0 auto;" class="row row-cols-1 row-cols-md-4 gx-2 mt-0">
 	<% for (Hotel hot : theHotels) { %>
-		<div class="col grow py-5 ind-location">
+		<div class="col grow ind-location">
 			<div class="location-card h-75 rounded">
 				<img style="width: 100%; height: 200px" src="images/<%=hot.getPicture()%>" class="card-img-top-locations rounded"
 					alt="<%=hot.getPicture() %>">
-				<div class="card-body text-center">
+				<div class="card-body text-center" style="background-color: white;">
 					<h5 class="card-title  mt-2 fw-bold fst-italic"><%=hot.getCity() %> <br> <%=hot.getHotel_name() %></h5>
 					<p class="card-text mt-2 fst-italic"><%=hot.getAddress() %> <br> <%=hot.getCity() %>, <%=hot.getInd_state() %> <%=hot.getZip() %> <br> <%=hot.getPhone_number() %> </p>
 					

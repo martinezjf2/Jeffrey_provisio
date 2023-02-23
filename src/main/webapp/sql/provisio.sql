@@ -216,7 +216,7 @@ INSERT INTO hotel(hotel_name, address, phone_number, price, descrip, amenities, 
         
 INSERT INTO hotel(hotel_name, address, phone_number, price, descrip, amenities, place_id)
     VALUES(
-        'DoubleTree by Hilton London - Tower od London', 
+        'DoubleTree by Hilton London - Tower of London', 
         '7 Pepys St, Londong EC3N 4AF',
         '+44 20 7709 1000',
         134, 
