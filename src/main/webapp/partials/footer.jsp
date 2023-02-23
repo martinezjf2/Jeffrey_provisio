@@ -26,7 +26,7 @@
 					<% } else { %>
 			
 						 
-						 <form action="reservations" method="GET" id="reserveForm">
+						 <form action="reservations" method="POST" id="reserveForm">
   							<input type="hidden" name="user_id" value=<%=session.getAttribute("user_id") %> />
   							<!-- <button type="submit" id="btn1" class="btn nav-link">Reservations</button> -->
   							<a class="d-inline-block mb-2 text-white text-decoration-none" style="cursor: pointer;" onclick="document.getElementById('reserveForm').submit()" >Reservations</a>

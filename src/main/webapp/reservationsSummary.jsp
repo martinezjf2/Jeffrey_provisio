@@ -72,25 +72,25 @@
  		<% for (Reservation res : theReservations) { %>
  			<div class="card py-3 grow" style="margin: 30px 0px; padding:50px">
  				<div class="card-body">
- 				    <p hidden value=<%= res.getReservation_id() %>></p>
- 					<h4>Check In: </h4><h5><%= res.getCheck_in() %></h5>
- 					<h4>Check Out: </h4><h5><%= res.getCheck_out() %></h5>
- 					<h4>Adults: </h4><h3><%= res.getAdults() %></h3>
- 					<h4>Children: </h4><h5><%= res.getChildren() %></h5>
- 					<h4>Room Type: </h4><h5><%= res.getRoom_type() %></h5>
- 					<h4>Confirmation Code: </h4><h5><%= res.getConfirmation_code() %></h5>
- 					<h4>Instructions: </h4><h5><%= res.getInstructions() %></h5>
+ 				    <p><%=res.getReservation_id()%></p>
+ 					<h4>Check In: </h4><h5><%=res.getCheck_in()%></h5>
+ 					<h4>Check Out: </h4><h5><%=res.getCheck_out()%></h5>
+ 					<h4>Adults: </h4><h3><%=res.getAdults()%></h3>
+ 					<h4>Children: </h4><h5><%=res.getChildren()%></h5>
+ 					<h4>Room Type: </h4><h5><%=res.getRoom_type()%></h5>
+ 					<h4>Confirmation Code: </h4><h5><%=res.getConfirmation_code()%></h5>
+ 					<h4>Instructions: </h4><h5><%=res.getInstructions()%></h5>
 
  				</div>
- 				<form action="IndividualResSum" method="GET">
- 					<input type="hidden" name="reservation_id" value="<%= res.getReservation_id() %>" />
- 					<input type="hidden" name="check_in" value="<%= res.getCheck_in() %>" />
- 					<input type="hidden" name="check_out" value="<%= res.getCheck_out() %>" />
- 					<input type="hidden" name="adults" value="<%= res.getAdults() %>" />
- 					<input type="hidden" name="children" value="<%= res.getChildren() %>" />
- 					<input type="hidden" name="room_type" value="<%= res.getRoom_type() %>" />
- 					<input type="hidden" name="confirmation_code" value="<%= res.getConfirmation_code() %>" />
- 					<input type="hidden" name="instructions" value="<%= res.getInstructions() %>" />
+ 				<form action="IndividualResSum" method="POST">
+ 					<input type="hidden" name="reservation_id" value="<%=res.getReservation_id()%>" />
+ 					<input type="hidden" name="check_in" value="<%=res.getCheck_in()%>" />
+ 					<input type="hidden" name="check_out" value="<%=res.getCheck_out()%>" />
+ 					<input type="hidden" name="adults" value="<%=res.getAdults()%>" />
+ 					<input type="hidden" name="children" value="<%=res.getChildren()%>" />
+ 					<input type="hidden" name="room_type" value="<%=res.getRoom_type()%>" />
+ 					<input type="hidden" name="confirmation_code" value="<%=res.getConfirmation_code()%>" />
+ 					<input type="hidden" name="instructions" value="<%=res.getInstructions()%>" />
  					<input type="submit" name="submit" id="btn2" value="View Reservation" />
  				</form>
  				

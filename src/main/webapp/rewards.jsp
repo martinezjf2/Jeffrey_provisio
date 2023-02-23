@@ -69,7 +69,7 @@
       					<td><%=res.getCheck_out() %></td>
       					<td><%=res.getPoints() %></td>
       					<td style="width: 10%;">
-      						<form action="IndividualResSum" method="GET" style="margin:0 auto;">
+      						<form action="IndividualResSum" method="POST" style="margin:0 auto;">
  								<input type="hidden" name="reservation_id" value="<%= res.getId() %>" />
  								<input type="hidden" name="check_in" value="<%= res.getCheck_in() %>" />
  								<input type="hidden" name="check_out" value="<%= res.getCheck_out() %>" />

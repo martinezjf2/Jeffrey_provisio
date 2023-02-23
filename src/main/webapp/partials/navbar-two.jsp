@@ -51,7 +51,7 @@
   <% } else { %>
   
  	<li class="nav-item">
-   		<form action="reservations" method="GET" id="reserveForm">
+   		<form action="reservations" method="POST" id="reserveForm">
   			<input type="hidden" name="user_id" value=<%=session.getAttribute("user_id") %> />
   			<!-- <button type="submit" id="btn1" class="btn nav-link">Reservations</button> -->
   			<a class="nav-link text-white" style="cursor: pointer;" onclick="document.getElementById('reserveForm').submit()" >Reservations</a>

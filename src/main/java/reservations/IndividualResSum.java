@@ -25,7 +25,7 @@ public class IndividualResSum extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
 		String reservation_id = request.getParameter("reservation_id");
 		String check_in = request.getParameter("check_in");
