@@ -114,7 +114,7 @@ CREATE TABLE hotel (
     hotel_id        INT             NOT NULL        AUTO_INCREMENT,
     hotel_name      VARCHAR(75)     NOT NULL,
     address      VARCHAR(200)     NOT NULL,
-    phone_number      VARCHAR(10)     NOT NULL,
+    phone_number      VARCHAR(25)     NOT NULL,
     price          	 INT            	 NOT NULL,
     descrip         VARCHAR(255)    NOT NULL,
     amenities       VARCHAR(300)    NOT NULL,
