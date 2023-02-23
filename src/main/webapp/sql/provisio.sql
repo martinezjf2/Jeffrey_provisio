@@ -254,13 +254,41 @@ INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmatio
         5,
         2,
         150,
-        '82HDJ345',
+        '36D38FJK3',
         '2019-08-21',
         '2019-08-28',
         'Double Queen Beds',
         'Make sure to have it close to the lobby'
     );
 
+INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmation_code, check_in, check_out, room_type, instructions) 
+    VALUES (
+        (SELECT user_id FROM user WHERE first_name = 'Darell'),
+        (SELECT hotel_id FROM hotel WHERE hotel_name = 'DoubleTree by Hilton Hotel'),
+        1,
+        0,
+        150,
+        '27T98JKV2',
+        '2020-09-02',
+        '2020-09-17',
+        'King',
+        'No suggestions'
+    );
+
+INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmation_code, check_in, check_out, room_type, instructions) 
+    VALUES (
+        (SELECT user_id FROM user WHERE first_name = 'Darell'),
+        (SELECT hotel_id FROM hotel WHERE hotel_name = 'Caesars Palace'),
+        3,
+        7,
+        150,
+        '98DYE839J',
+        '2021-05-10',
+        '2021-05-20',
+        'Double Full Beds',
+        'Would love to be close to the pool or a bar'
+    );
+    
 INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmation_code, check_in, check_out, room_type, instructions) 
     VALUES (
         (SELECT user_id FROM user WHERE first_name = 'Isabella'),
@@ -271,24 +299,93 @@ INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmatio
         '3TIM4XOZ',
         '2020-09-27',
         '2020-10-14',
-        'Double Full Beds',
+        'Double Queen Beds',
         'Would like to have it close to the pool'
+    );
+    
+INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmation_code, check_in, check_out, room_type, instructions) 
+    VALUES (
+        (SELECT user_id FROM user WHERE first_name = 'Isabella'),
+        (SELECT hotel_id FROM hotel WHERE hotel_name = 'Hotel Mercurio Venice'),
+        2,
+        0,
+        150,
+        '87SCK473I',
+        '2021-03-16',
+        '2021-03-27',
+        'Double Full Beds',
+        'Please make sure to have it close to shops'
     );
 
 INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmation_code, check_in, check_out, room_type, instructions) 
     VALUES (
         (SELECT user_id FROM user WHERE first_name = 'Austin'),
-        (SELECT hotel_id FROM hotel WHERE hotel_name = 'Grand Provisio'),
+        (SELECT hotel_id FROM hotel WHERE hotel_name = 'Hotel Astoria - Astotel'),
         2,
         0,
         150,
-        '4HTU9384',
+        '8JD65SYE2',
         '2022-07-21',
         '2022-08-09',
         'King',
         'Would love to have it next to a restaurant'
     );
 
+INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmation_code, check_in, check_out, room_type, instructions) 
+    VALUES (
+        (SELECT user_id FROM user WHERE first_name = 'Austin'),
+        (SELECT hotel_id FROM hotel WHERE hotel_name = 'Hotel Mercurio Venice'),
+        4,
+        2,
+        150,
+        '1JK38KJH2',
+        '2021-05-21',
+        '2021-05-31',
+        'Double Full Beds',
+        'Would be nice to have a high floor to watch the fireworks'
+    );
+    
+INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmation_code, check_in, check_out, room_type, instructions) 
+    VALUES (
+        (SELECT user_id FROM user WHERE first_name = 'Austin'),
+        (SELECT hotel_id FROM hotel WHERE hotel_name = 'Hard Rock Hotel & Casino Lake Tahoe'),
+        1,
+        0,
+        150,
+        '9EN47MWQ6',
+        '2022-01-01',
+        '2022-01-21',
+        'King',
+        'Could we leave our packages at reception, so it could be brought inside when check-in'
+    );
+
+INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmation_code, check_in, check_out, room_type, instructions) 
+    VALUES (
+        (SELECT user_id FROM user WHERE first_name = 'Austin'),
+        (SELECT hotel_id FROM hotel WHERE hotel_name = 'DoubleTree by Hilton London - Tower of London'),
+        4,
+        7,
+        150,
+        '7QQ44ENN3',
+        '2022-12-21',
+        '2022-12-31',
+        'Double Queen Beds',
+        'High Floor if possible'
+    );
+    
+INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmation_code, check_in, check_out, room_type, instructions) 
+    VALUES (
+        (SELECT user_id FROM user WHERE first_name = 'Austin'),
+        (SELECT hotel_id FROM hotel WHERE hotel_name = 'Grand Provisio'),
+        3,
+        2,
+        150,
+        '4HTU9384',
+        '2019-06-09',
+        '2019-06-17',
+        'Double Full Beds',
+        'No suggestions'
+    );
 
 
 
