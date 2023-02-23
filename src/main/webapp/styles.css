@@ -568,9 +568,10 @@ input[type=submit]{
     background-color: dodgerblue;
  }
  
- .ind-location {
- 	height: 48rem;
+.ind-location {
+ 	height: 30em;
  }
+  
  
 .location-card:hover{
 	 transform: scale(1.05);
