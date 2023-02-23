@@ -129,7 +129,7 @@ INSERT INTO hotel(hotel_name, address, phone_number, price, descrip, amenities, 
     VALUES(
         'Old Key West', 
         '123 Madison St',
-        '6317283948',
+        '(631) 728-3948',
         500, 
         'Family fun resort style stay', 
         'Pool, Tennis, Gym, Amusement Parks, Restaurants', 
@@ -140,7 +140,7 @@ INSERT INTO hotel(hotel_name, address, phone_number, price, descrip, amenities, 
     VALUES(
         'Provisio South Beach', 
         '786 Hollywood Blvd',
-        '5162837483',
+        '(516) 283-7483',
         1000, 
         'Adult Hideaway', 
         'Pool, Clubs, Gym, Restaurants, Bars', 
@@ -151,13 +151,81 @@ INSERT INTO hotel(hotel_name, address, phone_number, price, descrip, amenities, 
     VALUES(
         'Grand Provisio', 
         '362 Grand Way',
-        '3237483928',
+        '(323) 748-3928',
         2000, 
         'Executive Business Stays', 
         'Pool, Gym, Conference Areas, Restaurants, Free Wifi', 
         (SELECT place_id FROM place where city = 'New York')
         );
+        
+INSERT INTO hotel(hotel_name, address, phone_number, price, descrip, amenities, place_id)
+    VALUES(
+        'DoubleTree by Hilton Hotel', 
+        '270 Flinders St',
+        '+61 3 9654 6888',
+        689, 
+        'Executive Business Stays', 
+        'Pool, Gym, Conference Areas, Restaurants, Free Wifi', 
+        (SELECT place_id FROM place where city = 'Melbourne')
+        );
 
+
+INSERT INTO hotel(hotel_name, address, phone_number, price, descrip, amenities, place_id)
+    VALUES(
+        'Caesars Palace', 
+        '3570 S Las Vegas Blvd',
+        '(866) 227-5938',
+        1727, 
+        'Executive Business Stays', 
+        'Pool, Gym, Conference Areas, Restaurants, Free Wifi', 
+        (SELECT place_id FROM place where city = 'Las Vegas')
+        );
+ 
+INSERT INTO hotel(hotel_name, address, phone_number, price, descrip, amenities, place_id)
+    VALUES(
+        'Hotel Astoria - Astotel', 
+        '42 rue de Moscou 8th Arr.,',
+        '011 33 1 42 93 63 53',
+        125, 
+        'Executive Business Stays', 
+        'Pool, Gym, Conference Areas, Restaurants, Free Wifi', 
+        (SELECT place_id FROM place where city = 'Paris')
+        );
+        
+INSERT INTO hotel(hotel_name, address, phone_number, price, descrip, amenities, place_id)
+    VALUES(
+        'Hotel Mercurio Venice', 
+        '30124 Venezia VE',
+        '+39 041 522 0947',
+        67, 
+        'Executive Business Stays', 
+        'Pool, Gym, Conference Areas, Restaurants, Free Wifi', 
+        (SELECT place_id FROM place where city = 'Venice')
+        );
+        
+INSERT INTO hotel(hotel_name, address, phone_number, price, descrip, amenities, place_id)
+    VALUES(
+        'Hard Rock Hotel & Casino Lake Tahoe', 
+        '50 US-59, Stateline',
+        '(844) 588-7625',
+        80, 
+        'Executive Business Stays', 
+        'Pool, Gym, Conference Areas, Restaurants, Free Wifi', 
+        (SELECT place_id FROM place where city = 'Lake Tahoe')
+        );
+        
+INSERT INTO hotel(hotel_name, address, phone_number, price, descrip, amenities, place_id)
+    VALUES(
+        'DoubleTree by Hilton London - Tower od London', 
+        '7 Pepys St, Londong EC3N 4AF',
+        '+44 20 7709 1000',
+        134, 
+        'Executive Business Stays', 
+        'Pool, Gym, Conference Areas, Restaurants, Free Wifi', 
+        (SELECT place_id FROM place where city = 'London')
+        );
+        
+        
 -- CREATE TABLE RESERVATION
 
 CREATE TABLE reservation (
