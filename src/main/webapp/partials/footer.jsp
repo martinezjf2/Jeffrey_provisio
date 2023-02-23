@@ -24,7 +24,17 @@
                     <% if (session.getAttribute("first_name") == null){ %>
 						<a href="registerUser.jsp" class="d-inline-block mb-2 text-white text-decoration-none ">Register</a><br>
 					<% } else { %>
-						 <a href="reservations" class="d-inline-block mb-2 text-white text-decoration-none ">Reservations</a><br>
+			
+						 
+						 <form action="reservations" method="GET" id="reserveForm">
+  							<input type="hidden" name="user_id" value=<%=session.getAttribute("user_id") %> />
+  							<!-- <button type="submit" id="btn1" class="btn nav-link">Reservations</button> -->
+  							<a class="d-inline-block mb-2 text-white text-decoration-none" style="cursor: pointer;" onclick="document.getElementById('reserveForm').submit()" >Reservations</a>
+    					</form>
+						 
+						 
+						 
+						 
 						 <form action="rewards" method="POST" id="myForm">
 						 	<input type="hidden" name="user_id" value="<%=session.getAttribute("user_id") %>" />
   							<a style="cursor: pointer;" class="d-inline-block mb-2 text-white text-decoration-none" onclick="document.getElementById('myForm').submit()">Rewards</a>
