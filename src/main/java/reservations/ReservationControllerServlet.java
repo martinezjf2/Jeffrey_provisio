@@ -1,6 +1,7 @@
 package reservations;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -10,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.sql.DataSource;
 
 /**
@@ -44,7 +46,10 @@ public class ReservationControllerServlet extends HttpServlet {
 		
 	
 		try {
-			listReservations(request, response);
+			String session_user_id = request.getParameter("user_id");
+//			HttpSession session = request.getSession();
+//			String id = (String) request.getAttribute("user_id");
+			listReservations(request, response, session_user_id);
 		} catch (Exception exc) {
 			throw new ServletException(exc);
 		}
@@ -52,9 +57,10 @@ public class ReservationControllerServlet extends HttpServlet {
 	
 	}
 
-	private void listReservations(HttpServletRequest request, HttpServletResponse response) throws Exception {
-	
-		List<Reservation> reservations = reservationDbUtil.getReservations();
+	private void listReservations(HttpServletRequest request, HttpServletResponse response, String id) throws Exception {
+		
+		
+		List<Reservation> reservations = reservationDbUtil.getReservations(id);
 		request.setAttribute("reservations", reservations);
 		request.getRequestDispatcher("reservationsSummary.jsp").forward(request, response);
 		

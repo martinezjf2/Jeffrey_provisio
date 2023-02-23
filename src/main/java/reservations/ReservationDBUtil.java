@@ -17,19 +17,20 @@ public class ReservationDBUtil {
 		dataSource = theDataSource;
 	}
 	
-	public List<Reservation> getReservations() throws Exception {
+	public List<Reservation> getReservations(String session_user_id) throws Exception {
 		List<Reservation> reservations = new ArrayList<>();
 		
+		int session_id = Integer.parseInt(session_user_id);
 		Connection myConn = null;
 		Statement myStmt = null;
 		ResultSet myRs = null;
 //		HttpSession session;
 		
 		try {
-//			int session_user_id = (int)session.getAttribute("user_id");
+			
 			
 			myConn = dataSource.getConnection();
-			String sql = "SELECT * FROM reservation order by reservation_id desc";
+			String sql = "SELECT * FROM reservation WHERE reservation.user_id = " + session_id + " ORDER BY reservation_id desc";
 			
 			// want to display reservation just from the user
 			// want to display the hotel information based on the hotel_id

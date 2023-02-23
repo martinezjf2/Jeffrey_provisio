@@ -51,7 +51,10 @@
   <% } else { %>
   
  	<li class="nav-item">
-   		<a class="nav-link text-white" href="reservations">Reservations</a>
+   		<form action="reservations" method="GET">
+  			<input type="hidden" name="user_id" value=<%=session.getAttribute("user_id") %> />
+  			<button type="submit" id="btn1" class="btn nav-link">Reservations</button>
+    	</form>
   	</li>
   	<li class="nav-item">
   		<form action="rewards" method="POST">
