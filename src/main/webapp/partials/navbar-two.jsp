@@ -51,15 +51,17 @@
   <% } else { %>
   
  	<li class="nav-item">
-   		<form action="reservations" method="GET">
+   		<form action="reservations" method="GET" id="reserveForm">
   			<input type="hidden" name="user_id" value=<%=session.getAttribute("user_id") %> />
-  			<button type="submit" id="btn1" class="btn nav-link">Reservations</button>
+  			<!-- <button type="submit" id="btn1" class="btn nav-link">Reservations</button> -->
+  			<a class="nav-link text-white" style="cursor: pointer;" onclick="document.getElementById('reserveForm').submit()" >Reservations</a>
     	</form>
   	</li>
   	<li class="nav-item">
-  		<form action="rewards" method="POST">
+  		<form action="rewards" method="POST" id="rewardsForm">
   			<input type="hidden" name="user_id" value="<%=session.getAttribute("user_id") %>" />
-  			<button type="submit" id="btn1" class="btn nav-link">Rewards</button>
+  			<!-- <button type="submit" id="btn1" class="btn nav-link">Rewards</button> -->
+  			<a class="nav-link text-white" style="cursor: pointer;" onclick="document.getElementById('rewardsForm').submit()" >Rewards</a>
     	</form>
   	</li>
    
