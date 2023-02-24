@@ -55,7 +55,7 @@
 
 
 	<form style="display: inline" action="cancel-reservation" method="POST">
-		<input type="hidden" value=<%=request.getAttribute("reservation_id")%> name="reservation_id"/>
+		<input type="hidden" value="<%=request.getAttribute("reservation_id")%>" name="reservation_id"/>
 		<button name="cancelled" id="btn2">Cancel Reservation</button>
 	</form>
 	
