@@ -13,23 +13,34 @@
     <title>Provisio Wrong Info Page </title>
 </head>
 <body>
-<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
+
+	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
 	<jsp:include page="./partials/navbar-two.jsp" />
 	
 	<!--Modal fade for User Login-->
-   <jsp:include page="./partials/forms/loginForm.jsp" />
+   	<jsp:include page="./partials/forms/loginForm.jsp" />
    
-
-
  	<!--Modal fade for User Registration-->
  	<jsp:include page="./partials/forms/registration.jsp" />
  	
  	
- 	<div>
- 		<% if (request.getAttribute("error") != null){ %>
-        	<h1 style="text-align: center;"><%= request.getAttribute("error") %></h1>
-    	<% } %>
-    </div>
+ 	<% if (request.getAttribute("error") != null){ %>
+ 	<div id="wrapper">
+ 		<div style="margin-top: 100px">
+ 			<h3 style="text-align: center;"><%= request.getAttribute("error") %></h3>
+ 			<br><br>
+ 		</div>
+ 	</div>
+ 	<% } %>
+ 	
+
+    
+    
+    <!-- VALUES INCLUDE  -->
+ 	<jsp:include page="./partials/values.jsp" />
+ 	
+ 	<!-- TOURISTC PLACES CAROUSEL INCLUDE  -->
+ 	<jsp:include page="./partials/touristicPlaces.jsp" />
 
  	<!-- FOOTER INCLUDE  -->
  	<jsp:include page="./partials/footer.jsp" />
