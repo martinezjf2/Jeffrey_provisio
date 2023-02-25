@@ -57,11 +57,11 @@
                     
                      <div class="form-row">
                         <input type="text" style="width: 100%" name="user_email" placeholder=<%= email %> disabled>
-                        <input type="text" style="width: 100%" value="<%= request.getParameter("hotel_name") %>" disabled >
-                        <input type="hidden" style="width: 100%" name="hotel_id" value="<%= request.getParameter("hotel_id") %>" >
-                        <input type="hidden" style="width: 100%" name="hotel_name" value="<%= request.getParameter("hotel_name") %>" >
-                        <input type="hidden" style="width: 100%" name="hotel_amenities" value="<%= request.getParameter("hotel_amenities") %>" >
-                        <input type="hidden" style="width: 100%" name="hotel_descrip" value="<%= request.getParameter("hotel_descrip") %>" >
+                        <input type="text" style="width: 100%" value="${hotel_name}" disabled >
+                        <input type="hidden" style="width: 100%" name="hotel_id" value="${hotel_id}" >
+                        <input type="hidden" style="width: 100%" name="hotel_name" value="${hotel_name}" >
+                        <input type="hidden" style="width: 100%" name="hotel_amenities" value="${hotel_amenities}" >
+                        <input type="hidden" style="width: 100%" name="hotel_descrip" value="${hotel_descrip}" >
                     </div>
                     
                     
