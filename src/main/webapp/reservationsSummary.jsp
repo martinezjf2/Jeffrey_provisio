@@ -73,13 +73,26 @@
  			<div class="card py-3 grow" style="margin: 30px 0px; padding:50px">
  				<div class="card-body">
  				    <%-- <p><%=res.getReservation_id()%></p> --%>
+ 				    <h4>Reservation ID: </h4><h5><%=res.getReservation_id()%></h5>
+ 				    <h4>Adults: </h4><h3><%=res.getAdults()%></h3>
+ 					<h4>Children: </h4><h5><%=res.getChildren()%></h5>
+ 					<h4>Instructions: </h4><h5><%=res.getInstructions()%></h5>
+ 					<h4>Confirmation Code: </h4><h5><%=res.getConfirmation_code()%></h5>
  					<h4>Check In: </h4><h5><%=res.getCheck_in()%></h5>
  					<h4>Check Out: </h4><h5><%=res.getCheck_out()%></h5>
- 					<h4>Adults: </h4><h3><%=res.getAdults()%></h3>
- 					<h4>Children: </h4><h5><%=res.getChildren()%></h5>
  					<h4>Room Type: </h4><h5><%=res.getRoom_type()%></h5>
- 					<h4>Confirmation Code: </h4><h5><%=res.getConfirmation_code()%></h5>
- 					<h4>Instructions: </h4><h5><%=res.getInstructions()%></h5>
+ 					<h4>Points: </h4><h5><%=res.getPoints()%></h5>
+ 					<h4>User ID: </h4><h5><%=res.getUser_id()%></h5>
+ 					
+ 					<h4>City: </h4><h5><%=res.getCity()%></h5>
+ 					<h4>State: </h4><h5><%=res.getState()%></h5>
+ 					<h4>Zip: </h4><h5><%=res.getZip()%></h5>
+ 					<h4>Picture: </h4><h5><%=res.getPicture()%></h5>
+ 					
+ 					<h4>Hotel Name: </h4><h5><%=res.getHotel_name()%></h5>
+ 					<h4>Hotel Address: </h4><h5><%=res.getAddress()%></h5>
+ 					<h4>Hotel Phone Number: </h4><h5><%=res.getPhone_number()%></h5>
+ 					<h4>Place ID: </h4><h5><%=res.getPlace_id()%></h5>
 
  				</div>
  				<form action="IndividualResSum" method="POST">
