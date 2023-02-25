@@ -32,21 +32,62 @@
 	<div class="container" style="padding: 25px 50px 75px 50px;">
 	<h1>Here are you results</h1>
 	
-	<h3>Check In</h3>
-	<input type="hidden" value="<%=request.getAttribute("reservation_id")%>" />
-	<h4><%=request.getAttribute("check_in")%></h4>
-	<h3>Check Out</h3>
-	<h4><%=request.getAttribute("check_out")%></h4>
+	<input type="hidden" value="${reservation_id}" />
+	<input type="hidden" value="${user_id}" />
+	<input type="hidden" value="${hotel_id}" />
+	<input type="hidden" value="${place_id}" />
+	
 	<h3>Adults</h3>
-	<h4><%=request.getAttribute("adults")%></h4>
+	<h4>${adults}</h4>
+	
 	<h3>Children</h3>
-	<h4><%=request.getAttribute("children")%></h4>
-	<h3>Room Type</h3>
-	<h4><%=request.getAttribute("room_type")%></h4>
-	<h3>Confirmation Code</h3>
-	<h4><%=request.getAttribute("confirmation_code")%></h4>
+	<h4>${children}</h4>
+	
 	<h3>Instructions</h3>
-	<h4><%=request.getAttribute("instructions")%></h4><br>
+	<h4>${instructions}</h4><br>
+	
+	<h3>Confirmation Code</h3>
+	<h4>${confirmation_code}</h4>
+	
+	<h3>Check In</h3>
+	<h4>${check_in}</h4>
+	
+	<h3>Check Out</h3>
+	<h4>${check_out}</h4>
+	
+	<h3>Room Type</h3>
+	<h4>${room_type}</h4>
+	
+	<h3>City</h3>
+	<h4>${city}</h4>
+	
+	<h3>State</h3>
+	<h4>${state}</h4>
+	
+	<h3>Zip</h3>
+	<h4>${zip}</h4>
+	
+	<h3>Image</h3>
+	<h4>${picture}</h4>
+	
+	<h3>Hotel Name</h3>
+	<h4>${hotel_name}</h4>
+	
+	<h3>Address</h3>
+	<h4>${address}</h4>
+	
+	<h3>Phone Number</h3>
+	<h4>${phone_number}</h4>
+	
+	<h3>Amenities</h3>
+	<h4>${amenities}</h4>
+	
+	<h3>Description</h3>
+	<h4>${descrip}</h4>
+	
+
+	
+	
 	
 	
 
