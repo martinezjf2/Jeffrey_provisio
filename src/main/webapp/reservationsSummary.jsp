@@ -99,9 +99,23 @@
  	</div>
  	
  	<% } else { %>
- 	<div>
- 	<h1>There are no reservations</h1>
- 	</div>
+ 		<div id="wrapper">
+ 			<div style="margin-top: 25px; color: red">
+ 				<h3 class="text-center fw-bold h-line">There are no reservations are the moment</h3>
+ 				<br><br>
+ 			</div>
+ 		</div>
+ 		
+ 		
+ 		
+ 	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
+	<jsp:include page="partials/values.jsp"/>
+	
+	
+	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
+	<jsp:include page="partials/touristicPlaces.jsp"/>
+	
+	
  	<% } %>
  	
  	
