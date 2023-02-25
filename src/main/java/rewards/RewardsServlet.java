@@ -63,7 +63,7 @@ public class RewardsServlet extends HttpServlet {
 				String email = rs.getString("email");
 				
 //				Reservation Table
-				int id = rs.getInt("reservation_id");
+				int reservation_id = rs.getInt("reservation_id");
 				int adults = rs.getInt("adults");
 				int children = rs.getInt("children");
 				String instructions = rs.getString("instructions");
@@ -134,7 +134,7 @@ public class RewardsServlet extends HttpServlet {
 				
 				
 				
-				RewardsRes tempRes = new RewardsRes(id, first_name, last_name, email, adults, children, instructions, confirmation_code, check_in, check_out, room_type, points, city, ind_state, hotel_name, descrip, amenities, zip);;
+				RewardsRes tempRes = new RewardsRes(first_name, last_name, email, reservation_id, adults, children, instructions, confirmation_code, check_in, check_out, room_type, points, hotel_id, user_sql_id, city, state, zip, picture, hotel_name, address, phone_number, place_id, amenities, descrip);
 				totalPoints += points;
 				rewardsRes.add(tempRes);
 				
