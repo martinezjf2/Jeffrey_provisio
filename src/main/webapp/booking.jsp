@@ -40,7 +40,9 @@
             
             <div class="card-content" style="height: auto; width: auto;">
                 <h3>Make Your Reservation</h3>
-                <form style="margin: 0; padding: 0; width: 100%; border: none;" method="GET" action="BookingFormServlet">
+                
+                
+                <form style="margin: 0; padding: 0; width: 100%; border: none;" method="POST" action="BookingFormServlet">
                 
                  <div class="form-row">
                  <% 

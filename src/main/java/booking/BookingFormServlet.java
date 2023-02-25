@@ -33,7 +33,7 @@ public class BookingFormServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		out.println("<html><body>");
@@ -54,6 +54,7 @@ public class BookingFormServlet extends HttpServlet {
 		String instructions = request.getParameter("instructions");
 		String hotel_amenities = request.getParameter("hotel_amenities");
 		String hotel_descrip = request.getParameter("hotel_descrip");
+		int points = 150;
 		
 //		Create an random generated number for confirmation
 		String candidateStrings = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
@@ -95,7 +96,7 @@ public class BookingFormServlet extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/provisio", "provisio_user", "password");
 			Statement stmt = con.createStatement();
-			String sql = "INSERT INTO reservation(user_id, hotel_id, confirmation_code, adults, children, check_in, check_out, room_type, instructions) VALUES (" + user_id + ", " + hotel_id + ", '" + confirmationCode + "', " + adults + ", " + children + ", '" + check_in + "', '" + check_out + "', '" + room_type + "', '" + instructions + "');";	
+			String sql = "INSERT INTO reservation(user_id, hotel_id, adults, children, points, confirmation_code, check_in, check_out, room_type, instructions) VALUES (" + user_id + ", " + hotel_id + ", " + adults + ", " + children + ", " + points + ", '" + confirmationCode + "', '" + check_in + "', '" + check_out + "', '" + room_type + "', '" + instructions + "');";	
 			stmt.executeUpdate(sql);
 			request.setAttribute("submit", request.getParameter("submit"));
 			request.getRequestDispatcher("reservations").forward(request, response);
