@@ -32,9 +32,9 @@
  	<% List<Hotel> theHotels = (List<Hotel>)request.getAttribute("hotels"); %>
 
 
-	<div id="wrapper">
+	<div id="wrapper" style="width: 25%; margin: 0 auto;">
  		<div style="margin-top: 100px">
- 			<h3 class="text-center fw-bold h-line">Hotels</h3>
+ 			<h3 class="text-center fw-bold h-line grow">Hotels</h3>
  			<br><br>
  		</div>
  	</div>

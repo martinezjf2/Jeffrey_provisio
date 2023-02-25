@@ -33,9 +33,9 @@
 
 
 
-	<div id="wrapper">
+	<div id="wrapper" style="width: 25%; margin: 0 auto;">
  		<div style="margin-top: 100px">
- 			<h3 class="text-center fw-bold h-line">Locations</h3>
+ 			<h3 class="text-center fw-bold h-line grow">Locations</h3>
  			<br><br>
  		</div>
  	</div>

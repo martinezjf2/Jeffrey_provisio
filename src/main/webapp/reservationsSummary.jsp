@@ -53,9 +53,9 @@
  	<!-- Add an alert to let the user now that the reservation was created successfully -->
  	
  	
- 	<div id="wrapper">
- 		<div style="margin-top: 100px">
- 			<h3 class="text-center fw-bold h-line">Reservations</h3>
+ 	<div id="wrapper" style="width: 25%; margin: 0 auto;">
+ 		<div style="margin-top: 100px" >
+ 			<h3 class="text-center fw-bold h-line grow">Reservations</h3>
  			<br><br>
  		</div>
  	</div>
