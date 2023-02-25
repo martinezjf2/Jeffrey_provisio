@@ -16,6 +16,7 @@ public class RewardsRes {
 	private String confirmation_code;
 	private String check_in;
 	private String check_out;
+	private String room_type;
 	private int points;
 	private int hotel_id;
 	private int user_id;
@@ -35,10 +36,14 @@ public class RewardsRes {
 	private String descrip;
 	
 	
+
+
+
 	public RewardsRes(int id, String first_name, String last_name, String email, int reservation_id, int adults,
-			int children, String instructions, String confirmation_code, String check_in, String check_out, int points,
-			int hotel_id, int user_id, String city, String state, String zip, String picture, String hotel_name,
-			String address, String phone_number, int place_id, String amenities, String descrip) {
+			int children, String instructions, String confirmation_code, String check_in, String check_out,
+			String room_type, int points, int hotel_id, int user_id, String city, String state, String zip,
+			String picture, String hotel_name, String address, String phone_number, int place_id, String amenities,
+			String descrip) {
 		super();
 		this.id = id;
 		this.first_name = first_name;
@@ -51,6 +56,7 @@ public class RewardsRes {
 		this.confirmation_code = confirmation_code;
 		this.check_in = check_in;
 		this.check_out = check_out;
+		this.room_type = room_type;
 		this.points = points;
 		this.hotel_id = hotel_id;
 		this.user_id = user_id;
@@ -68,9 +74,9 @@ public class RewardsRes {
 
 
 	public RewardsRes(String first_name, String last_name, String email, int reservation_id, int adults, int children,
-			String instructions, String confirmation_code, String check_in, String check_out, int points, int hotel_id,
-			int user_id, String city, String state, String zip, String picture, String hotel_name, String address,
-			String phone_number, int place_id, String amenities, String descrip) {
+			String instructions, String confirmation_code, String check_in, String check_out, String room_type,
+			int points, int hotel_id, int user_id, String city, String state, String zip, String picture,
+			String hotel_name, String address, String phone_number, int place_id, String amenities, String descrip) {
 		super();
 		this.first_name = first_name;
 		this.last_name = last_name;
@@ -82,6 +88,7 @@ public class RewardsRes {
 		this.confirmation_code = confirmation_code;
 		this.check_in = check_in;
 		this.check_out = check_out;
+		this.room_type = room_type;
 		this.points = points;
 		this.hotel_id = hotel_id;
 		this.user_id = user_id;
@@ -205,6 +212,16 @@ public class RewardsRes {
 
 	public void setCheck_out(String check_out) {
 		this.check_out = check_out;
+	}
+
+
+	public String getRoom_type() {
+		return room_type;
+	}
+
+
+	public void setRoom_type(String room_type) {
+		this.room_type = room_type;
 	}
 
 
@@ -343,11 +360,16 @@ public class RewardsRes {
 		return "RewardsRes [id=" + id + ", first_name=" + first_name + ", last_name=" + last_name + ", email=" + email
 				+ ", reservation_id=" + reservation_id + ", adults=" + adults + ", children=" + children
 				+ ", instructions=" + instructions + ", confirmation_code=" + confirmation_code + ", check_in="
-				+ check_in + ", check_out=" + check_out + ", points=" + points + ", hotel_id=" + hotel_id + ", user_id="
-				+ user_id + ", city=" + city + ", state=" + state + ", zip=" + zip + ", picture=" + picture
-				+ ", hotel_name=" + hotel_name + ", address=" + address + ", phone_number=" + phone_number
-				+ ", place_id=" + place_id + ", amenities=" + amenities + ", descrip=" + descrip + "]";
+				+ check_in + ", check_out=" + check_out + ", room_type=" + room_type + ", points=" + points
+				+ ", hotel_id=" + hotel_id + ", user_id=" + user_id + ", city=" + city + ", state=" + state + ", zip="
+				+ zip + ", picture=" + picture + ", hotel_name=" + hotel_name + ", address=" + address
+				+ ", phone_number=" + phone_number + ", place_id=" + place_id + ", amenities=" + amenities
+				+ ", descrip=" + descrip + "]";
 	}
+
+
+
+
 	
 	
 	
