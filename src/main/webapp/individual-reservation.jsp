@@ -48,15 +48,12 @@
 	<h3>Instructions</h3>
 	<h4><%=request.getAttribute("instructions")%></h4><br>
 	
-
-	<h3>ID</h3>
-	<h4><%=request.getAttribute("reservation_id")%></h4>
 	
 
 
 	<form style="display: inline" action="cancel-reservation" method="POST">
 		<input type="hidden" value="<%=request.getAttribute("reservation_id")%>" name="reservation_id"/>
-		<button name="cancelled" id="btn2">Cancel Reservation</button>
+		<button name="cancelled" id="btn2" onclick="if (!(confirm('Are you sure you want to delete the reservation'))) return false">Cancel Reservation</button>
 	</form>
 	
 	</div>

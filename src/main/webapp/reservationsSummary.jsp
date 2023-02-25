@@ -72,7 +72,7 @@
  		<% for (Reservation res : theReservations) { %>
  			<div class="card py-3 grow" style="margin: 30px 0px; padding:50px">
  				<div class="card-body">
- 				    <p><%=res.getReservation_id()%></p>
+ 				    <%-- <p><%=res.getReservation_id()%></p> --%>
  					<h4>Check In: </h4><h5><%=res.getCheck_in()%></h5>
  					<h4>Check Out: </h4><h5><%=res.getCheck_out()%></h5>
  					<h4>Adults: </h4><h3><%=res.getAdults()%></h3>
