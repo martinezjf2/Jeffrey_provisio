@@ -93,17 +93,32 @@
  					<h4>Hotel Address: </h4><h5><%=res.getAddress()%></h5>
  					<h4>Hotel Phone Number: </h4><h5><%=res.getPhone_number()%></h5>
  					<h4>Place ID: </h4><h5><%=res.getPlace_id()%></h5>
+ 					<h4>Amenities: </h4><h5><%=res.getAmenities()%></h5>
+ 					<h4>Description: </h4><h5><%=res.getDescrip()%></h5>
 
  				</div>
  				<form action="IndividualResSum" method="POST">
  					<input type="hidden" name="reservation_id" value="<%=res.getReservation_id()%>" />
- 					<input type="hidden" name="check_in" value="<%=res.getCheck_in()%>" />
- 					<input type="hidden" name="check_out" value="<%=res.getCheck_out()%>" />
  					<input type="hidden" name="adults" value="<%=res.getAdults()%>" />
  					<input type="hidden" name="children" value="<%=res.getChildren()%>" />
- 					<input type="hidden" name="room_type" value="<%=res.getRoom_type()%>" />
- 					<input type="hidden" name="confirmation_code" value="<%=res.getConfirmation_code()%>" />
  					<input type="hidden" name="instructions" value="<%=res.getInstructions()%>" />
+ 					<input type="hidden" name="confirmation_code" value="<%=res.getConfirmation_code()%>" />
+ 					<input type="hidden" name="check_in" value="<%=res.getCheck_in()%>" />
+ 					<input type="hidden" name="check_out" value="<%=res.getCheck_out()%>" />
+ 					<input type="hidden" name="points" value="<%=res.getPoints()%>" />
+ 					<input type="hidden" name="room_type" value="<%=res.getRoom_type()%>" />
+ 					<input type="hidden" name="hotel_id" value="<%=res.getHotel_id()%>" />
+ 					<input type="hidden" name="user_id" value="<%=res.getUser_id()%>" />
+ 					<input type="hidden" name="city" value="<%=res.getCity()%>" />
+ 					<input type="hidden" name="state" value="<%=res.getState()%>" />
+ 					<input type="hidden" name="zip" value="<%=res.getZip()%>" />
+ 					<input type="hidden" name="picture" value="<%=res.getPicture()%>" />
+ 					<input type="hidden" name="hotel_name" value="<%=res.getHotel_name()%>" />
+ 					<input type="hidden" name="address" value="<%=res.getAddress()%>" />
+ 					<input type="hidden" name="phone_number" value="<%=res.getPhone_number()%>" />
+ 					<input type="hidden" name="place_id" value="<%=res.getPlace_id()%>" />
+ 					<input type="hidden" name="amenities" value="<%=res.getAmenities()%>" />
+ 					<input type="hidden" name="descrip" value="<%=res.getDescrip()%>" />
  					<input type="submit" name="submit" id="btn2" value="View Reservation" />
  				</form>
  				
