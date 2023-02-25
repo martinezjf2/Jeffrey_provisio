@@ -54,8 +54,8 @@ public class ReservationCancelled extends HttpServlet {
 		} catch(Exception e) {
 			out.println(id);
 			out.println(e);
-//			request.setAttribute("error", "Unable to delete reservation");
-//			request.getRequestDispatcher("error.jsp").forward(request, response);
+			request.setAttribute("success", "Reservation Successfully Deleted");
+			request.getRequestDispatcher("error.jsp").forward(request, response);
 		}
     	
     }
