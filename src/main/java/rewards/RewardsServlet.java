@@ -72,16 +72,23 @@ public class RewardsServlet extends HttpServlet {
 				String check_out = rs.getString("check_out");
 				String room_type = rs.getString("room_type");
 				int points = rs.getInt("points");
+				int hotel_id = rs.getInt("hotel_id");
+				int user_sql_id = rs.getInt("user_id");
 				
 //				Place Table
 				String city = rs.getString("city");
-				String ind_state = rs.getString("ind_state");
+				String state = rs.getString("ind_state");
+				String zip = rs.getString("zip");
+				String picture = rs.getString("picture");
 				
 //				Hotel Table
 				String hotel_name = rs.getString("hotel_name");
-				String descrip = rs.getString("descrip");
+				String address = rs.getString("address");
+				String phone_number = rs.getString("phone_number");
+				int place_id = rs.getInt("place_id");
 				String amenities = rs.getString("amenities");
-				int zip = rs.getInt("zip");
+				String descrip = rs.getString("descrip");
+				
 				
 //				out.println("<h3>User Table</h3>");
 //				out.println("<strong>First Name: </strong>" + first_name);
