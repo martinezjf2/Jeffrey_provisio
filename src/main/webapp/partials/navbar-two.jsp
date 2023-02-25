@@ -67,7 +67,7 @@
    
    	<li class="nav-item">
   		<form class="" action="logout" method="POST">
-        	<button type="submit" name="loggedOut" id="btn1" class="btn nav-link">Log Out</button>
+        	<button type="submit" name="loggedOut" id="btn1" class="btn nav-link" onclick="if (!(confirm('Are you sure you want to logout?'))) return false">Log Out</button>
     	</form>
    </li>
    	<% } %>
