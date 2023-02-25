@@ -31,7 +31,7 @@
  	} else { %>
 
 
-<section class="banner">
+<section class="banner" style="padding: 85px 10px">
         <h2>BOOK YOUR ROOM NOW</h2>
         <div class="card-container" >
             <div class="card-img">
