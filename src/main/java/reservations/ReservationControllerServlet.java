@@ -77,12 +77,15 @@ public class ReservationControllerServlet extends HttpServlet {
 				String address = rs.getString("address");
 				String phone_number = rs.getString("phone_number");
 				int place_id = rs.getInt("place_id");
+				String amenities = rs.getString("amenities");
+				String descrip = rs.getString("descrip");
+				
 				
 				
 
 				
 				
-				Reservation tempRes = new Reservation(reservation_id, adults, children, instructions, confirmation_code, check_in, check_out, room_type, points, hotel_id, user_sql_id, city, state, zip, picture, hotel_name, address, phone_number, place_id);
+				Reservation tempRes = new Reservation(reservation_id, adults, children, instructions, confirmation_code, check_in, check_out, room_type, points, hotel_id, user_sql_id, city, state, zip, picture, hotel_name, address, phone_number, place_id, amenities, descrip);
 				reservations.add(tempRes);
 			}
 			
