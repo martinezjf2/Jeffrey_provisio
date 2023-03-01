@@ -15,18 +15,17 @@
 <body>
 
 <div id="values">
-
-	<div id="wrapper" style="width: 25%; margin: 0 auto;">
+<div id="wrapper">
  		<div style="margin-top: 25px;">
- 			<h3 class="text-center fw-bold h-line grow">Our Values</h3>
+ 			<h3 class="text-center fw-bold h-line">Our Values</h3>
  			<br><br>
  		</div>
  	</div>
 
 
 	<div class="row">
-  <div class="col-sm-12 col-md-3 mb-3" style="height: 250px">
-    <div class="card text-center grow">
+  <div class="col-sm-12 col-md-3 mb-3">
+    <div class="card text-center">
       <div class="card-body shadow">
         <h5 class="card-title">We Put People First</h5>
         <p class="card-text">"Take care of guests and they will take care of your business."</p>
@@ -35,8 +34,8 @@
     </div>
   </div>
   
-  <div class="col-sm-12 col-md-3 mb-3" style="height: 250px">
-    <div class="card text-center grow">
+  <div class="col-sm-12 col-md-3 mb-3">
+    <div class="card text-center">
       <div class="card-body shadow">
         <h5 class="card-title">We Pursue Excellence</h5>
         <p class="card-text">Our dedication to the customer shows in everything we do.</p>
@@ -45,8 +44,8 @@
     </div>
   </div>
   
-  <div class="col-sm-12 col-md-3 mb-3" style="height: 250px">
-    <div class="card text-center grow">
+  <div class="col-sm-12 col-md-3 mb-3">
+    <div class="card text-center">
       <div class="card-body shadow">
         <h5 class="card-title">We Embrace Change</h5>
         <p class="card-text">Innovation has always been part of the Provisio Resorts story.</p>
@@ -55,8 +54,8 @@
     </div>
   </div>
   
-   <div class="col-sm-12 col-md-3 mb-3" style="height: 250px">
-    <div class="card text-center grow">
+   <div class="col-sm-12 col-md-3 mb-3">
+    <div class="card text-center">
       <div class="card-body shadow">
         <h5 class="card-title">We Act with Integrity</h5>
         <p class="card-text">How we do business is as important as the business we do.</p>

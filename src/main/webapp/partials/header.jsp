@@ -17,11 +17,9 @@
 <% String name = (String)session.getAttribute("first_name"); %>
 	<!-- NAVBAR JSP INCLUDE FOR FLEXIBILITY -->
 	<div id="landingHeader">
-    	<div class="container">
         	<div class="content">
             	<div class="text">
-            	
-            	
+
             		<% if (session.getAttribute("first_name") == null){ %>
             			<h1 style="text-align: center;">Be Vibrant, Enjoy Life, <br> <span>Book Provisio</span></h1>
             			<p class="text-white h1" style="font-size: 25px; text-align: center;">Welcome home at Provisio Beach and Resorts.<br>Family vacations to appeal each member. <br>and a getaway to achieve your relation needs.</p>
@@ -41,7 +39,6 @@
            			
            		</div>
        		</div>
-   		</div>
  	</div> 
 </body>
 </html>

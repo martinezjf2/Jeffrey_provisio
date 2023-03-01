@@ -97,9 +97,10 @@ nav a {
 .content {
     position: relative;
     display: flex;
-    width: 100%;
+    width: 60%;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
 }
 .content .text {
     position: relative;
@@ -222,7 +223,7 @@ section form {
 }
 
 .card-img{
-    background: url(images/bookingAustralia.jpg) center/cover no-repeat ;
+    background: url(images/australia.jpg) center/cover no-repeat ;
 }
 
 .banner h2{

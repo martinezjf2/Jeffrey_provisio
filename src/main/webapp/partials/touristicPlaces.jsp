@@ -25,21 +25,21 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="images/cancun.jpg" alt="First slide" style="height: 800px">
+            <img class="d-block w-100" src="images/cancun.jpg" alt="First slide" style="height: 1200px">
            <!--  <div class="carousel-caption d-none d-md-block">
                 <h5>My Caption Title (1st Image)</h5>
                 <p>The whole caption will only show up if the screen is at least medium size.</p>
             </div> -->
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="images/miami2.jpg" alt="Second slide" style="height: 800px">
+            <img class="d-block w-100" src="images/miami2.jpg" alt="Second slide" style="height: 1200px">
             <!-- <div class="carousel-caption d-none d-md-block">
                 <h5>My Caption Title (1st Image)</h5>
                 <p>The whole caption will only show up if the screen is at least medium size.</p>
             </div> -->
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="images/laketahoe2.jpg" alt="Third slide" style="height: 800px">
+            <img class="d-block w-100" src="images/laketahoe2.jpg" alt="Third slide" style="height: 1200px">
             <!-- <div class="carousel-caption d-none d-md-block">
                 <h5>My Caption Title (1st Image)</h5>
                 <p>The whole caption will only show up if the screen is at least medium size.</p>

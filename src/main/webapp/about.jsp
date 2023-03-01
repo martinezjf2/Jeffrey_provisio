@@ -36,7 +36,7 @@
 	
 	
 	
-	<body>
+
 
                         <!-- About Company-->
                         <div class="px-5" style="margin-top: 100px; margin-bottom: 50px">  
@@ -69,7 +69,7 @@
                      </div>  
                    </div>
 
-</body>
+
 
 
 

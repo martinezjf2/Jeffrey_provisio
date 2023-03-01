@@ -36,18 +36,18 @@ public class IndividualResSum extends HttpServlet {
 		String check_out = request.getParameter("check_out");
 		String points = request.getParameter("points");
 		String room_type = request.getParameter("room_type");
-		String hotel_id = request.getParameter("points");
-		String user_id = request.getParameter("points");
-		String city = request.getParameter("points");
-		String state = request.getParameter("points");
-		String zip = request.getParameter("points");
-		String picture = request.getParameter("points");
-		String hotel_name = request.getParameter("points");
-		String address = request.getParameter("points");
-		String phone_number = request.getParameter("points");
-		String place_id = request.getParameter("points");
-		String amenities = request.getParameter("points");
-		String descrip = request.getParameter("points");
+		String hotel_id = request.getParameter("hotel_id");
+		String user_id = request.getParameter("user_id");
+		String city = request.getParameter("city");
+		String state = request.getParameter("state");
+		String zip = request.getParameter("zip");
+		String picture = request.getParameter("picture");
+		String hotel_name = request.getParameter("hotel_name");
+		String address = request.getParameter("address");
+		String phone_number = request.getParameter("phone_number");
+		String place_id = request.getParameter("place_id");
+		String amenities = request.getParameter("amenities");
+		String descrip = request.getParameter("descrip");
 				
 
 		request.setAttribute("reservation_id", reservation_id);

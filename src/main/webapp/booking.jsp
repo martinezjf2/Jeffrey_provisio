@@ -31,7 +31,7 @@
  	} else { %>
 
 
-<section class="banner" style="padding: 85px 10px">
+<section class="banner">
         <h2>BOOK YOUR ROOM NOW</h2>
         <div class="card-container" >
             <div class="card-img">
@@ -40,8 +40,6 @@
             
             <div class="card-content" style="height: auto; width: auto;">
                 <h3>Make Your Reservation</h3>
-                
-                
                 <form style="margin: 0; padding: 0; width: 100%; border: none;" method="POST" action="BookingFormServlet">
                 
                  <div class="form-row">
@@ -59,11 +57,11 @@
                     
                      <div class="form-row">
                         <input type="text" style="width: 100%" name="user_email" placeholder=<%= email %> disabled>
-                        <input type="text" style="width: 100%" value="${hotel_name}" disabled >
-                        <input type="hidden" style="width: 100%" name="hotel_id" value="${hotel_id}" >
-                        <input type="hidden" style="width: 100%" name="hotel_name" value="${hotel_name}" >
-                        <input type="hidden" style="width: 100%" name="hotel_amenities" value="${hotel_amenities}" >
-                        <input type="hidden" style="width: 100%" name="hotel_descrip" value="${hotel_descrip}" >
+                        <input type="text" style="width: 100%" value="<%= request.getParameter("hotel_name") %>" disabled >
+                        <input type="hidden" style="width: 100%" name="hotel_id" value="<%= request.getParameter("hotel_id") %>" >
+                        <input type="hidden" style="width: 100%" name="hotel_name" value="<%= request.getParameter("hotel_name") %>" >
+                        <input type="hidden" style="width: 100%" name="hotel_amenities" value="<%= request.getParameter("hotel_amenities") %>" >
+                        <input type="hidden" style="width: 100%" name="hotel_descrip" value="<%= request.getParameter("hotel_descrip") %>" >
                     </div>
                     
                     

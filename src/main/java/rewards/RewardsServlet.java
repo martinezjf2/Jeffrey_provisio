@@ -54,7 +54,7 @@ public class RewardsServlet extends HttpServlet {
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/provisio", "provisio_user", "password");
 			Statement stmt = con.createStatement();
 //			Resource: https://www.freecodecamp.org/news/sql-inner-join-how-to-join-3-tables-in-sql-and-mysql/
-			ResultSet rs = stmt.executeQuery("SELECT * FROM reservation INNER JOIN user ON reservation.user_id = user.user_id INNER JOIN hotel ON reservation.hotel_id = hotel.hotel_id INNER JOIN place ON hotel.place_id = place.place_id WHERE reservation.user_id = " + user_id);
+			ResultSet rs = stmt.executeQuery("SELECT * FROM reservation INNER JOIN user ON reservation.user_id = user.user_id INNER JOIN hotel ON reservation.hotel_id = hotel.hotel_id INNER JOIN place ON hotel.place_id = place.place_id WHERE reservation.user_id = " + user_id + " ORDER BY reservation_id DESC;");
 			
 			while (rs.next()) {
 //				User Table
