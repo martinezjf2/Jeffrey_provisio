@@ -15,7 +15,7 @@
 		
 <nav class="navbar navbar-expand-lg" style="padding: 10px 100px">
 
-<a href="index.jsp" class="navbar-brand"><img src="./images/logo1.png" class="logo"></a>  
+<a href="index.jsp" class="navbar-brand"><img src="./images/ProvisioNewLogo.png" class="logo"></a>  
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
