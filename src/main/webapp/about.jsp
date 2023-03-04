@@ -39,7 +39,7 @@
 
 
                         <!-- About Company-->
-                        <div class="px-5" style="margin-top: 100px; margin-bottom: 50px">  
+                        <div class="px-5" style="margin-top: 100px; margin-bottom: 75px">  
                             <h3 class="text-center fw-bold h-font">ABOUT OUR COMPANY</h3>
                             <div class="h-line" style="margin: 0 auto; width: 65%">
                                    <p class="text-center mt-3" >
@@ -64,7 +64,7 @@
                            </p>
                        </div>
                         <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1" style="padding: 0; width: 30%;">
-                        <img src="images/provisioceo.jpg" class="w-100  rounded ">
+                        <img src="images/provisioceo.jpg" class="rounded "  alt="CEO" style="width: 150%">
                        </div>
                      </div>  
                    </div>
