@@ -44,7 +44,7 @@
  		<% if (resList.isEmpty() == false) { %>
  		
  		<div style="width:60%; text-align: right; margin: 0 auto;">
- 			<p class="justify-content-end" style="font-weight: bold;" >Total Points: <%=request.getAttribute("totalPoints") %></p>
+ 			<h4 class="justify-content-end" style="font-weight: bold;" >Total Points: <%=request.getAttribute("totalPoints") %></h4>
  		</div>
  		
  	<div style="margin: 0 auto; width: 75%; text-align: center;">
