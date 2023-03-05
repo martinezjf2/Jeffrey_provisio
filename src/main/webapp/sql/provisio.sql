@@ -1,11 +1,20 @@
 
 
-/* Team Two
+/** 
+ 
+Team Two
 SQL Insert Statements
 January 21, 2023
 
 To start the mysql server run this on your terminal
-mysql -u root -p */
+mysql -u root -p 
+
+
+To change the root password, make sure to run this command
+mysql -u root
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
+
+**/
 
 
 -- drop database
