@@ -48,7 +48,7 @@
  		</div>
  	</div>
  
-	<!-- Comment -->
+	
  	<div id="backToHomepageLink" style="margin-top: 30px; padding: 10px;">
 		<form action="reservations" method="POST" id="reserveForm">
   			<input type="hidden" name="user_id" value=<%=session.getAttribute("user_id") %> />
